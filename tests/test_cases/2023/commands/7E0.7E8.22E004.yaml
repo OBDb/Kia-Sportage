@@ -21,7 +21,10 @@ test_cases:
     7E82FA8840030C00901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C0109E8030000
@@ -41,7 +44,10 @@ test_cases:
     7E82F8E7200C1BF0901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C020BE8030000
@@ -61,7 +67,10 @@ test_cases:
     7E82F4E3700E1D70901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C020BE8030000
@@ -81,7 +90,10 @@ test_cases:
     7E82F383200A5D70901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C020BE8030000
@@ -147,7 +159,10 @@ test_cases:
     7E82FF38B004EC00901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C060BE8030000
@@ -167,7 +182,10 @@ test_cases:
     7E82F383200C3D70901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C0808E8030000
@@ -187,7 +205,10 @@ test_cases:
     7E82F5D740036CB0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C090AE8030000
@@ -207,7 +228,10 @@ test_cases:
     7E82FFC4A0049C60C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C090CE8030000
@@ -227,7 +251,10 @@ test_cases:
     7E82F3C4A00736B0B01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C0A09E8030000
@@ -247,7 +274,10 @@ test_cases:
     7E82FD47500F4BF0901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C0C0DB60B0000
@@ -267,7 +297,10 @@ test_cases:
     7E82F614200376B0B01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C0D08B60B0000
@@ -310,7 +343,10 @@ test_cases:
     7E82F788300DFC60C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C0E0CE8030000
@@ -376,7 +412,10 @@ test_cases:
     7E82F17090095BE0901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C0F09E8030000
@@ -396,7 +435,10 @@ test_cases:
     7E82FAE90006CC00901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C0F09E8030000
@@ -416,7 +458,10 @@ test_cases:
     7E82F73910077BE0901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C100BE8030000
@@ -436,7 +481,10 @@ test_cases:
     7E82FB6300087D70901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C170AE8030000
@@ -456,7 +504,10 @@ test_cases:
     7E82F46960087C30901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C170AE8030000
@@ -476,7 +527,10 @@ test_cases:
     7E82F7321004ED40901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C1909E8030000
@@ -496,7 +550,10 @@ test_cases:
     7E82FA5760012C00901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C1E09B60B0000
@@ -516,7 +573,10 @@ test_cases:
     7E82FD75A0028CA0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C1E09E8030000
@@ -536,7 +596,10 @@ test_cases:
     7E82FAE90008AC00901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C200AE8030000
@@ -579,7 +642,10 @@ test_cases:
     7E82F3C4A00556B0B01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C2309E8030000
@@ -599,7 +665,10 @@ test_cases:
     7E82F6C8B0029C80C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C2408E8030000
@@ -642,7 +711,10 @@ test_cases:
     7E82F2B200030D40901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C2A0AE8030000
@@ -662,7 +734,10 @@ test_cases:
     7E82FE7930069C30901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C2B0CE8030000
@@ -728,7 +803,10 @@ test_cases:
     7E82F4D140032B10C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C310BE8030000
@@ -748,7 +826,10 @@ test_cases:
     7E82FC2240069D70901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C340AE8030000
@@ -768,7 +849,10 @@ test_cases:
     7E82FD10800F4D30901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C340AE8030000
@@ -788,7 +872,10 @@ test_cases:
     7E82F47180012D40901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C340AE8030000
@@ -808,7 +895,10 @@ test_cases:
     7E82F886700EDC70C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C360BE8030000
@@ -851,7 +941,10 @@ test_cases:
     7E82FAE900062C00901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C390AE8030000
@@ -871,7 +964,10 @@ test_cases:
     7E82FD10800C7D30901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C3A07E8030000
@@ -914,7 +1010,10 @@ test_cases:
     7E82F488500AECB0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C3C0BB60B0000
@@ -934,7 +1033,10 @@ test_cases:
     7E82F886200096C0B01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C3D08B60B0000
@@ -1046,7 +1148,10 @@ test_cases:
     7E82FD10800D6D30901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C4509B60B0000
@@ -1066,7 +1171,10 @@ test_cases:
     7E82F2A400038C90C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C450BE8030000
@@ -1109,7 +1217,10 @@ test_cases:
     7E82F983200DD6A0B01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C4608E8030000
@@ -1129,7 +1240,10 @@ test_cases:
     7E82F9C4E0091C90C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C470AB60B0000
@@ -1149,7 +1263,10 @@ test_cases:
     7E82F4B0C0044CC0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C470AE8030000
@@ -1169,7 +1286,10 @@ test_cases:
     7E82FAE900062C00901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C470AE8030000
@@ -1189,7 +1309,10 @@ test_cases:
     7E82F5C06008BD30901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C480EE8030000
@@ -1232,7 +1355,10 @@ test_cases:
     7E82F9C4E00AFC90C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C4B0AB60B0000
@@ -1252,7 +1378,10 @@ test_cases:
     7E82FB81100BCCC0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C4B0AE8030000
@@ -1318,7 +1447,10 @@ test_cases:
     7E82FC84100196B0B01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C5008B60B0000
@@ -1338,7 +1470,10 @@ test_cases:
     7E82F4B0C0080CC0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C500AE8030000
@@ -1358,7 +1493,10 @@ test_cases:
     7E82FD10800A9D30901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C5309E8030000
@@ -1378,7 +1516,10 @@ test_cases:
     7E82FE58C00FDC60C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C5408E8030000
@@ -1398,7 +1539,10 @@ test_cases:
     7E82FFF470074C90C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C5408E8030000
@@ -1418,7 +1562,10 @@ test_cases:
     7E82F59960008CC0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C560AE8030000
@@ -1438,7 +1585,10 @@ test_cases:
     7E82F3E2200B3D80901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C5709E8030000
@@ -1458,7 +1608,10 @@ test_cases:
     7E82F943600FBC80C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C5908B60B0000
@@ -1478,7 +1631,10 @@ test_cases:
     7E82F79220016CD0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C5A0AE8030000
@@ -1498,7 +1654,10 @@ test_cases:
     7E82F2B95006DD30901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C5A0AE8030000
@@ -1518,7 +1677,10 @@ test_cases:
     7E82F9922002BD90901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C5C09E8030000
@@ -1561,7 +1723,10 @@ test_cases:
     7E82F5F250049D90901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C5F0AE8030000
@@ -1581,7 +1746,10 @@ test_cases:
     7E82F5F250067D90901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C610BE8030000
@@ -1601,7 +1769,10 @@ test_cases:
     7E82FC224004BD70901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C610BE8030000
@@ -1644,7 +1815,10 @@ test_cases:
     7E82F992200EFD80901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C640AE8030000
@@ -1664,7 +1838,10 @@ test_cases:
     7E82F9922000DD90901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C640CB60B0000
@@ -1707,7 +1884,10 @@ test_cases:
     7E82FCA220057D40901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C640CE8030000
@@ -1727,7 +1907,10 @@ test_cases:
     7E82FCA220057D40901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C6808B60B0000
@@ -1747,7 +1930,10 @@ test_cases:
     7E82F5D740054CB0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C6808E8030000
@@ -1767,7 +1953,10 @@ test_cases:
     7E82FC32800C0C80C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C680AE8030000
@@ -1787,7 +1976,10 @@ test_cases:
     7E82F992200D1D80901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C690CE8030000
@@ -1807,7 +1999,10 @@ test_cases:
     7E82F2E24000FD70901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C6B0BB60B0000
@@ -1827,7 +2022,10 @@ test_cases:
     7E82F5B140077C50C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C6E0CE8030000
@@ -1847,7 +2045,10 @@ test_cases:
     7E82FCA220057D40901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C6F09B60B0000
@@ -1890,7 +2091,10 @@ test_cases:
     7E82FB6080066C80C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C700BB60B0000
@@ -1910,7 +2114,10 @@ test_cases:
     7E82FAC6000CD6B0B01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C7108B60B0000
@@ -1930,7 +2137,10 @@ test_cases:
     7E82F51630082CA0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C720AE8030000
@@ -1950,7 +2160,10 @@ test_cases:
     7E82F500E0095D80901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C720CE8030000
@@ -1993,7 +2206,10 @@ test_cases:
     7E82F4C6900EFC40901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C750BB60B0000
@@ -2013,7 +2229,10 @@ test_cases:
     7E82FAC6000EB6B0B01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C750BE8030000
@@ -2056,7 +2275,10 @@ test_cases:
     7E82F5D830090CB0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C770AE8030000
@@ -2076,7 +2298,10 @@ test_cases:
     7E82F88050077D80901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C7909E8030000
@@ -2096,7 +2321,10 @@ test_cases:
     7E82F4C69000DC50901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C7909E8030000
@@ -2116,7 +2344,10 @@ test_cases:
     7E82F6933000DC60C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C7A0BE8030000
@@ -2159,7 +2390,10 @@ test_cases:
     7E82FE44D0085C60C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C7B0AE8030000
@@ -2179,7 +2413,10 @@ test_cases:
     7E82FC3860059D80901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C7E09E8030000
@@ -2199,7 +2436,10 @@ test_cases:
     7E82FE55D00B3C40901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C7E09E8030000
@@ -2219,7 +2459,10 @@ test_cases:
     7E82FE55D00D1C40901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C7E09E8030000
@@ -2239,7 +2482,10 @@ test_cases:
     7E82FC7560095C40901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C8210B60B0000
@@ -2259,7 +2505,10 @@ test_cases:
     7E82F98320088640B01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C8309B60B0000
@@ -2279,7 +2528,10 @@ test_cases:
     7E82F5C180095C50C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C8309E8030000
@@ -2299,7 +2551,10 @@ test_cases:
     7E82FF644003BC40901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C8709E8030000
@@ -2319,7 +2574,10 @@ test_cases:
     7E82FC7560077C40901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C8709E8030000
@@ -2339,7 +2597,10 @@ test_cases:
     7E82FC7560059C40901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C8709E8030000
@@ -2359,7 +2620,10 @@ test_cases:
     7E82F585300CFC70C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C8710E8030000
@@ -2425,7 +2689,10 @@ test_cases:
     7E82F616C0018C50901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C8C0BE8030000
@@ -2468,7 +2735,10 @@ test_cases:
     7E82F050F0083C80C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C8F0CB60B0000
@@ -2511,7 +2781,10 @@ test_cases:
     7E82F846C0017CB0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C9308B60B0000
@@ -2531,7 +2804,10 @@ test_cases:
     7E82F1F68009FCA0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C9308B60B0000
@@ -2574,7 +2850,10 @@ test_cases:
     7E82FDE1E00A2C80C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C9509E8030000
@@ -2594,7 +2873,10 @@ test_cases:
     7E82FB33B00FFC30901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C980AE8030000
@@ -2614,7 +2896,10 @@ test_cases:
     7E82F616E003BD80901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C9A09E8030000
@@ -2634,7 +2919,10 @@ test_cases:
     7E82FA8970039C70C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C9A09E8030000
@@ -2654,7 +2942,10 @@ test_cases:
     7E82FF644001DC40901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217C9B0BB60B0000
@@ -2789,7 +3080,10 @@ test_cases:
     7E82F5F8F001BC70C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CA50BB60B0000
@@ -2809,7 +3103,10 @@ test_cases:
     7E82FE06900276C0B01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CA608E8030000
@@ -2829,7 +3126,10 @@ test_cases:
     7E82F4B0C0062CC0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CA608E8030000
@@ -2849,7 +3149,10 @@ test_cases:
     7E82F946900DBCA0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CA60AE8030000
@@ -2938,7 +3241,10 @@ test_cases:
     7E82F145300CEC90C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CAB0AE8030000
@@ -3004,7 +3310,10 @@ test_cases:
     7E82F011D00F8CC0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CAF08E8030000
@@ -3024,7 +3333,10 @@ test_cases:
     7E82FCF140075C70C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CB207B60B0000
@@ -3067,7 +3379,10 @@ test_cases:
     7E82F2D2500E1C30901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CB408E8030000
@@ -3087,7 +3402,10 @@ test_cases:
     7E82F305A00A3C60C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CB50AE8030000
@@ -3107,7 +3425,10 @@ test_cases:
     7E82F2C58001DD80901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CB709E8030000
@@ -3127,7 +3448,10 @@ test_cases:
     7E82F599600EACB0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CB908B60B0000
@@ -3147,7 +3471,10 @@ test_cases:
     7E82FD75A0045CA0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CB908E8030000
@@ -3167,7 +3494,10 @@ test_cases:
     7E82FB811009ECC0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CBB07E8030000
@@ -3210,7 +3540,10 @@ test_cases:
     7E82F386700C1C60C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CBE08E8030000
@@ -3230,7 +3563,10 @@ test_cases:
     7E82F4B0C0026CC0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CBE08E8030000
@@ -3250,7 +3586,10 @@ test_cases:
     7E82F00000057C70C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CBF0AE8030000
@@ -3316,7 +3655,10 @@ test_cases:
     7E82F3A0E00C3C30901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CC808B60B0000
@@ -3336,7 +3678,10 @@ test_cases:
     7E82FBA6A00FACA0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CC808E8030000
@@ -3356,7 +3701,10 @@ test_cases:
     7E82FC39000CCCB0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CC907B60B0000
@@ -3399,7 +3747,10 @@ test_cases:
     7E82F3D75000BC80C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CCA0EE8030000
@@ -3442,7 +3793,10 @@ test_cases:
     7E82FD75A00EBC90C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CCC0DB60B0000
@@ -3462,7 +3816,10 @@ test_cases:
     7E82F98320088640B01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CCC0DE8030000
@@ -3482,7 +3839,10 @@ test_cases:
     7E82F0A5900AF6B0B01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CCE07B60B0000
@@ -3594,7 +3954,10 @@ test_cases:
     7E82FB7290093C70C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CD60AB60B0000
@@ -3637,7 +4000,10 @@ test_cases:
     7E82FA0070047C80C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CDB08B60B0000
@@ -3657,7 +4023,10 @@ test_cases:
     7E82F182000D1C50C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CDF08E8030000
@@ -3677,7 +4046,10 @@ test_cases:
     7E82F8832002ABF0901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CDF0DB60B0000
@@ -3789,7 +4161,10 @@ test_cases:
     7E82F0A5900916B0B01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CE60EE8030000
@@ -3809,7 +4184,10 @@ test_cases:
     7E82FC84100FB6A0B01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CE709B60B0000
@@ -3829,7 +4207,10 @@ test_cases:
     7E82F343C002BC60C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CE70BE8030000
@@ -3849,7 +4230,10 @@ test_cases:
     7E82F2E24002DD70901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CE908E8030000
@@ -3869,7 +4253,10 @@ test_cases:
     7E82F88320049BF0901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CE908E8030000
@@ -3889,7 +4276,10 @@ test_cases:
     7E82F1E810072CB0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CE908E8030000
@@ -3909,7 +4299,10 @@ test_cases:
     7E82F331400EFBE0901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CE908E8030000
@@ -3929,7 +4322,10 @@ test_cases:
     7E82F182000B3C50C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CEA0AE8030000
@@ -3949,7 +4345,10 @@ test_cases:
     7E82F454500FFD70901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CEA0CB60B0000
@@ -4038,7 +4437,10 @@ test_cases:
     7E82F331400D0BE0901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CEE08E8030000
@@ -4058,7 +4460,10 @@ test_cases:
     7E82F011D00DACC0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CEF0AE8030000
@@ -4101,7 +4506,10 @@ test_cases:
     7E82F2A400055C90C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CF009E8030000
@@ -4121,7 +4529,10 @@ test_cases:
     7E82F2F0500A6C30901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CF308B60B0000
@@ -4141,7 +4552,10 @@ test_cases:
     7E82FD75A0009CA0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CF308B60B0000
@@ -4161,7 +4575,10 @@ test_cases:
     7E82FC32800DDC80C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CF308B60B0000
@@ -4181,7 +4598,10 @@ test_cases:
     7E82FC85B0064CA0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CF308B60B0000
@@ -4201,7 +4621,10 @@ test_cases:
     7E82F1F6800BDCA0C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CF308E8030000
@@ -4221,7 +4644,10 @@ test_cases:
     7E82F8823000CBF0901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CF308E8030000
@@ -4241,7 +4667,10 @@ test_cases:
     7E82F331400B2BE0901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CF507E8030000
@@ -4307,7 +4736,10 @@ test_cases:
     7E82F2A40001AC90C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CF60BE8030000
@@ -4350,7 +4782,10 @@ test_cases:
     7E82FFB3D0067BF0901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CF808E8030000
@@ -4370,7 +4805,10 @@ test_cases:
     7E82FE44D0067C60C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CF808E8030000
@@ -4390,7 +4828,10 @@ test_cases:
     7E82F7D6100A3BF0901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CF808E8030000
@@ -4410,7 +4851,10 @@ test_cases:
     7E82FE73E00B1C70C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CFC08E8030000
@@ -4430,7 +4874,10 @@ test_cases:
     7E82FD47500DFBF0901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CFC08E8030000
@@ -4450,7 +4897,10 @@ test_cases:
     7E82F0A3100EFC50C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CFC08E8030000
@@ -4470,7 +4920,10 @@ test_cases:
     7E82FB7520085BF0901
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
 - response: |-
     7E8107C62E004CDC000
     7E8217CFC0DB60B0000
@@ -4490,4 +4943,7 @@ test_cases:
     7E82F5B140059C50C01
     7E82000000000000000
     7E821000000000000AA
-  expected_values: {}
+  expected_values:
+    KIA_22E004: 100
+    KIA_AUX_SOC: 0
+    KIA_AUX_SOH: 0
