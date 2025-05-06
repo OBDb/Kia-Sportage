@@ -1,0 +1,46 @@
+command_id: 7D4.7DC.2101
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: |-
+    7DC100F6101858EC100
+    7DC2101D0D197680B23
+    7DC2214100000000000
+  expected_values:
+    KIA_STEER_ANGLE: 285.1
+- response: |-
+    7DC100F6101858EC105
+    7DC2105C9C9659B0C3F
+    7DC22F0E00000000000
+  expected_values:
+    KIA_STEER_ANGLE: 313.5
+- response: |-
+    7DC100F6101868FC104
+    7DC2104C0C0718FFFBD
+    7DC22FCC00000000000
+  expected_values:
+    KIA_STEER_ANGLE: -6.7
+- response: |-
+    7DC100F6101878FC118
+    7DC2117FEFE718F0142
+    7DC2201500000000000
+  expected_values:
+    KIA_STEER_ANGLE: 32.2
+- response: |-
+    7DC100F6101878FC119
+    7DC2119FEFE817EFFCD
+    7DC22FE900000000000
+  expected_values:
+    KIA_STEER_ANGLE: -5.1
+- response: |-
+    7DC100F61018890C103
+    7DC2103C5C68F71FD50
+    7DC2201F00000000000
+  expected_values:
+    KIA_STEER_ANGLE: -68.8
+- response: |-
+    7DC100F61018891C105
+    7DC2105CED0926DFEA1
+    7DC2202000000000000
+  expected_values:
+    KIA_STEER_ANGLE: -35.1

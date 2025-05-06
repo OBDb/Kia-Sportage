@@ -1,0 +1,13 @@
+command_id: 7E1.7E9.21A0
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: |-
+    7E9101E61A0FFBF0000
+    7E9210DB00000000CA6
+    7E9220000460000090A
+    7E92300220B0000FFF0
+    7E924C0D000AAAAAAAA
+  expected_values:
+    KIA_ATF_T: 30
+    KIA_VSS: 0
