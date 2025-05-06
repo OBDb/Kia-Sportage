@@ -1,0 +1,16 @@
+command_id: 7D4.7DC.2101
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: |-
+    7DC100F61018990C100
+    7DC2100DBDB817E00AF
+    7DC22FFC00000000000
+  expected_values:
+    KIA_STEER_ANGLE_V2: 17.5
+- response: |-
+    7DC100F61018A91C100
+    7DC2100DDDC817D00B0
+    7DC2200000000000000
+  expected_values:
+    KIA_STEER_ANGLE_V2: 17.6
