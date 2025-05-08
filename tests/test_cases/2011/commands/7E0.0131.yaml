@@ -8,3 +8,18 @@ test_cases:
 - response: '7E80441310318'
   expected_values:
     CLR_DIST: 792
+- response: '7E80441310324'
+  expected_values:
+    CLR_DIST: 804
+- response: '7E80441310325'
+  expected_values:
+    CLR_DIST: 805
+- response: '7E80441310326'
+  expected_values:
+    CLR_DIST: 806
+- response: '7E80441310327'
+  expected_values:
+    CLR_DIST: 807
+- response: '7E80441310329'
+  expected_values:
+    CLR_DIST: 809
