@@ -37,3 +37,10 @@ test_cases:
     KIA_LOCK_FL: 0
     KIA_LOCK_FR: 0
     KIA_REVERSE_GEAR: 1
+- response: |-
+    778100B62BC04B03770
+    77821200D600000AAAA
+  expected_values:
+    KIA_LOCK_FL: 0
+    KIA_LOCK_FR: 0
+    KIA_REVERSE_GEAR: 1

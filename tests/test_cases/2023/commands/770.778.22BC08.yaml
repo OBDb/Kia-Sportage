@@ -3,6 +3,16 @@ can_id_format: ELEVEN_BIT
 extended_addressing_enabled: false
 test_cases:
 - response: |-
+    778100B62BC08A05710
+    77821BC0200001CAAAA
+  expected_values:
+    KIA_TURN_R: 1
+- response: |-
+    778100B62BC08A05710
+    77821BC0400001CAAAA
+  expected_values:
+    KIA_TURN_R: 1
+- response: |-
     778100B62BC08A05790
     77821BC0200011CAAAA
   expected_values:

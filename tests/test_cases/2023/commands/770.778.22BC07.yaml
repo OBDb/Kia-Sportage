@@ -3,6 +3,21 @@ can_id_format: ELEVEN_BIT
 extended_addressing_enabled: false
 test_cases:
 - response: |-
+    778100B62BC07080003
+    77821FC00000000AAAA
+  expected_values:
+    KIA_DEFOG_LIGHT: 0
+- response: |-
+    778100B62BC07080003
+    77821FC00000004AAAA
+  expected_values:
+    KIA_DEFOG_LIGHT: 0
+- response: |-
+    778100B62BC07080003
+    77821FC00000008AAAA
+  expected_values:
+    KIA_DEFOG_LIGHT: 0
+- response: |-
     778100B62BC07080013
     778210200000000AAAA
   expected_values:
