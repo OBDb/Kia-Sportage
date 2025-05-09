@@ -3,6 +3,18 @@ can_id_format: ELEVEN_BIT
 extended_addressing_enabled: false
 test_cases:
 - response: |-
+    7DC100F6101838CC100
+    7DC2100E2DF66980AA3
+    7DC22E1200000000000
+  expected_values:
+    KIA_STEER_ANGLE_V2: 272.3
+- response: |-
+    7DC100F6101888FC11F
+    7DC211FFEFE906FFF8E
+    7DC2203800000000000
+  expected_values:
+    KIA_STEER_ANGLE_V2: -11.4
+- response: |-
     7DC100F61018990C100
     7DC2100DBDB817E00AF
     7DC22FFC00000000000
