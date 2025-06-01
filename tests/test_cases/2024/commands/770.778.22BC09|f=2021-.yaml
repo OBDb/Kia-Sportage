@@ -1,0 +1,26 @@
+command_id: 770.778.22BC09|f=2021-
+test_cases:
+- response: |-
+    778100B62BC09362003
+    77821CF20000000AAAA
+  expected_values:
+    KIA_HL_HIGH_V2: 0
+    KIA_HL_LOW_V2: 0
+- response: |-
+    778100B62BC09362003
+    77821CF2000C000AAAA
+  expected_values:
+    KIA_HL_HIGH_V2: 1
+    KIA_HL_LOW_V2: 0
+- response: |-
+    778100B62BC09362003
+    77821CF20040030AAAA
+  expected_values:
+    KIA_HL_HIGH_V2: 0
+    KIA_HL_LOW_V2: 1
+- response: |-
+    778100B62BC09362003
+    77821CF2004C000AAAA
+  expected_values:
+    KIA_HL_HIGH_V2: 1
+    KIA_HL_LOW_V2: 0

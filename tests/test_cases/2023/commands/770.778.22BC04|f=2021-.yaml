@@ -1,0 +1,102 @@
+command_id: 770.778.22BC04|f=2021-
+test_cases:
+- response: |-
+    778100B62BC04B03770
+    778212000000000AAAA
+  expected_values:
+    KIA_BELT_RL: 0
+    KIA_BELT_RM: 0
+    KIA_BELT_RR: 0
+    KIA_GEAR_R: 0
+    KIA_LOCK_FL_V2: 0
+    KIA_LOCK_FR_V2: 0
+- response: |-
+    778100B62BC04B03770
+    778212000000E00AAAA
+  expected_values:
+    KIA_BELT_RL: 1
+    KIA_BELT_RM: 1
+    KIA_BELT_RR: 1
+    KIA_GEAR_R: 0
+    KIA_LOCK_FL_V2: 0
+    KIA_LOCK_FR_V2: 0
+- response: |-
+    778100B62BC04B03770
+    778212001000000AAAA
+  expected_values:
+    KIA_BELT_RL: 0
+    KIA_BELT_RM: 0
+    KIA_BELT_RR: 0
+    KIA_GEAR_R: 0
+    KIA_LOCK_FL_V2: 0
+    KIA_LOCK_FR_V2: 0
+- response: |-
+    778100B62BC04B03770
+    778212001800000AAAA
+  expected_values:
+    KIA_BELT_RL: 0
+    KIA_BELT_RM: 0
+    KIA_BELT_RR: 0
+    KIA_GEAR_R: 0
+    KIA_LOCK_FL_V2: 0
+    KIA_LOCK_FR_V2: 0
+- response: |-
+    778100B62BC04B03770
+    778212008000000AAAA
+  expected_values:
+    KIA_BELT_RL: 0
+    KIA_BELT_RM: 0
+    KIA_BELT_RR: 0
+    KIA_GEAR_R: 0
+    KIA_LOCK_FL_V2: 1
+    KIA_LOCK_FR_V2: 0
+- response: |-
+    778100B62BC04B03770
+    778212009000000AAAA
+  expected_values:
+    KIA_BELT_RL: 0
+    KIA_BELT_RM: 0
+    KIA_BELT_RR: 0
+    KIA_GEAR_R: 0
+    KIA_LOCK_FL_V2: 1
+    KIA_LOCK_FR_V2: 0
+- response: |-
+    778100B62BC04B03770
+    77821200C000000AAAA
+  expected_values:
+    KIA_BELT_RL: 0
+    KIA_BELT_RM: 0
+    KIA_BELT_RR: 0
+    KIA_GEAR_R: 0
+    KIA_LOCK_FL_V2: 1
+    KIA_LOCK_FR_V2: 1
+- response: |-
+    778100B62BC04B03770
+    77821200C800000AAAA
+  expected_values:
+    KIA_BELT_RL: 0
+    KIA_BELT_RM: 0
+    KIA_BELT_RR: 0
+    KIA_GEAR_R: 0
+    KIA_LOCK_FL_V2: 1
+    KIA_LOCK_FR_V2: 1
+- response: |-
+    778100B62BC04B03770
+    77821200D000000AAAA
+  expected_values:
+    KIA_BELT_RL: 0
+    KIA_BELT_RM: 0
+    KIA_BELT_RR: 0
+    KIA_GEAR_R: 0
+    KIA_LOCK_FL_V2: 1
+    KIA_LOCK_FR_V2: 1
+- response: |-
+    778100B62BC04B03770
+    77821200D600000AAAA
+  expected_values:
+    KIA_BELT_RL: 0
+    KIA_BELT_RM: 0
+    KIA_BELT_RR: 0
+    KIA_GEAR_R: 0
+    KIA_LOCK_FL_V2: 1
+    KIA_LOCK_FR_V2: 1

@@ -1,7 +1,35 @@
 command_id: 7D4.7DC.2101
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
+- response: |-
+    7DC100F6101838CC100
+    7DC2100E2DF66980AA3
+    7DC22E1200000000000
+  expected_values:
+    KIA_STEER_ANGLE_V2: 272.3
+- response: |-
+    7DC100F6101878EC11A
+    7DC211AFEFE857AFFC9
+    7DC22FF600000000000
+  expected_values:
+    KIA_STEER_ANGLE_V2: -5.5
+- response: |-
+    7DC100F6101888FC11F
+    7DC211FFEFE906FFF8E
+    7DC2203800000000000
+  expected_values:
+    KIA_STEER_ANGLE_V2: -11.4
+- response: |-
+    7DC100F6101888FC121
+    7DC2121FEFE7E810014
+    7DC2201A00000000000
+  expected_values:
+    KIA_STEER_ANGLE_V2: 2
+- response: |-
+    7DC100F6101888FC12A
+    7DC212AFEFE8976FF8A
+    7DC2200400000000000
+  expected_values:
+    KIA_STEER_ANGLE_V2: -11.8
 - response: |-
     7DC100F61018990C100
     7DC2100DBDB817E00AF
@@ -9,8 +37,38 @@ test_cases:
   expected_values:
     KIA_STEER_ANGLE_V2: 17.5
 - response: |-
+    7DC100F61018990C12E
+    7DC212EFEFE8D72002C
+    7DC2201F00000000000
+  expected_values:
+    KIA_STEER_ANGLE_V2: 4.4
+- response: |-
+    7DC100F61018A90C100
+    7DC2100CECF78870029
+    7DC22FF300000000000
+  expected_values:
+    KIA_STEER_ANGLE_V2: 4.1
+- response: |-
+    7DC100F61018A90C100
+    7DC2100E1E37C820001
+    7DC22FFF00000000000
+  expected_values:
+    KIA_STEER_ANGLE_V2: 0.1
+- response: |-
+    7DC100F61018A90C138
+    7DC2138FEFE86790010
+    7DC2200C00000000000
+  expected_values:
+    KIA_STEER_ANGLE_V2: 1.6
+- response: |-
     7DC100F61018A91C100
     7DC2100DDDC817D00B0
     7DC2200000000000000
   expected_values:
     KIA_STEER_ANGLE_V2: 17.6
+- response: |-
+    7DC100F61018B91C102
+    7DC2102D1D2758A001C
+    7DC22FEC00000000000
+  expected_values:
+    KIA_STEER_ANGLE_V2: 2.8
