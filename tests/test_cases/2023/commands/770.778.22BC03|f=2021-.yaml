@@ -1,0 +1,58 @@
+command_id: 770.778.22BC03|f=2021-
+test_cases:
+- response: |-
+    778100B62BC03FDEE20
+    778216300060000AAAA
+  expected_values:
+    KIA_BELT_DRIV: 1
+    KIA_BELT_PASS: 1
+    KIA_DEFOG_SW_V2: 0
+    KIA_DOOR_FL_V2: 0
+    KIA_DOOR_FR_V2: 0
+    KIA_DOOR_RL_V2: 0
+    KIA_DOOR_RR_V2: 0
+    KIA_HANDBRAKE_V2: 0
+    KIA_HOOD: 0
+    KIA_TRUNK_V2: 0
+- response: |-
+    778100B62BC03FDEE20
+    778216300060400AAAA
+  expected_values:
+    KIA_BELT_DRIV: 1
+    KIA_BELT_PASS: 1
+    KIA_DEFOG_SW_V2: 0
+    KIA_DOOR_FL_V2: 0
+    KIA_DOOR_FR_V2: 0
+    KIA_DOOR_RL_V2: 0
+    KIA_DOOR_RR_V2: 0
+    KIA_HANDBRAKE_V2: 0
+    KIA_HOOD: 0
+    KIA_TRUNK_V2: 0
+- response: |-
+    778100B62BC03FDEE20
+    77821630B060400AAAA
+  expected_values:
+    KIA_BELT_DRIV: 1
+    KIA_BELT_PASS: 1
+    KIA_DEFOG_SW_V2: 0
+    KIA_DOOR_FL_V2: 0
+    KIA_DOOR_FR_V2: 0
+    KIA_DOOR_RL_V2: 1
+    KIA_DOOR_RR_V2: 0
+    KIA_HANDBRAKE_V2: 1
+    KIA_HOOD: 0
+    KIA_TRUNK_V2: 0
+- response: |-
+    778100B62BC03FDEE20
+    7782163AA060000AAAA
+  expected_values:
+    KIA_BELT_DRIV: 1
+    KIA_BELT_PASS: 1
+    KIA_DEFOG_SW_V2: 0
+    KIA_DOOR_FL_V2: 1
+    KIA_DOOR_FR_V2: 0
+    KIA_DOOR_RL_V2: 0
+    KIA_DOOR_RR_V2: 0
+    KIA_HANDBRAKE_V2: 1
+    KIA_HOOD: 0
+    KIA_TRUNK_V2: 1

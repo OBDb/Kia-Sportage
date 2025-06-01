@@ -1,6 +1,4 @@
 command_id: 7E0.7E8.22ED02
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
 - response: |-
     7E8103462ED02FEFCB0
@@ -12,7 +10,7 @@ test_cases:
     7E826858D0900000050
     7E82723000000AAAAAA
   expected_values:
-    KIA_EOT: 0
+    KIA_EOT_V2: 0
 - response: |-
     7E8103462ED02FEFCB0
     7E821050000003FA020
@@ -23,7 +21,7 @@ test_cases:
     7E826858D0900000050
     7E82723000000AAAAAA
   expected_values:
-    KIA_EOT: 0
+    KIA_EOT_V2: 0
 - response: |-
     7E8103462ED02FEFCB0
     7E82105197F1D43E022
@@ -34,7 +32,7 @@ test_cases:
     7E826898D0900A024BF
     7E82723003D03AAAAAA
   expected_values:
-    KIA_EOT: 9
+    KIA_EOT_V2: 9
 - response: |-
     7E8103462ED02FEFCB0
     7E8210519A21C460823
@@ -45,7 +43,7 @@ test_cases:
     7E826888D0900E722BF
     7E82723003D03AAAAAA
   expected_values:
-    KIA_EOT: 8
+    KIA_EOT_V2: 8
 - response: |-
     7E8103462ED02FEFCB0
     7E8210519D61C44D820
@@ -56,7 +54,7 @@ test_cases:
     7E826868D09000D24BD
     7E82723003E03AAAAAA
   expected_values:
-    KIA_EOT: 9
+    KIA_EOT_V2: 9
 - response: |-
     7E8103462ED02FEFCB0
     7E8210519DF1B457020
@@ -67,7 +65,7 @@ test_cases:
     7E826868D0900A024BB
     7E82723003F03AAAAAA
   expected_values:
-    KIA_EOT: 9
+    KIA_EOT_V2: 9
 - response: |-
     7E8103462ED02FEFCB0
     7E8210519EC1B44F021
@@ -78,7 +76,7 @@ test_cases:
     7E826878D0900E722BD
     7E82723003E03AAAAAA
   expected_values:
-    KIA_EOT: 9
+    KIA_EOT_V2: 9
 - response: |-
     7E8103462ED02FEFCB0
     7E821051A0A1D424022
@@ -89,7 +87,7 @@ test_cases:
     7E826888D09005422BB
     7E82723004203AAAAAA
   expected_values:
-    KIA_EOT: 9
+    KIA_EOT_V2: 9
 - response: |-
     7E8103462ED02FEFCB0
     7E821051A3A163FB021
@@ -100,7 +98,7 @@ test_cases:
     7E826878D09005724C3
     7E82723004003AAAAAA
   expected_values:
-    KIA_EOT: 0
+    KIA_EOT_V2: 0
 - response: |-
     7E8103462ED02FEFCB0
     7E821051C7B1F462822
@@ -111,7 +109,7 @@ test_cases:
     7E8268B8D0900E7228B
     7E82723009B03AAAAAA
   expected_values:
-    KIA_EOT: 45
+    KIA_EOT_V2: 45
 - response: |-
     7E8103462ED02FEFCB0
     7E821051CC52747A020
@@ -122,7 +120,7 @@ test_cases:
     7E826858D09005724A8
     7E82723008D03AAAAAA
   expected_values:
-    KIA_EOT: 4
+    KIA_EOT_V2: 4
 - response: |-
     7E8103462ED02FEFCB0
     7E821052500004AF025
@@ -133,7 +131,7 @@ test_cases:
     7E826898D0900C423A0
     7E8272300B604AAAAAA
   expected_values:
-    KIA_EOT: 123
+    KIA_EOT_V2: 123
 - response: |-
     7E8103462ED02FEFCB0
     7E821052700003CE822
@@ -144,7 +142,7 @@ test_cases:
     7E826878D0900C423D0
     7E8272300F004AAAAAA
   expected_values:
-    KIA_EOT: 38
+    KIA_EOT_V2: 38
 - response: |-
     7E8103462ED02FEFCB0
     7E8210529000046B023
@@ -155,7 +153,7 @@ test_cases:
     7E826888D0900C423F0
     7E82723003905AAAAAA
   expected_values:
-    KIA_EOT: 123
+    KIA_EOT_V2: 123
 - response: |-
     7E8103462ED02FEFCB0
     7E821052B63873CD824
@@ -166,7 +164,7 @@ test_cases:
     7E826878D0900822953
     7E82729006E05AAAAAA
   expected_values:
-    KIA_EOT: -1
+    KIA_EOT_V2: -1
 - response: |-
     7E8103462ED02FEFCB0
     7E821052BEE3F3BD827
@@ -177,7 +175,7 @@ test_cases:
     7E826878D09000D2410
     7E82724007605AAAAAA
   expected_values:
-    KIA_EOT: 2
+    KIA_EOT_V2: 2
 - response: |-
     7E8103462ED02FEFCB0
     7E821052E000045F826
@@ -188,7 +186,7 @@ test_cases:
     7E8268B8D09000D2430
     7E8272400C205AAAAAA
   expected_values:
-    KIA_EOT: 123
+    KIA_EOT_V2: 123
 - response: |-
     7E8103462ED02FEFCB0
     7E821052E54573BF826
@@ -199,7 +197,7 @@ test_cases:
     7E826878D0900C42340
     7E8272400D205AAAAAA
   expected_values:
-    KIA_EOT: -1
+    KIA_EOT_V2: -1
 - response: |-
     7E8103462ED02FEFCB0
     7E8210530FD28427823
@@ -210,7 +208,7 @@ test_cases:
     7E8268B8D0900A02470
     7E82724000506AAAAAA
   expected_values:
-    KIA_EOT: 6
+    KIA_EOT_V2: 6
 - response: |-
     7E8103462ED02FEFCB0
     7E82105314F53447022
@@ -221,7 +219,7 @@ test_cases:
     7E826898D0900C927F4
     7E82728003D06AAAAAA
   expected_values:
-    KIA_EOT: 2
+    KIA_EOT_V2: 2
 - response: |-
     7E8103462ED02FEFCB0
     7E8210533885A43602A
@@ -232,7 +230,7 @@ test_cases:
     7E826898D0900C927EC
     7E82728007B06AAAAAA
   expected_values:
-    KIA_EOT: 1
+    KIA_EOT_V2: 1
 - response: |-
     7E8103462ED02FEFCB0
     7E82105369B6D42E825
@@ -243,7 +241,7 @@ test_cases:
     7E8268B8D09008B2F08
     7E8273000DF06AAAAAA
   expected_values:
-    KIA_EOT: 1
+    KIA_EOT_V2: 1
 - response: |-
     7E8103462ED02FEFCB0
     7E821053B2393449829
@@ -254,7 +252,7 @@ test_cases:
     7E826878D0900DD352C
     7E82736006707AAAAAA
   expected_values:
-    KIA_EOT: -1
+    KIA_EOT_V2: -1
 - response: |-
     7E8103462ED02FEFCB0
     7E8210540453C413829
@@ -265,4 +263,4 @@ test_cases:
     7E8268A8D0900102660
     7E82726000708AAAAAA
   expected_values:
-    KIA_EOT: 3
+    KIA_EOT_V2: 3

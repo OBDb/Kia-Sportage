@@ -1,6 +1,4 @@
 command_id: 7D4.7DC.2101
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
 - response: |-
     7DC100F61018088C100

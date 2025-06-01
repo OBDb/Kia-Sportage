@@ -1,0 +1,32 @@
+command_id: 770.778.22BC08|f=2021-
+test_cases:
+- response: |-
+    778100B62BC08A05710
+    77821BC0200001CAAAA
+  expected_values:
+    KIA_TURN_R_V2: 1
+- response: |-
+    778100B62BC08A05710
+    77821BC0400001CAAAA
+  expected_values:
+    KIA_TURN_R_V2: 1
+- response: |-
+    778100B62BC08A05790
+    77821BC0100011CAAAA
+  expected_values:
+    KIA_TURN_R_V2: 1
+- response: |-
+    778100B62BC08A05790
+    77821BC0200011CAAAA
+  expected_values:
+    KIA_TURN_R_V2: 1
+- response: |-
+    778100B62BC08A05790
+    77821BC0400011CAAAA
+  expected_values:
+    KIA_TURN_R_V2: 1
+- response: |-
+    778100B62BC08A05790
+    77821BC0800011CAAAA
+  expected_values:
+    KIA_TURN_R_V2: 1

@@ -1,0 +1,32 @@
+command_id: 770.778.22BC07|f=2021-
+test_cases:
+- response: |-
+    778100B62BC07080003
+    77821FC00000000AAAA
+  expected_values:
+    KIA_DEFOG_LIGHT_V2: 0
+- response: |-
+    778100B62BC07080003
+    77821FC00000004AAAA
+  expected_values:
+    KIA_DEFOG_LIGHT_V2: 0
+- response: |-
+    778100B62BC07080003
+    77821FC00000008AAAA
+  expected_values:
+    KIA_DEFOG_LIGHT_V2: 0
+- response: |-
+    778100B62BC07080013
+    778210200000000AAAA
+  expected_values:
+    KIA_DEFOG_LIGHT_V2: 0
+- response: |-
+    778100B62BC07080013
+    778210200000840AAAA
+  expected_values:
+    KIA_DEFOG_LIGHT_V2: 0
+- response: |-
+    778100B62BC07080013
+    778210210000000AAAA
+  expected_values:
+    KIA_DEFOG_LIGHT_V2: 0

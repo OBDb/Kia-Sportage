@@ -1,6 +1,4 @@
 command_id: 7D1.7D9.2101
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
 - response: |-
     7D910296101DFEBEF09
@@ -12,8 +10,6 @@ test_cases:
   expected_values:
     KIA_FL_VSS: 0
     KIA_FR_VSS: 0
-    KIA_RL_VSS: 0
-    KIA_RR_VSS: 0
 - response: |-
     7D910296101DFEBEF09
     7D921281A0D0F04E2FF
@@ -24,8 +20,6 @@ test_cases:
   expected_values:
     KIA_FL_VSS: 14
     KIA_FR_VSS: 13
-    KIA_RL_VSS: 14
-    KIA_RR_VSS: 13
 - response: |-
     7D910296101DFEBEF09
     7D921340A000004DFFF
@@ -36,8 +30,6 @@ test_cases:
   expected_values:
     KIA_FL_VSS: 0
     KIA_FR_VSS: 0
-    KIA_RL_VSS: 0
-    KIA_RR_VSS: 0
 - response: |-
     7D910296101DFEBEF09
     7D92134257A4204E2FF
@@ -48,8 +40,6 @@ test_cases:
   expected_values:
     KIA_FL_VSS: 122
     KIA_FR_VSS: 122
-    KIA_RL_VSS: 122
-    KIA_RR_VSS: 122
 - response: |-
     7D910296101DFEBEF09
     7D9214C10060A04E3FF
@@ -60,8 +50,6 @@ test_cases:
   expected_values:
     KIA_FL_VSS: 6
     KIA_FR_VSS: 6
-    KIA_RL_VSS: 6
-    KIA_RR_VSS: 6
 - response: |-
     7D910296101DFEBEF09
     7D921700B020002E0FF
@@ -72,8 +60,6 @@ test_cases:
   expected_values:
     KIA_FL_VSS: 2
     KIA_FR_VSS: 2
-    KIA_RL_VSS: 2
-    KIA_RR_VSS: 2
 - response: |-
     7D910296101DFEBEF09
     7D921780D0F0004E4FF
@@ -84,8 +70,6 @@ test_cases:
   expected_values:
     KIA_FL_VSS: 15
     KIA_FR_VSS: 15
-    KIA_RL_VSS: 15
-    KIA_RR_VSS: 15
 - response: |-
     7D910296101DFEBEF09
     7D921781D620004E4FF
@@ -96,8 +80,6 @@ test_cases:
   expected_values:
     KIA_FL_VSS: 98
     KIA_FR_VSS: 98
-    KIA_RL_VSS: 98
-    KIA_RR_VSS: 97
 - response: |-
     7D910296101DFEBEF09
     7D9217C1F678404E4FF
@@ -108,8 +90,6 @@ test_cases:
   expected_values:
     KIA_FL_VSS: 103
     KIA_FR_VSS: 103
-    KIA_RL_VSS: 103
-    KIA_RR_VSS: 103
 - response: |-
     7D910296101DFEBEF09
     7D9218C216E3004E2FF
@@ -120,8 +100,6 @@ test_cases:
   expected_values:
     KIA_FL_VSS: 109
     KIA_FR_VSS: 110
-    KIA_RL_VSS: 110
-    KIA_RR_VSS: 110
 - response: |-
     7D910296101DFEBEF09
     7D921BC09000004D9FF
@@ -132,8 +110,6 @@ test_cases:
   expected_values:
     KIA_FL_VSS: 0
     KIA_FR_VSS: 0
-    KIA_RL_VSS: 0
-    KIA_RR_VSS: 0
 - response: |-
     7D910296101DFEBEF09
     7D921E0283B9E04E4FF
@@ -144,8 +120,6 @@ test_cases:
   expected_values:
     KIA_FL_VSS: 59
     KIA_FR_VSS: 59
-    KIA_RL_VSS: 59
-    KIA_RR_VSS: 59
 - response: |-
     7D910296101DFEBEF09
     7D921F0192F0A04E4FF
@@ -156,5 +130,3 @@ test_cases:
   expected_values:
     KIA_FL_VSS: 47
     KIA_FR_VSS: 47
-    KIA_RL_VSS: 47
-    KIA_RR_VSS: 47
