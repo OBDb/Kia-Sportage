@@ -1,8 +1,8 @@
 command_id: 7E0.7E8.22ED02
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 0
+  response: |-
     7E8103462ED02FEFCB0
     7E821050000003F9820
     7E8229021D821802028
@@ -11,9 +11,9 @@ test_cases:
     7E825000000C0078209
     7E826858D0900000050
     7E82723000000AAAAAA
-  expected_values:
-    KIA_EOT: 0
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 0
+  response: |-
     7E8103462ED02FEFCB0
     7E821050000003FA020
     7E822B82130224820D7
@@ -22,9 +22,9 @@ test_cases:
     7E825000000C0078209
     7E826858D0900000050
     7E82723000000AAAAAA
-  expected_values:
-    KIA_EOT: 0
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 9
+  response: |-
     7E8103462ED02FEFCB0
     7E82105197F1D43E022
     7E822B02548256821FE
@@ -33,9 +33,9 @@ test_cases:
     7E825440101C007C709
     7E826898D0900A024BF
     7E82723003D03AAAAAA
-  expected_values:
-    KIA_EOT: 9
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 8
+  response: |-
     7E8103462ED02FEFCB0
     7E8210519A21C460823
     7E8228827A023F02000
@@ -44,9 +44,9 @@ test_cases:
     7E825460101C007CA09
     7E826888D0900E722BF
     7E82723003D03AAAAAA
-  expected_values:
-    KIA_EOT: 8
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 9
+  response: |-
     7E8103462ED02FEFCB0
     7E8210519D61C44D820
     7E822B822F0222820FD
@@ -55,9 +55,9 @@ test_cases:
     7E825460101C007C209
     7E826868D09000D24BD
     7E82723003E03AAAAAA
-  expected_values:
-    KIA_EOT: 9
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 9
+  response: |-
     7E8103462ED02FEFCB0
     7E8210519DF1B457020
     7E82248229822881F04
@@ -66,9 +66,9 @@ test_cases:
     7E825460101C0079B09
     7E826868D0900A024BB
     7E82723003F03AAAAAA
-  expected_values:
-    KIA_EOT: 9
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 9
+  response: |-
     7E8103462ED02FEFCB0
     7E8210519EC1B44F021
     7E822A82478245820FF
@@ -77,9 +77,9 @@ test_cases:
     7E8253D0101C0078709
     7E826878D0900E722BD
     7E82723003E03AAAAAA
-  expected_values:
-    KIA_EOT: 9
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 9
+  response: |-
     7E8103462ED02FEFCB0
     7E821051A0A1D424022
     7E8220025B824982001
@@ -88,9 +88,9 @@ test_cases:
     7E825460101C0079209
     7E826888D09005422BB
     7E82723004203AAAAAA
-  expected_values:
-    KIA_EOT: 9
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 0
+  response: |-
     7E8103462ED02FEFCB0
     7E821051A3A163FB021
     7E822282410245020FE
@@ -99,9 +99,9 @@ test_cases:
     7E825150000C007BF09
     7E826878D09005724C3
     7E82723004003AAAAAA
-  expected_values:
-    KIA_EOT: 0
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 45
+  response: |-
     7E8103462ED02FEFCB0
     7E821051C7B1F462822
     7E8227026E025301FFF
@@ -110,9 +110,9 @@ test_cases:
     7E825470101C007D209
     7E8268B8D0900E7228B
     7E82723009B03AAAAAA
-  expected_values:
-    KIA_EOT: 45
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 4
+  response: |-
     7E8103462ED02FEFCB0
     7E821051CC52747A020
     7E822F02160222021FB
@@ -121,9 +121,9 @@ test_cases:
     7E8253E0101C0078D09
     7E826858D09005724A8
     7E82723008D03AAAAAA
-  expected_values:
-    KIA_EOT: 4
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 123
+  response: |-
     7E8103462ED02FEFCB0
     7E821052500004AF025
     7E822482710244025FF
@@ -132,9 +132,9 @@ test_cases:
     7E825470100C0078509
     7E826898D0900C423A0
     7E8272300B604AAAAAA
-  expected_values:
-    KIA_EOT: 123
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 38
+  response: |-
     7E8103462ED02FEFCB0
     7E821052700003CE822
     7E822902340246825FB
@@ -143,9 +143,9 @@ test_cases:
     7E8253E0101C0078409
     7E826878D0900C423D0
     7E8272300F004AAAAAA
-  expected_values:
-    KIA_EOT: 38
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 123
+  response: |-
     7E8103462ED02FEFCB0
     7E8210529000046B023
     7E822C027A823482100
@@ -154,9 +154,9 @@ test_cases:
     7E825450100C0076409
     7E826888D0900C423F0
     7E82723003905AAAAAA
-  expected_values:
-    KIA_EOT: 123
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: -1
+  response: |-
     7E8103462ED02FEFCB0
     7E821052B63873CD824
     7E822E0259822702964
@@ -165,9 +165,9 @@ test_cases:
     7E825480100C0079409
     7E826878D0900822953
     7E82729006E05AAAAAA
-  expected_values:
-    KIA_EOT: -1
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 2
+  response: |-
     7E8103462ED02FEFCB0
     7E821052BEE3F3BD827
     7E8221826F822E02AFC
@@ -176,9 +176,9 @@ test_cases:
     7E825400100C0073E09
     7E826878D09000D2410
     7E82724007605AAAAAA
-  expected_values:
-    KIA_EOT: 2
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 123
+  response: |-
     7E8103462ED02FEFCB0
     7E821052E000045F826
     7E82230265826002BFD
@@ -187,9 +187,9 @@ test_cases:
     7E825480101C0077A09
     7E8268B8D09000D2430
     7E8272400C205AAAAAA
-  expected_values:
-    KIA_EOT: 123
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: -1
+  response: |-
     7E8103462ED02FEFCB0
     7E821052E54573BF826
     7E822B825A022082C05
@@ -198,9 +198,9 @@ test_cases:
     7E825480100C0077B09
     7E826878D0900C42340
     7E8272400D205AAAAAA
-  expected_values:
-    KIA_EOT: -1
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 6
+  response: |-
     7E8103462ED02FEFCB0
     7E8210530FD28427823
     7E822B8280027A81FFD
@@ -209,9 +209,9 @@ test_cases:
     7E825460101C0079E09
     7E8268B8D0900A02470
     7E82724000506AAAAAA
-  expected_values:
-    KIA_EOT: 6
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 2
+  response: |-
     7E8103462ED02FEFCB0
     7E82105314F53447022
     7E8227025C8249021FE
@@ -220,9 +220,9 @@ test_cases:
     7E825480101C0078209
     7E826898D0900C927F4
     7E82728003D06AAAAAA
-  expected_values:
-    KIA_EOT: 2
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 1
+  response: |-
     7E8103462ED02FEFCB0
     7E8210533885A43602A
     7E822A02B2823B02901
@@ -231,9 +231,9 @@ test_cases:
     7E825480101C0078109
     7E826898D0900C927EC
     7E82728007B06AAAAAA
-  expected_values:
-    KIA_EOT: 1
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 1
+  response: |-
     7E8103462ED02FEFCB0
     7E82105369B6D42E825
     7E822D02828272827FF
@@ -242,9 +242,9 @@ test_cases:
     7E825480101C0079509
     7E8268B8D09008B2F08
     7E8273000DF06AAAAAA
-  expected_values:
-    KIA_EOT: 1
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: -1
+  response: |-
     7E8103462ED02FEFCB0
     7E821053B2393449829
     7E82288274022303071
@@ -253,9 +253,9 @@ test_cases:
     7E8254A0101C0074C09
     7E826878D0900DD352C
     7E82736006707AAAAAA
-  expected_values:
-    KIA_EOT: -1
-- response: |-
+- expected_values:
+    SPORTAGE_EOT_V2: 3
+  response: |-
     7E8103462ED02FEFCB0
     7E8210540453C413829
     7E822602AD025082CFD
@@ -264,5 +264,3 @@ test_cases:
     7E825420101C0077209
     7E8268A8D0900102660
     7E82726000708AAAAAA
-  expected_values:
-    KIA_EOT: 3

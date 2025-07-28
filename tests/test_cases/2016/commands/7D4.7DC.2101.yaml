@@ -1,0 +1,14 @@
+command_id: 7D4.7DC.2101
+test_cases:
+- expected_values:
+    SPORTAGE_STEER_ANGLE_V2: -71.5
+  response: |-
+    7DC101061017C7D7E00
+    7DC2100CDCCFEB2FD35
+    7DC22FE900000000000
+- expected_values:
+    SPORTAGE_STEER_ANGLE_V2: -71.5
+  response: |-
+    7DC101061017D7D7E00
+    7DC2100CFCFFEA7FD35
+    7DC22FED00000000000
