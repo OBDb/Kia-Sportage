@@ -1,0 +1,7 @@
+command_id: 770.778.22BC05|f=2023-
+test_cases:
+- expected_values:
+    SPORTAGE_HAZARD_SW: 0
+  response: |-
+    778100B62BC052F1320
+    778210000400000AAAA

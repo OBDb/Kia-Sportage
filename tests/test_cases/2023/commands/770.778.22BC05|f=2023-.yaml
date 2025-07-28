@@ -1,0 +1,33 @@
+command_id: 770.778.22BC05|f=2023-
+test_cases:
+- expected_values:
+    SPORTAGE_HAZARD_SW: 0
+  response: |-
+    778100B62BC050F1320
+    778210000000000AAAA
+- expected_values:
+    SPORTAGE_HAZARD_SW: 0
+  response: |-
+    778100B62BC050F1320
+    778210000400000AAAA
+- expected_values:
+    SPORTAGE_HAZARD_SW: 0
+  response: |-
+    778100B62BC052F1320
+    778210000000000AAAA
+- expected_values:
+    SPORTAGE_HAZARD_SW: 0
+  response: |-
+    778100B62BC052F1320
+    778210000080000AAAA
+- expected_values:
+    SPORTAGE_HAZARD_SW: 0
+    SPORTAGE_HL_SW: 1
+  response: |-
+    778100B62BC052F1320
+    778210000400400AAAA
+- expected_values:
+    SPORTAGE_HAZARD_SW: 240
+  response: |-
+    778100B62BC052F1320
+    7782100F0400000AAAA

@@ -1,34 +1,26 @@
 command_id: 7D4.7DC.2101
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
-- response: |-
-    7DC1010610186857F60
-    7DC2160FEFEFF8BFFF7
-    7DC22FF300000000000
-  expected_values:
-    KIA_STEER_ANGLE_V2: -0.9
-- response: |-
+- expected_values:
+    SPORTAGE_STEER_ANGLE_V3: 1.5
+  response: |-
     7DC1010610186857F62
     7DC2162FEFE0131000F
     7DC2200200000000000
-  expected_values:
-    KIA_STEER_ANGLE_V2: 1.5
-- response: |-
+- expected_values:
+    SPORTAGE_STEER_ANGLE_V3: 0.2
+  response: |-
     7DC1010610186857F65
     7DC2165FEFEFFB50002
     7DC22FF900000000000
-  expected_values:
-    KIA_STEER_ANGLE_V2: 0.2
-- response: |-
+- expected_values:
+    SPORTAGE_STEER_ANGLE_V3: 0.3
+  response: |-
     7DC1010610186857F68
     7DC2168FEFE01F80003
     7DC2200500000000000
-  expected_values:
-    KIA_STEER_ANGLE_V2: 0.3
-- response: |-
+- expected_values:
+    SPORTAGE_STEER_ANGLE_V3: 0
+  response: |-
     7DC1010610186857F68
     7DC2168FEFEFFB50000
     7DC22FFA00000000000
-  expected_values:
-    KIA_STEER_ANGLE_V2: 0
