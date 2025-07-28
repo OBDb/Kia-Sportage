@@ -3,43 +3,6 @@
   "signals": [
     {"id": "SPORTAGE_DC_CHRG_STATE", "path": "Battery", "fmt": {"bix": 140, "len": 1, "max": 1, "unit": "offon" }, "name": "DC charging state"}
   ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC03"}, "freq": 1, "filter": { "from": 2023 }, "dbgfilter": { "from": 2025 },
-  "signals": [
-    {"id": "SPORTAGE_DOOR_RL",        "path": "Doors",     "fmt": {"bix": 32, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Rear left door open?"},
-    {"id": "SPORTAGE_DOOR_FL",        "path": "Doors",     "fmt": {"bix": 34, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Front left door open?"},
-    {"id": "SPORTAGE_HANDBRAKE",      "path": "Control",   "fmt": {"bix": 35, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Handbrake engaged?"},
-    {"id": "SPORTAGE_DOOR_FR",        "path": "Doors",     "fmt": {"bix": 36, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Front right door open?"},
-    {"id": "SPORTAGE_DOOR_RR",        "path": "Doors",     "fmt": {"bix": 37, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Rear right door open?"},
-    {"id": "SPORTAGE_TRUNK",          "path": "Doors",     "fmt": {"bix": 39, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Trunk open?"},
-    {"id": "SPORTAGE_BELT_PASSENGER", "path": "Seatbelts", "fmt": {"bix": 40, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Passenger seatbelt latched?"},
-    {"id": "SPORTAGE_BELT_DRIVER",    "path": "Seatbelts", "fmt": {"bix": 41, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Driver seatbelt latched?"},
-    {"id": "SPORTAGE_BELT_PASS",      "path": "Seatbelts", "fmt": {"bix": 45, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Passenger seatbelt latched?"},
-    {"id": "SPORTAGE_BELT_DRIV",      "path": "Seatbelts", "fmt": {"bix": 46, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Driver seatbelt latched?"},
-    {"id": "SPORTAGE_HOOD",           "path": "Doors",     "fmt": {"bix": 47, "len": 1, "max": 1,                             "unit": "noyes" }, "name": "Hood latched?"},
-    {"id": "SPORTAGE_DEFOG_SW",       "path": "Climate",   "fmt": {"bix": 56, "len": 8, "max": 1, "nullmin": 0, "nullmax": 1, "unit": "noyes" }, "name": "Defogging?"}
-  ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC04"}, "freq": 1, "filter": { "from": 2023 }, "dbgfilter": { "from": 2025 },
-  "signals": [
-    {"id": "SPORTAGE_LOCK_FR", "path": "Doors",     "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "scalar" }, "name": "Door lock front right"},
-    {"id": "SPORTAGE_LOCK_FL", "path": "Doors",     "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "scalar" }, "name": "Door lock front left "},
-    {"id": "SPORTAGE_BELT_RM", "path": "Seatbelts", "fmt": {"bix": 52, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear middle seatbelt latched?"},
-    {"id": "SPORTAGE_BELT_RL", "path": "Seatbelts", "fmt": {"bix": 53, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear left seatbelt latched?"},
-    {"id": "SPORTAGE_BELT_RR", "path": "Seatbelts", "fmt": {"bix": 54, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear right seatbelt latched?"}
-  ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC05"}, "freq": 1, "filter": { "from": 2023 }, "dbgfilter": { "from": 2025 },
-  "signals": [
-    {"id": "SPORTAGE_HAZARD_SW", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255,                             "unit": "scalar" }, "name": "Hazard switch"},
-    {"id": "SPORTAGE_HL_SW",     "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1,   "nullmin": 0, "nullmax": 2, "unit": "noyes"  }, "name": "Headlight switch"}
-  ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC07"}, "freq": 1, "filter": { "from": 2023 }, "dbgfilter": { "from": 2025 },
-  "signals": [
-    {"id": "SPORTAGE_DEFOG_LIGHT", "path": "Climate", "fmt": {"bix": 40, "len": 8, "max": 1, "unit": "noyes" }, "name": "Defog light on"}
-  ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC09"}, "freq": 1, "filter": { "from": 2023 }, "dbgfilter": { "from": 2025 },
-  "signals": [
-    {"id": "SPORTAGE_HL_HIGH", "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1, "div": 12, "unit": "noyes" }, "name": "Headlight high beam on"},
-    {"id": "SPORTAGE_HL_LOW",  "path": "Lights", "fmt": {"bix": 56, "len": 8, "max": 1, "div": 12, "unit": "noyes" }, "name": "Headlight low beam on"}
-  ]},
 { "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00B"}, "freq": 15, "dbgfilter": { "to": 2021, "from": 2025 },
   "signals": [
     {"id": "SPORTAGE_TP_FL",      "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Front left tire pressure",          "suggestedMetric": "frontLeftTirePressure"},
@@ -99,28 +62,17 @@
 { "hdr": "7D1", "rax": "7D9", "cmd": {"21": "01"}, "freq": 0.25, "dbgfilter": { "to": 2010, "years": [2013, 2017, 2018, 2019, 2021], "from": 2023 },
   "signals": [
     {"id": "SPORTAGE_VSS_AVG",     "path": "Movement", "fmt": {"bix": 48,  "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "Vehicle speed"},
-    {"id": "SPORTAGE_FL_VSS",      "path": "Movement", "fmt": {"bix": 88,  "len": 8,  "max": 127.5,  "min": -127.5,               "sign": true, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
-    {"id": "SPORTAGE_FR_VSS",      "path": "Movement", "fmt": {"bix": 96,  "len": 8,  "max": 127.5,  "min": -127.5,               "sign": true, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
-    {"id": "SPORTAGE_RL_VSS",      "path": "Movement", "fmt": {"bix": 104, "len": 8,  "max": 127.5,  "min": -127.5,               "sign": true, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
-    {"id": "SPORTAGE_RR_VSS",      "path": "Movement", "fmt": {"bix": 112, "len": 8,  "max": 127.5,  "min": -127.5,               "sign": true, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
+    {"id": "SPORTAGE_FL_VSS",      "path": "Movement", "fmt": {"bix": 88,  "len": 8,  "max": 127,    "min": -127,                 "sign": true, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "SPORTAGE_FR_VSS",      "path": "Movement", "fmt": {"bix": 96,  "len": 8,  "max": 127,    "min": -127,                 "sign": true, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "SPORTAGE_RL_VSS",      "path": "Movement", "fmt": {"bix": 104, "len": 8,  "max": 127,    "min": -127,                 "sign": true, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "SPORTAGE_RR_VSS",      "path": "Movement", "fmt": {"bix": 112, "len": 8,  "max": 127,    "min": -127,                 "sign": true, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
     {"id": "SPORTAGE_TC_SWITCH",   "path": "Movement", "fmt": {"bix": 150, "len": 1,  "max": 1,                                                 "unit": "noyes"             }, "name": "Wheel traction control switch"},
     {"id": "SPORTAGE_STEER_ANGLE", "path": "Control",  "fmt": {"bix": 200, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,   "sign": true, "unit": "degrees"           }, "name": "Steering wheel angle"},
     {"id": "SPORTAGE_BRAKE_P",     "path": "Control",  "fmt": {"bix": 256, "len": 16, "max": 100,                    "div": 86.7, "sign": true, "unit": "percent"           }, "name": "Brake pressure"}
   ]},
-{ "hdr": "7D1", "rax": "7D9", "cmd": {"22": "0104"}, "freq": 1, "dbgfilter": { "to": 2022, "from": 2024 },
+{ "hdr": "7D4", "rax": "7DC", "cmd": {"21": "01"}, "freq": 0.25, "dbgfilter": { "years": [2013], "from": 2023 },
   "signals": [
-    {"id": "SPORTAGE_VSS_AVG_V2",     "path": "Movement", "fmt": {"bix": 48,  "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "ABS speed (avg)"},
-    {"id": "SPORTAGE_TIRE_FL_VSS",    "path": "Movement", "fmt": {"bix": 88,  "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "ABS speed front left"},
-    {"id": "SPORTAGE_TIRE_FR_VSS",    "path": "Movement", "fmt": {"bix": 96,  "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "ABS speed front right"},
-    {"id": "SPORTAGE_TIRE_RR_VSS",    "path": "Movement", "fmt": {"bix": 104, "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "ABS speed rear right"},
-    {"id": "SPORTAGE_TIRE_RL_VSS",    "path": "Movement", "fmt": {"bix": 112, "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "ABS speed rear left"},
-    {"id": "SPORTAGE_TC_SWITCH_V2",   "path": "Movement", "fmt": {"bix": 150, "len": 1,  "max": 1,                                                 "unit": "noyes"             }, "name": "ABS traction control switch (raw)"},
-    {"id": "SPORTAGE_STEER_ANGLE_V2", "path": "Control",  "fmt": {"bix": 200, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,   "sign": true, "unit": "degrees"           }, "name": "Steering wheel angle"},
-    {"id": "SPORTAGE_BRAKE_P_V2",     "path": "Control",  "fmt": {"bix": 256, "len": 16, "max": 100,                    "div": 86.7, "sign": true, "unit": "percent"           }, "name": "Brake pressure"}
-  ]},
-{ "hdr": "7D4", "rax": "7DC", "dbg": true, "cmd": {"21": "01"}, "freq": 0.25,
-  "signals": [
-    {"id": "SPORTAGE_STEER_ANGLE_V3", "path": "Control", "fmt": {"bix": 72, "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "degrees" }, "name": "Steering wheel angle"}
+    {"id": "SPORTAGE_STEER_ANGLE_V2", "path": "Control", "fmt": {"bix": 72, "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "degrees" }, "name": "Steering wheel angle"}
   ]},
 { "hdr": "7D4", "rax": "7DC", "dbg": true, "cmd": {"22": "0101"}, "freq": 5,
   "signals": [
@@ -133,20 +85,12 @@
     {"id": "SPORTAGE_BMS_MOD3_TEMP",  "path": "Battery", "fmt": {"bix": 144, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "BMS battery mod 3 temp"},
     {"id": "SPORTAGE_BMS_MOD4_TEMP",  "path": "Battery", "fmt": {"bix": 152, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "BMS battery mod 4 temp"}
   ]},
-{ "hdr": "7E0", "rax": "7D8", "dbg": true, "cmd": {"21": "18"}, "freq": 0.25,
-  "signals": [
-    {"id": "SPORTAGE_CVVT_T", "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 207, "min": -48, "add": -48, "unit": "celsius" }, "name": "CVVT temperature", "description": "Continuously variable valve timing temperature."}
-  ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "01"}, "freq": 1,
   "signals": [
     {"id": "SPORTAGE_MIS_1", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfire count #1"},
     {"id": "SPORTAGE_MIS_2", "path": "Engine", "fmt": {"bix": 72,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfire count #2"},
     {"id": "SPORTAGE_MIS_3", "path": "Engine", "fmt": {"bix": 88,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfire count #3"},
     {"id": "SPORTAGE_MIS_4", "path": "Engine", "fmt": {"bix": 104, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfire count #4"}
-  ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "21A0"}, "freq": 10,
-  "signals": [
-    {"id": "SPORTAGE_ATF_TEMP", "path": "Transmission", "fmt": {"bix": 16, "len": 8, "max": 255, "mul": 9, "div": 5, "add": -40, "unit": "fahrenheit" }, "name": "Transmission fluid temperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E001"}, "freq": 1,
   "signals": [
@@ -216,11 +160,6 @@
 { "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "E004"}, "freq": 1,
   "signals": [
     {"id": "SPORTAGE_VPWR_V3", "path": "Battery", "fmt": {"bix": 152, "len": 8, "max": 100, "unit": "percent" }, "name": "12V battery charge"}
-  ]},
-{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"21": "05"}, "freq": 1,
-  "signals": [
-    {"id": "SPORTAGE_HVBAT_SOH_V2",      "path": "Battery", "fmt": {"bix": 280, "len": 16, "max": 100, "div": 10, "unit": "percent" }, "name": "HV battery health",             "suggestedMetric": "stateOfHealth"},
-    {"id": "SPORTAGE_HVBAT_SOC_DISP_V2", "path": "Battery", "fmt": {"bix": 304, "len": 8,  "max": 100, "div": 2,  "unit": "percent" }, "name": "HV battery charge (displayed)", "suggestedMetric": "stateOfCharge"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"22": "0101"}, "freq": 1,
   "signals": [

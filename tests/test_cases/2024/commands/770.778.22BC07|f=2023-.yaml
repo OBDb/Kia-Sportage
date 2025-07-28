@@ -1,7 +1,0 @@
-command_id: 770.778.22BC07|f=2023-
-test_cases:
-- expected_values:
-    SPORTAGE_DEFOG_LIGHT: 0
-  response: |-
-    778100B62BC07084003
-    77821CC00000000AAAA
