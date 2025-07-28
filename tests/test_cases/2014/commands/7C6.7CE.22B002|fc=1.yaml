@@ -1,0 +1,26 @@
+command_id: 7C6.7CE.22B002|fc=1
+test_cases:
+- expected_values:
+    SPORTAGE_FLI_VOL: 50
+    SPORTAGE_VPWR: 14.76562
+  response: |-
+    7CE100962B002C00000
+    7CE210032BD00000000
+- expected_values:
+    SPORTAGE_FLI_VOL: 54
+    SPORTAGE_VPWR: 14.76562
+  response: |-
+    7CE100962B002C00000
+    7CE210036BD00000000
+- expected_values:
+    SPORTAGE_FLI_VOL: 54
+    SPORTAGE_VPWR: 14.84375
+  response: |-
+    7CE100962B002C00000
+    7CE210036BE00000000
+- expected_values:
+    SPORTAGE_FLI_VOL: 56
+    SPORTAGE_VPWR: 14.76562
+  response: |-
+    7CE100962B002C00000
+    7CE210038BD00000000
