@@ -193,7 +193,7 @@
     {"id": "SPORTAGE_RPM",              "path": "Engine",  "fmt": {"bix": 424, "len": 16, "max": 65535,                                                        "unit": "rpm"           }, "name": "Drive motor speed"},
     {"id": "SPORTAGE_ISO_R",            "path": "Battery", "fmt": {"bix": 456, "len": 16, "max": 65535,                                                        "unit": "kiloohms"      }, "name": "Isolation resistance"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0102"}, "freq": 1, "filter": { "from": 2023 }, "dbgfilter": { "to": 2022, "from": 2024 },
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0102"}, "freq": 1, "filter": { "from": 2023 }, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SPORTAGE_HVBAT_CMU001_VOLT", "path": "Battery.Modules.001", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 001 voltage"},
     {"id": "SPORTAGE_HVBAT_CMU002_VOLT", "path": "Battery.Modules.002", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 002 voltage"},
@@ -228,7 +228,7 @@
     {"id": "SPORTAGE_HVBAT_CMU031_VOLT", "path": "Battery.Modules.031", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 031 voltage"},
     {"id": "SPORTAGE_HVBAT_CMU032_VOLT", "path": "Battery.Modules.032", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 032 voltage"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0103"}, "freq": 1, "filter": { "from": 2023 }, "dbgfilter": { "to": 2022, "from": 2024 },
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0103"}, "freq": 1, "filter": { "from": 2023 }, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SPORTAGE_HVBAT_CMU033_VOLT", "path": "Battery.Modules.033", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 033 voltage"},
     {"id": "SPORTAGE_HVBAT_CMU034_VOLT", "path": "Battery.Modules.034", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 034 voltage"},
@@ -263,7 +263,7 @@
     {"id": "SPORTAGE_HVBAT_CMU063_VOLT", "path": "Battery.Modules.063", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 063 voltage"},
     {"id": "SPORTAGE_HVBAT_CMU064_VOLT", "path": "Battery.Modules.064", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 064 voltage"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0104"}, "freq": 1, "filter": { "from": 2023 }, "dbgfilter": { "to": 2022, "from": 2024 },
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0104"}, "freq": 1, "filter": { "from": 2023 }, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SPORTAGE_HVBAT_CMU065_VOLT", "path": "Battery.Modules.065", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 065 voltage"},
     {"id": "SPORTAGE_HVBAT_CMU066_VOLT", "path": "Battery.Modules.066", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 066 voltage"},
@@ -298,7 +298,7 @@
     {"id": "SPORTAGE_HVBAT_CMU095_VOLT", "path": "Battery.Modules.095", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 095 voltage"},
     {"id": "SPORTAGE_HVBAT_CMU096_VOLT", "path": "Battery.Modules.096", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 096 voltage"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0105"}, "freq": 1, "filter": { "from": 2023 }, "dbgfilter": { "to": 2022, "from": 2024 },
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0105"}, "freq": 1, "filter": { "from": 2023 }, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SPORTAGE_HVBAT_C_DEV_V",     "path": "Battery",             "fmt": {"bix": 160, "len": 8,  "max": 5.1,                          "div": 50,                                 "unit": "volts"         }, "name": "HV cell deviation (voltage)"},
     {"id": "SPORTAGE_HVBAT_HTR1_T",      "path": "Battery",             "fmt": {"bix": 184, "len": 8,  "max": 127, "min": -127,                          "sign": true,                 "unit": "celsius"       }, "name": "HV battery heater 1 temperature"},
@@ -312,7 +312,7 @@
     {"id": "SPORTAGE_HVBAT_CMU097_VOLT", "path": "Battery.Modules.097", "fmt": {"bix": 272, "len": 8,  "max": 4.2, "min": 2.8,              "div": 50,                                 "unit": "volts"         }, "name": "HV battery module 097 voltage"},
     {"id": "SPORTAGE_HVBAT_CMU098_VOLT", "path": "Battery.Modules.098", "fmt": {"bix": 280, "len": 8,  "max": 4.2, "min": 2.8,              "div": 50,                                 "unit": "volts"         }, "name": "HV battery module 098 voltage"}
   ]},
-{ "hdr": "7E7", "rax": "7EF", "cmd": {"22": "C101"}, "freq": 0.25, "filter": { "from": 2023 }, "dbgfilter": { "to": 2022, "from": 2024 },
+{ "hdr": "7E7", "rax": "7EF", "cmd": {"22": "C101"}, "freq": 0.25, "filter": { "from": 2023 }, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "SPORTAGE_TIRE_FL_SPD", "path": "Movement", "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
     {"id": "SPORTAGE_TIRE_FR_SPD", "path": "Movement", "fmt": {"bix": 96,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
