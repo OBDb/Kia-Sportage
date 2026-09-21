@@ -1,6 +1,36 @@
 command_id: 7C6.7CE.22B002|fc=1
 test_cases:
 - expected_values:
+    SPORTAGE_FLI_VOL: 19
+    SPORTAGE_VPWR: 13.75
+  response: |-
+    7CE100A62B002C00000
+    7CE210013B000AAAAAA
+- expected_values:
+    SPORTAGE_FLI_VOL: 31
+    SPORTAGE_VPWR: 13.82812
+  response: |-
+    7CE100A62B002C00000
+    7CE21001FB100AAAAAA
+- expected_values:
+    SPORTAGE_FLI_VOL: 32
+    SPORTAGE_VPWR: 13.75
+  response: |-
+    7CE100A62B002C00000
+    7CE210020B000AAAAAA
+- expected_values:
+    SPORTAGE_FLI_VOL: 78
+    SPORTAGE_VPWR: 13.67188
+  response: |-
+    7CE100A62B002C00000
+    7CE21004EAF00AAAAAA
+- expected_values:
+    SPORTAGE_FLI_VOL: 255
+    SPORTAGE_VPWR: 11.5625
+  response: |-
+    7CE100A62B002C00000
+    7CE2100FF9400AAAAAA
+- expected_values:
     SPORTAGE_FLI_VOL: 75
     SPORTAGE_ODO_KM: 92937
     SPORTAGE_ODO_MI: 57748
