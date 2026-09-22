@@ -4,5 +4,30 @@ test_cases:
     VSS: 0
   response: 7E803410D00
 - expected_values:
+    VSS: 0
+  response: |-
+    7E803410D00
+    7E903410D00
+- expected_values:
+    VSS: 15
+  response: |-
+    7E803410D0E
+    7E903410D0F
+- expected_values:
+    VSS: 99
+  response: |-
+    7E803410D62
+    7E903410D63
+- expected_values:
     VSS: 131
   response: 7E803410D83
+- expected_values:
+    VSS: 0
+  response: |-
+    7E903410D00
+    7E803410D00
+- expected_values:
+    VSS: 105
+  response: |-
+    7E903410D6A
+    7E803410D69
