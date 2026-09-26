@@ -94,7 +94,6 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E001"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2024 },
   "signals": [
-    {"id": "SPORTAGE_IAT", "path": "Engine", "fmt": {"bix": 264, "len": 8, "max": 143.254781,                       "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Intake air temperature"},
     {"id": "SPORTAGE_EIT", "path": "Engine", "fmt": {"bix": 264, "len": 8, "max": 143,        "min": -48, "mul": 3, "div": 4,      "add": -48, "unit": "celsius" }, "name": "Intake air temperature"},
     {"id": "SPORTAGE_EOT", "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 143.254781,                       "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
@@ -306,7 +305,6 @@
     {"id": "SPORTAGE_HVBAT_SOH",         "path": "Battery",             "fmt": {"bix": 200, "len": 16, "max": 100,                          "div": 10,                                 "unit": "percent"       }, "name": "HV battery state of health",         "suggestedMetric": "stateOfHealth"},
     {"id": "SPORTAGE_HVBAT_DET_MAX_ID",  "path": "Battery",             "fmt": {"bix": 216, "len": 8,  "max": 98,                                                      "nullmax": 200, "unit": "scalar"        }, "name": "HV battery max deteriation cell id"},
     {"id": "SPORTAGE_HVBAT_WH",          "path": "Battery",             "fmt": {"bix": 224, "len": 16, "max": 100,              "mul": 2,   "div": 1000,                               "unit": "kilowattHours" }, "name": "HV battery remaining energy"},
-    {"id": "SPORTAGE_HVBAT_DET_MIN",     "path": "Battery",             "fmt": {"bix": 224, "len": 16, "max": 100,                          "div": 10,                                 "unit": "percent"       }, "name": "HV battery min deteriation"},
     {"id": "SPORTAGE_HVBAT_DET_MIN_ID",  "path": "Battery",             "fmt": {"bix": 240, "len": 8,  "max": 98,                                                      "nullmax": 200, "unit": "scalar"        }, "name": "HV battery min deteriation cell id"},
     {"id": "SPORTAGE_HVBAT_SOC_DISP",    "path": "Battery",             "fmt": {"bix": 248, "len": 8,  "max": 100,              "mul": 0.5,                                            "unit": "percent"       }, "name": "HV battery charge",                  "suggestedMetric": "stateOfCharge"},
     {"id": "SPORTAGE_HVBAT_CMU097_VOLT", "path": "Battery.Modules.097", "fmt": {"bix": 272, "len": 8,  "max": 4.2, "min": 2.8,              "div": 50,                                 "unit": "volts"         }, "name": "HV battery module 097 voltage"},
