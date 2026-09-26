@@ -1,9 +1,30 @@
 command_id: 7E0.7E8.22E001
 test_cases:
 - expected_values:
+    SPORTAGE_EIT: 51.75
+    SPORTAGE_EOT: 101.25373
+  response: |-
+    7E8102D62E001DFF7FE
+    7E82100B3B45100004E
+    7E822000000002A03CC
+    7E82364902F14000053
+    7E82400BE0000620000
+    7E825F80085C71C4902
+    7E82667008E17AAAAAA
+- expected_values:
+    SPORTAGE_EIT: 56.25
+    SPORTAGE_EOT: 96.0036
+  response: |-
+    7E8102D62E001DFF7FE
+    7E82100B4B45100004E
+    7E822000000002B03F4
+    7E82364A02F1400005C
+    7E82400B70000620000
+    7E825DA008BC01DCA02
+    7E82667008E17AAAAAA
+- expected_values:
     SPORTAGE_EIT: 56.25
     SPORTAGE_EOT: 95.25358
-    SPORTAGE_IAT: 56.25261
   response: |-
     7E8102D62E001DFF7FE
     7E82100B5B55200004E
@@ -13,33 +34,8 @@ test_cases:
     7E825D8008BBF1D4902
     7E8266800D717AAAAAA
 - expected_values:
-    SPORTAGE_EIT: 51
-    SPORTAGE_EOT: 99.75369
-    SPORTAGE_IAT: 51.00248
-  response: |-
-    7E8102D62E001DFF7FE
-    7E82100B6B65100004E
-    7E822000000002B03EE
-    7E82364902F14000053
-    7E82400BE0000610000
-    7E825FC0084C51A4902
-    7E82667008E17AAAAAA
-- expected_values:
-    SPORTAGE_EIT: 57
-    SPORTAGE_EOT: 96.0036
-    SPORTAGE_IAT: 57.00263
-  response: |-
-    7E8102D62E001DFF7FE
-    7E82100B6B65200004E
-    7E822000000002B03EE
-    7E82364602F14000061
-    7E82400B50000600000
-    7E825D5008CC01F4902
-    7E8266800D717AAAAAA
-- expected_values:
     SPORTAGE_EIT: 52.5
     SPORTAGE_EOT: 99.75369
-    SPORTAGE_IAT: 52.50251
   response: |-
     7E8102D62E001DFF7FE
     7E82100BB0051000042
@@ -51,7 +47,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 57
     SPORTAGE_EOT: 96.0036
-    SPORTAGE_IAT: 57.00263
   response: |-
     7E8102D62E001DFF7FE
     7E82100BCBC52FC0C53
@@ -63,7 +58,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 45
     SPORTAGE_EOT: 93.75354
-    SPORTAGE_IAT: 45.00233
   response: |-
     7E8102D62E001DFF7FE
     7E82100BD0051000040
@@ -75,7 +69,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 47.25
     SPORTAGE_EOT: 102.75377
-    SPORTAGE_IAT: 47.25238
   response: |-
     7E8102D62E001DFF7FE
     7E82100BEBE52A40B53
@@ -87,7 +80,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 39.75
     SPORTAGE_EOT: 99.75369
-    SPORTAGE_IAT: 39.75219
   response: |-
     7E8102D62E001DFF7FE
     7E82100BEBF52581655
@@ -99,7 +91,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 55.5
     SPORTAGE_EOT: 95.25358
-    SPORTAGE_IAT: 55.50259
   response: |-
     7E8102D62E001DFF7FE
     7E82100BFBF514C0D53
@@ -111,7 +102,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 54.75
     SPORTAGE_EOT: 95.25358
-    SPORTAGE_IAT: 54.75257
   response: |-
     7E8102D62E001DFF7FE
     7E82100BFC052141555
@@ -123,7 +113,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 36.75
     SPORTAGE_EOT: 99.00368
-    SPORTAGE_IAT: 36.75212
   response: |-
     7E8102D62E001DFF7FE
     7E82100BFC052741A55
@@ -135,7 +124,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 42
     SPORTAGE_EOT: 102.00375
-    SPORTAGE_IAT: 42.00225
   response: |-
     7E8102D62E001DFF7FE
     7E82100BFC052801955
@@ -147,7 +135,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 49.5
     SPORTAGE_EOT: 96.0036
-    SPORTAGE_IAT: 49.50244
   response: |-
     7E8102D62E001DFF7FE
     7E82100BFC052881B55
@@ -159,7 +146,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 38.25
     SPORTAGE_EOT: 99.00368
-    SPORTAGE_IAT: 38.25216
   response: |-
     7E8102D62E001DFF7FE
     7E82100BFC052981355
@@ -171,7 +157,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 55.5
     SPORTAGE_EOT: 95.25358
-    SPORTAGE_IAT: 55.50259
   response: |-
     7E8102D62E001DFF7FE
     7E82100C0C051500D53
@@ -183,7 +168,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 57
     SPORTAGE_EOT: 96.0036
-    SPORTAGE_IAT: 57.00263
   response: |-
     7E8102D62E001DFF7FE
     7E82100C0C052240F53
@@ -195,7 +179,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 37.5
     SPORTAGE_EOT: 99.00368
-    SPORTAGE_IAT: 37.50214
   response: |-
     7E8102D62E001DFF7FE
     7E82100C0C052641955
@@ -207,7 +190,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 48
     SPORTAGE_EOT: 98.25366
-    SPORTAGE_IAT: 48.0024
   response: |-
     7E8102D62E001DFF7FE
     7E82100C0C052641A55
@@ -219,7 +201,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 45
     SPORTAGE_EOT: 98.25366
-    SPORTAGE_IAT: 45.00233
   response: |-
     7E8102D62E001DFF7FE
     7E82100C0C052781855
@@ -231,7 +212,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 48.75
     SPORTAGE_EOT: 101.25373
-    SPORTAGE_IAT: 48.75242
   response: |-
     7E8102D62E001DFF7FE
     7E82100C0C052881253
@@ -243,7 +223,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 39.75
     SPORTAGE_EOT: 101.25373
-    SPORTAGE_IAT: 39.75219
   response: |-
     7E8102D62E001DFF7FE
     7E82100C0C052A41755
@@ -255,7 +234,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 56.25
     SPORTAGE_EOT: 95.25358
-    SPORTAGE_IAT: 56.25261
   response: |-
     7E8102D62E001DFF7FE
     7E82100C0C052BC1453
@@ -267,7 +245,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 48
     SPORTAGE_EOT: 99.75369
-    SPORTAGE_IAT: 48.0024
   response: |-
     7E8102D62E001DFF7FE
     7E82100C0C052D81154
@@ -279,7 +256,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 55.5
     SPORTAGE_EOT: 95.25358
-    SPORTAGE_IAT: 55.50259
   response: |-
     7E8102D62E001DFF7FE
     7E82100C0C1515C0D53
@@ -291,7 +267,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 45.75
     SPORTAGE_EOT: 92.25351
-    SPORTAGE_IAT: 45.75234
   response: |-
     7E8102D62E001DFF7FE
     7E82100C2C250380A42
@@ -303,7 +278,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 46.5
     SPORTAGE_EOT: 92.25351
-    SPORTAGE_IAT: 46.50236
   response: |-
     7E8102D62E001DFF7FE
     7E82100C2C2505C0A42
@@ -315,7 +289,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 49.5
     SPORTAGE_EOT: 101.25373
-    SPORTAGE_IAT: 49.50244
   response: |-
     7E8102D62E001DFF7FE
     7E82100C4C451C02155
@@ -327,7 +300,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 47.25
     SPORTAGE_EOT: 93.00353
-    SPORTAGE_IAT: 47.25238
   response: |-
     7E8102D62E001DFF7FE
     7E82100C8C7506C0A42
@@ -339,7 +311,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 45
     SPORTAGE_EOT: 93.00353
-    SPORTAGE_IAT: 45.00233
   response: |-
     7E8102D62E001DFF7FE
     7E82100C8C8514C0A42
@@ -351,7 +322,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 47.25
     SPORTAGE_EOT: 102.75377
-    SPORTAGE_IAT: 47.25238
   response: |-
     7E8102D62E001DFF7FE
     7E82100D9D952641455
@@ -363,7 +333,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 44.25
     SPORTAGE_EOT: 98.25366
-    SPORTAGE_IAT: 44.25231
   response: |-
     7E8102D62E001DFF7FE
     7E82100D9D952841555
@@ -375,7 +344,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 45.75
     SPORTAGE_EOT: 67.50289
-    SPORTAGE_IAT: 45.75234
   response: |-
     7E8105F62E001DBBDFB
     7E821E0BDBD00000000
@@ -394,7 +362,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 51.75
     SPORTAGE_EOT: 85.50334
-    SPORTAGE_IAT: 51.75249
   response: |-
     7E8105F62E001DBBDFB
     7E821E0BEBE00000000
@@ -413,7 +380,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 43.5
     SPORTAGE_EOT: 70.50296
-    SPORTAGE_IAT: 43.50229
   response: |-
     7E8105F62E001DBBDFB
     7E821E0C0C000000000
@@ -432,7 +398,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 42.75
     SPORTAGE_EOT: 80.25321
-    SPORTAGE_IAT: 42.75227
   response: |-
     7E8105F62E001DBBDFB
     7E821E0C0C000000000
@@ -451,7 +416,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 38.25
     SPORTAGE_EOT: 87.00338
-    SPORTAGE_IAT: 38.25216
   response: |-
     7E8105F62E001DBBDFB
     7E821E0C1C000000000
@@ -470,7 +434,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 30.75
     SPORTAGE_EOT: 61.50274
-    SPORTAGE_IAT: 30.75197
   response: |-
     7E8105F62E001DBBDFB
     7E821E0C1C000000000
@@ -489,7 +452,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 25.5
     SPORTAGE_EOT: 47.25238
-    SPORTAGE_IAT: 25.50184
   response: |-
     7E8105F62E001DBBDFB
     7E821E0C1C100000000
@@ -508,7 +470,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 32.25
     SPORTAGE_EOT: 42.00225
-    SPORTAGE_IAT: 32.25201
   response: |-
     7E8105F62E001DBBDFB
     7E821E0C1C100000000
@@ -527,7 +488,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 54
     SPORTAGE_EOT: 98.25366
-    SPORTAGE_IAT: 54.00255
   response: |-
     7E8105F62E001DBBDFB
     7E821E0C1C100000000
@@ -546,7 +506,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 56.25
     SPORTAGE_EOT: 96.0036
-    SPORTAGE_IAT: 56.25261
   response: |-
     7E8105F62E001DBBDFB
     7E821E0C3C300000000
@@ -565,7 +524,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 57.75
     SPORTAGE_EOT: 83.25328
-    SPORTAGE_IAT: 57.75264
   response: |-
     7E8105F62E001DBBDFB
     7E821E0C3C300000000
@@ -584,7 +542,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 43.5
     SPORTAGE_EOT: 90.00345
-    SPORTAGE_IAT: 43.50229
   response: |-
     7E8105F62E001DBBDFB
     7E821E0C3C300000000
@@ -603,7 +560,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 35.25
     SPORTAGE_EOT: 78.75317
-    SPORTAGE_IAT: 35.25208
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B2B100C01964
@@ -622,7 +578,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 50.25
     SPORTAGE_EOT: 105.00383
-    SPORTAGE_IAT: 50.25246
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B3B300942464
@@ -641,7 +596,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 35.25
     SPORTAGE_EOT: 84.75332
-    SPORTAGE_IAT: 35.25208
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B3B300A22364
@@ -660,7 +614,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 45
     SPORTAGE_EOT: 72.75302
-    SPORTAGE_IAT: 45.00233
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B3B40012235F
@@ -679,7 +632,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 27
     SPORTAGE_EOT: 24.75182
-    SPORTAGE_IAT: 27.00188
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B5B400000066
@@ -698,7 +650,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 44.25
     SPORTAGE_EOT: 100.50371
-    SPORTAGE_IAT: 44.25231
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B5B4000A5464
@@ -717,7 +668,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 47.25
     SPORTAGE_EOT: 66.75287
-    SPORTAGE_IAT: 47.25238
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B5B40014155F
@@ -736,7 +686,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 18
     SPORTAGE_EOT: 40.50221
-    SPORTAGE_IAT: 18.00165
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B5B400182264
@@ -755,7 +704,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 33.75
     SPORTAGE_EOT: 98.25366
-    SPORTAGE_IAT: 33.75204
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B5B4002A1F64
@@ -774,7 +722,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 50.25
     SPORTAGE_EOT: 102.75377
-    SPORTAGE_IAT: 50.25246
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B5B4002E2164
@@ -793,7 +740,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 24
     SPORTAGE_EOT: 39.00218
-    SPORTAGE_IAT: 24.0018
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B5B400321E64
@@ -812,7 +758,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 46.5
     SPORTAGE_EOT: 96.0036
-    SPORTAGE_IAT: 46.50236
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B5B400661E64
@@ -831,7 +776,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 39.75
     SPORTAGE_EOT: 79.50319
-    SPORTAGE_IAT: 39.75219
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B5B400E41D64
@@ -850,7 +794,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 24
     SPORTAGE_EOT: 29.25193
-    SPORTAGE_IAT: 24.0018
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B5B600F41764
@@ -869,7 +812,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 46.5
     SPORTAGE_EOT: 93.00353
-    SPORTAGE_IAT: 46.50236
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B5B600FA1964
@@ -888,7 +830,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 39
     SPORTAGE_EOT: 98.25366
-    SPORTAGE_IAT: 39.00218
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B6B6001C1D64
@@ -907,7 +848,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 44.25
     SPORTAGE_EOT: 61.50274
-    SPORTAGE_IAT: 44.25231
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B6B6002C1796
@@ -926,7 +866,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 35.25
     SPORTAGE_EOT: 104.25381
-    SPORTAGE_IAT: 35.25208
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B6B6002E1F64
@@ -945,7 +884,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 28.5
     SPORTAGE_EOT: 71.25298
-    SPORTAGE_IAT: 28.50191
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B6B600941D64
@@ -964,7 +902,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 38.25
     SPORTAGE_EOT: 75.00308
-    SPORTAGE_IAT: 38.25216
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B6B600AE1A64
@@ -983,7 +920,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 23.25
     SPORTAGE_EOT: 33.00203
-    SPORTAGE_IAT: 23.25178
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B6B600D0175F
@@ -1002,7 +938,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 34.5
     SPORTAGE_EOT: 56.25261
-    SPORTAGE_IAT: 34.50206
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B6B700F81864
@@ -1021,7 +956,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 34.5
     SPORTAGE_EOT: 43.50229
-    SPORTAGE_IAT: 34.50206
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B7B7003A1B5F
@@ -1040,7 +974,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 41.25
     SPORTAGE_EOT: 63.00278
-    SPORTAGE_IAT: 41.25223
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B7B70056105F
@@ -1059,7 +992,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 27
     SPORTAGE_EOT: 35.25208
-    SPORTAGE_IAT: 27.00188
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B7B700680164
@@ -1078,7 +1010,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 26.25
     SPORTAGE_EOT: 33.00203
-    SPORTAGE_IAT: 26.25186
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B7B70084235F
@@ -1097,7 +1028,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 37.5
     SPORTAGE_EOT: 78.00315
-    SPORTAGE_IAT: 37.50214
   response: |-
     7E8105F62E001DBBDFB
     7E821E1B9B9009E0864
@@ -1116,7 +1046,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 20.25
     SPORTAGE_EOT: 39.00218
-    SPORTAGE_IAT: 20.25171
   response: |-
     7E8105F62E001DBBDFB
     7E821E1BCBB00000064
@@ -1136,7 +1065,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 37.5
     SPORTAGE_EOT: 91.50349
-    SPORTAGE_IAT: 37.50214
   response: |-
     7E8105F62E001DBBDFB
     7E821E1BDBD00000064
@@ -1155,7 +1083,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 60
     SPORTAGE_EOT: 76.50311
-    SPORTAGE_IAT: 60.0027
   response: |-
     7E8105F62E001DBBDFB
     7E821E1BEBE0000005F
@@ -1174,7 +1101,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 41.25
     SPORTAGE_EOT: 88.50341
-    SPORTAGE_IAT: 41.25223
   response: |-
     7E8105F62E001DBBDFB
     7E821E1BEBE00000064
@@ -1193,7 +1119,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 37.5
     SPORTAGE_EOT: 90.00345
-    SPORTAGE_IAT: 37.50214
   response: |-
     7E8105F62E001DBBDFB
     7E821E1BEBE00C8185F
@@ -1212,7 +1137,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 42.75
     SPORTAGE_EOT: 72.75302
-    SPORTAGE_IAT: 42.75227
   response: |-
     7E8105F62E001DBBDFB
     7E821E1C0BE0000005F
@@ -1231,7 +1155,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 20.25
     SPORTAGE_EOT: 43.50229
-    SPORTAGE_IAT: 20.25171
   response: |-
     7E8105F62E001DBBDFB
     7E821E1C1C000602E64
@@ -1250,7 +1173,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 60.75
     SPORTAGE_EOT: 102.00375
-    SPORTAGE_IAT: 60.75272
   response: |-
     7E8105F62E001DBBDFB
     7E821E1C3C300000064
@@ -1269,7 +1191,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 42.75
     SPORTAGE_EOT: 102.75377
-    SPORTAGE_IAT: 42.75227
   response: |-
     7E8105F62E001DBBDFB
     7E821E1C7C600561A64
@@ -1288,7 +1209,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 21
     SPORTAGE_EOT: 69.75294
-    SPORTAGE_IAT: 21.00173
   response: |-
     7E8105F62E001DBBDFB
     7E821E1C7C7004A1C64
@@ -1308,7 +1228,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 34.5
     SPORTAGE_EOT: 84.0033
-    SPORTAGE_IAT: 34.50206
   response: |-
     7E8105F62E001DBBDFB
     7E821E1C7C700FC1864
@@ -1328,7 +1247,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 38.25
     SPORTAGE_EOT: 86.25336
-    SPORTAGE_IAT: 38.25216
   response: |-
     7E8105F62E001DBBDFB
     7E821E1C8C7007E3864
@@ -1347,7 +1265,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 53.25
     SPORTAGE_EOT: 82.50326
-    SPORTAGE_IAT: 53.25253
   response: |-
     7E8105F62E001DBBDFB
     7E821E1C8C900881D64
@@ -1366,7 +1283,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 45
     SPORTAGE_EOT: 110.25396
-    SPORTAGE_IAT: 45.00233
   response: |-
     7E8105F62E001DBBDFB
     7E821E1C8C900CE2A64
@@ -1385,7 +1301,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 39
     SPORTAGE_EOT: 55.50259
-    SPORTAGE_IAT: 39.00218
   response: |-
     7E8105F62E001DBBDFB
     7E821E1C8C900E40864
@@ -1404,7 +1319,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 38.25
     SPORTAGE_EOT: 88.50341
-    SPORTAGE_IAT: 38.25216
   response: |-
     7E8105F62E001DBBDFB
     7E821E1C9C9002C1864
@@ -1423,7 +1337,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 36.75
     SPORTAGE_EOT: 81.00323
-    SPORTAGE_IAT: 36.75212
   response: |-
     7E8105F62E001DBBDFB
     7E821E1C9C9003E4964
@@ -1442,7 +1355,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 14.25
     SPORTAGE_EOT: 33.00203
-    SPORTAGE_IAT: 14.25156
   response: |-
     7E8105F62E001DBBDFB
     7E821E1CBCA00182364
@@ -1461,7 +1373,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 19.5
     SPORTAGE_EOT: 18.00165
-    SPORTAGE_IAT: 19.50169
   response: |-
     7E8105F62E001DBBDFB
     7E821E1CBCA00941A96
@@ -1480,7 +1391,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 20.25
     SPORTAGE_EOT: 60.0027
-    SPORTAGE_IAT: 20.25171
   response: |-
     7E8105F62E001DBBDFB
     7E821E1CBCA00A41C64
@@ -1500,7 +1410,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 32.25
     SPORTAGE_EOT: 78.75317
-    SPORTAGE_IAT: 32.25201
   response: |-
     7E8105F62E001DBBDFB
     7E821E1CCCC00000064
@@ -1520,7 +1429,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 40.5
     SPORTAGE_EOT: 88.50341
-    SPORTAGE_IAT: 40.50221
   response: |-
     7E8105F62E001DBBDFB
     7E821E1CECD000E1964
@@ -1540,7 +1448,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 33
     SPORTAGE_EOT: 71.25298
-    SPORTAGE_IAT: 33.00203
   response: |-
     7E8105F62E001DBBDFB
     7E821E1CECF0000005F
@@ -1559,7 +1466,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 43.5
     SPORTAGE_EOT: 85.50334
-    SPORTAGE_IAT: 43.50229
   response: |-
     7E8105F62E001DBBDFB
     7E821E1CFCF0000005F
@@ -1579,7 +1485,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 28.5
     SPORTAGE_EOT: 64.50281
-    SPORTAGE_IAT: 28.50191
   response: |-
     7E8105F62E001DBBDFB
     7E821E1CFD00000005F
@@ -1598,7 +1503,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 41.25
     SPORTAGE_EOT: 83.25328
-    SPORTAGE_IAT: 41.25223
   response: |-
     7E8105F62E001DBBDFB
     7E821E1D0D00000005F
@@ -1617,7 +1521,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 38.25
     SPORTAGE_EOT: 36.0021
-    SPORTAGE_IAT: 38.25216
   response: |-
     7E8105F62E001FBBDFB
     7E821F18F8EDC000057
@@ -1636,7 +1539,6 @@ test_cases:
 - expected_values:
     SPORTAGE_EIT: 37.5
     SPORTAGE_EOT: 42.00225
-    SPORTAGE_IAT: 37.50214
   response: |-
     7E8105F62E001FBBDFB
     7E821F1C8C9DC040D53
