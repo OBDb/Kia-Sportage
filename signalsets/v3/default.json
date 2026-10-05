@@ -95,16 +95,16 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E002"}, "freq": 5, "dbgfilter": { "to": 2018, "years": [2020], "from": 2027 },
   "signals": [
-    {"id": "SPORTAGE_INJ_DUR_1", "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 1"},
-    {"id": "SPORTAGE_INJ_DUR_2", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 2"},
-    {"id": "SPORTAGE_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 3"},
-    {"id": "SPORTAGE_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 4"}
+    {"id": "SPORTAGE_INJ_DUR_1", "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection duration cylinder 1"},
+    {"id": "SPORTAGE_INJ_DUR_2", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection duration cylinder 2"},
+    {"id": "SPORTAGE_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection duration cylinder 3"},
+    {"id": "SPORTAGE_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection duration cylinder 4"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E004"}, "freq": 5, "dbgfilter": { "to": 2018, "years": [2020], "from": 2027 },
   "signals": [
-    {"id": "SPORTAGE_22E004",  "path": "Engine.Unknown", "fmt": {            "len": 8, "max": 100, "unit": "scalar"  }, "name": "Unknown"},
-    {"id": "SPORTAGE_AUX_SOC", "path": "Battery",        "fmt": {"bix": 320, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux battery state of charge", "suggestedMetric": "stateOfCharge"},
-    {"id": "SPORTAGE_AUX_SOH", "path": "Battery",        "fmt": {"bix": 328, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux battery state of health", "suggestedMetric": "stateOfHealth"}
+    {"id": "SPORTAGE_22E004",  "path": "Engine.Unknown", "fmt": {            "len": 8, "max": 100,               "unit": "scalar"  }, "name": "Unknown"},
+    {"id": "SPORTAGE_AUX_SOC", "path": "Battery",        "fmt": {"bix": 320, "len": 8, "max": 100, "nullmin": 0, "unit": "percent" }, "name": "Aux battery state of charge", "suggestedMetric": "stateOfCharge"},
+    {"id": "SPORTAGE_AUX_SOH", "path": "Battery",        "fmt": {"bix": 328, "len": 8, "max": 100, "nullmin": 0, "unit": "percent" }, "name": "Aux battery state of health", "suggestedMetric": "stateOfHealth"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E00A"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2020], "from": 2027 },
   "signals": [
@@ -119,11 +119,11 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E021"}, "freq": 0.1, "dbgfilter": { "to": 2018, "years": [2020], "from": 2026 },
   "signals": [
-    {"id": "SPORTAGE_TURBO_BOOST", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 66.81, "min": -10,             "div": 831.55690902, "add": -12, "unit": "psi"     }, "name": "Turbo boost pressure (gauge)"},
-    {"id": "SPORTAGE_WG_VOLTAGE",  "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 10,                "mul": 10,  "div": 65535,                    "unit": "volts"   }, "name": "Waste gate voltage"},
-    {"id": "SPORTAGE_WG_DUTY",     "path": "Engine", "fmt": {"bix": 408, "len": 16, "max": 200,               "mul": 200, "div": 65535,                    "unit": "percent" }, "name": "Waste gate duty"},
-    {"id": "SPORTAGE_WG_POSITION", "path": "Engine", "fmt": {"bix": 424, "len": 16, "max": 400,               "mul": 400, "div": 65535,                    "unit": "percent" }, "name": "Waste gate position"},
-    {"id": "SPORTAGE_WG_SETPOINT", "path": "Engine", "fmt": {"bix": 440, "len": 16, "max": 100,               "mul": 400, "div": 65535,                    "unit": "percent" }, "name": "Waste gate setpoint"}
+    {"id": "SPORTAGE_TURBO_BOOST", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 66.81,  "min": -10,              "div": 831.55690902, "add": -12,                                "unit": "psi"     }, "name": "Turbo boost pressure (gauge)"},
+    {"id": "SPORTAGE_WG_VOLTAGE",  "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 10,                  "mul": 10,  "div": 65535,                                                   "unit": "volts"   }, "name": "Waste gate voltage"},
+    {"id": "SPORTAGE_WG_DUTY",     "path": "Engine", "fmt": {"bix": 408, "len": 16, "max": 200,                 "mul": 200, "div": 65535,                                                   "unit": "percent" }, "name": "Waste gate duty"},
+    {"id": "SPORTAGE_WG_POSITION", "path": "Engine", "fmt": {"bix": 424, "len": 16, "max": 199.99, "min": -200, "mul": 400, "div": 65535,                    "sign": true, "nullmin": -200, "unit": "percent" }, "name": "Waste gate position"},
+    {"id": "SPORTAGE_WG_SETPOINT", "path": "Engine", "fmt": {"bix": 440, "len": 16, "max": 199.99, "min": -200, "mul": 400, "div": 65535,                    "sign": true, "nullmin": -200, "unit": "percent" }, "name": "Waste gate setpoint"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "ED02"}, "freq": 1, "dbgfilter": { "to": 2021, "years": [2023], "from": 2025 },
   "signals": [
