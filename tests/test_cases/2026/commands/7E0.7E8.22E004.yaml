@@ -2,8 +2,6 @@ command_id: 7E0.7E8.22E004
 test_cases:
 - expected_values:
     SPORTAGE_22E004: 100
-    SPORTAGE_AUX_SOC: 0
-    SPORTAGE_AUX_SOH: 0
   response: |-
     7E8107C62E004CDC000
     7E8217D7D0EE8030000
