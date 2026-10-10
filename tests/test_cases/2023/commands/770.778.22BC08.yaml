@@ -1,0 +1,27 @@
+command_id: 770.778.22BC08
+test_cases:
+- expected_values:
+    SPORTAGE_TURN_L: null
+  response: |-
+    778100B62BC08A05090
+    77821B80000011CAAAA
+- expected_values:
+    SPORTAGE_TURN_L: null
+  response: |-
+    778100B62BC08A05710
+    77821BC00000018AAAA
+- expected_values:
+    SPORTAGE_TURN_L: null
+  response: |-
+    778100B62BC08A05790
+    77821BC00000008AAAA
+- expected_values:
+    SPORTAGE_TURN_L: null
+  response: |-
+    778100B62BC08A05790
+    77821BC000A011CAAAA
+- expected_values:
+    SPORTAGE_TURN_L: null
+  response: |-
+    778100B62BC08A05790
+    77821BC0800011CAAAA
