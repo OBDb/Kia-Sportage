@@ -1,0 +1,38 @@
+command_id: 770.778.22BC09
+test_cases:
+- expected_values:
+    SPORTAGE_HL_HIGH: 0
+    SPORTAGE_HL_LOW: 0
+  response: |-
+    778100B62BC09362003
+    77821CC20000000AAAA
+- expected_values:
+    SPORTAGE_HL_HIGH: 0
+    SPORTAGE_HL_LOW: 1
+  response: |-
+    778100B62BC09362003
+    77821CC20040030AAAA
+- expected_values:
+    SPORTAGE_HL_HIGH: 1
+    SPORTAGE_HL_LOW: 0
+  response: |-
+    778100B62BC09362003
+    77821CC2004C000AAAA
+- expected_values:
+    SPORTAGE_HL_HIGH: 1
+    SPORTAGE_HL_LOW: 0
+  response: |-
+    778100B62BC09362003
+    77821CC2800C000AAAA
+- expected_values:
+    SPORTAGE_HL_HIGH: 0
+    SPORTAGE_HL_LOW: 1
+  response: |-
+    778100B62BC09362003
+    77821CC28040030AAAA
+- expected_values:
+    SPORTAGE_HL_HIGH: 1
+    SPORTAGE_HL_LOW: 0
+  response: |-
+    778100B62BC09362003
+    77821CC2804C000AAAA

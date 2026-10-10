@@ -1,0 +1,8 @@
+command_id: 7D4.7DC.220101
+test_cases:
+- expected_values:
+    SPORTAGE_MDPS_MOTOR_CURRENT: 0
+  response: |-
+    7DC1014620101757400
+    7DC2190003B00000000
+    7DC2200000001620100

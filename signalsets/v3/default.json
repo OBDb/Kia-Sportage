@@ -6,24 +6,136 @@
     { "hdr": "7E7", "type": "abs" }
   ],
   "commands": [
+{ "hdr": "730", "rax": "738", "dbg": true, "cmd": {"22": "F010"}, "freq": 0.25,
+  "signals": [
+    {"id": "SPORTAGE_WHEEL_FR_VSS_HD",           "path": "Movement",    "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 2047,                                 "div": 32,                                                   "unit": "kilometersPerHour"      },                  "name": "Front right wheel speed, high resolution"},
+    {"id": "SPORTAGE_WHEEL_FL_VSS_HD",           "path": "Movement",    "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 2047,                                 "div": 32,                                                   "unit": "kilometersPerHour"      },                  "name": "Front left wheel speed, high resolution"},
+    {"id": "SPORTAGE_WHEEL_RR_VSS_HD",           "path": "Movement",    "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 2047,                                 "div": 32,                                                   "unit": "kilometersPerHour"      },                  "name": "Rear right wheel speed, high resolution"},
+    {"id": "SPORTAGE_WHEEL_RL_VSS_HD",           "path": "Movement",    "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 2047,                                 "div": 32,                                                   "unit": "kilometersPerHour"      },                  "name": "Rear left wheel speed, high resolution"},
+    {"id": "SPORTAGE_STEERING_ANGLE",            "path": "Control",     "fmt": {"bix": 96,  "len": 16, "blsb": true, "max": 3276.7, "min": -3276.8,               "div": 10,                   "sign": true,                   "unit": "degrees"                },                  "name": "Steering wheel angle"},
+    {"id": "SPORTAGE_LATERAL_ACCELERATION",      "path": "Orientation", "fmt": {"bix": 112, "len": 16, "blsb": true, "max": 4.1769, "min": -4.1769, "mul": 8.354, "div": 65535, "add": -4.177,                                 "unit": "metersPerSecondSquared" },                  "name": "Lateral acceleration"},
+    {"id": "SPORTAGE_LONGITUDINAL_ACCELERATION", "path": "Orientation", "fmt": {"bix": 128, "len": 16, "blsb": true, "max": 4.1769, "min": -4.1769, "mul": 8.354, "div": 65535, "add": -4.177,                                 "unit": "metersPerSecondSquared" },                  "name": "Longitudinal acceleration"},
+    {"id": "SPORTAGE_YAW_RATE",                  "path": "Orientation", "fmt": {"bix": 144, "len": 8,  "max": 1.275,                                "div": 200,                                              "unit": "degrees" },                               "name": "Yaw rate"}
+  ]},
+{ "hdr": "740", "dbg": true, "cmd": {"21": "C0"}, "freq": 5,
+  "signals": [
+    {"id": "SPORTAGE_RPM_740",             "path": "Movement",     "fmt": {"bix": 32,  "len": 16, "max": 16383,                        "div": 4,              "unit": "rpm"               }, "name": "Engine RPM"},
+    {"id": "SPORTAGE_VSS_740",             "path": "Movement",     "fmt": {"bix": 48,  "len": 8,  "max": 255,                                                 "unit": "kilometersPerHour" }, "name": "Vehicle speed"},
+    {"id": "SPORTAGE_REL_ACCEL_PEDAL_POS", "path": "Movement",     "fmt": {"bix": 56,  "len": 8,  "max": 100,               "mul": 20, "div": 51,             "unit": "percent"           }, "name": "Relative accelerator pedal position"},
+    {"id": "SPORTAGE_SUP_V",               "path": "Battery",      "fmt": {"bix": 64,  "len": 8,  "max": 25.5,                         "div": 10,             "unit": "volts"             }, "name": "Supply voltage"},
+    {"id": "SPORTAGE_SYSTEM_V",            "path": "Battery",      "fmt": {"bix": 72,  "len": 8,  "max": 25.5,                         "div": 10,             "unit": "volts"             }, "name": "System voltage"},
+    {"id": "SPORTAGE_CMD_TQ",              "path": "Engine",       "fmt": {"bix": 80,  "len": 8,  "max": 2550,              "mul": 10,                        "unit": "newtonMeters"      }, "name": "Commanded torque"},
+    {"id": "SPORTAGE_CLU_SOLENOID_DUTY",   "path": "Transmission", "fmt": {"bix": 88,  "len": 8,  "max": 255,                                                 "unit": "percent"           }, "name": "Clutch solenoid duty"},
+    {"id": "SPORTAGE_HEAT",                "path": "Engine",       "fmt": {"bix": 96,  "len": 8,  "max": 255,                                                 "unit": "celsius"           }, "name": "Heat"},
+    {"id": "SPORTAGE_FR_WHL_SPD",          "path": "Tires",        "fmt": {"bix": 104, "len": 8,  "max": 255,                                                 "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "SPORTAGE_FL_WHL_SPD",          "path": "Tires",        "fmt": {"bix": 112, "len": 8,  "max": 255,                                                 "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "SPORTAGE_RR_WHL_SPD",          "path": "Tires",        "fmt": {"bix": 120, "len": 8,  "max": 255,                                                 "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
+    {"id": "SPORTAGE_RL_WHL_SPD",          "path": "Tires",        "fmt": {"bix": 128, "len": 8,  "max": 255,                                                 "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "SPORTAGE_LOCK_SWITCH",         "path": "Engine",       "fmt": {"bix": 151, "len": 1,  "max": 1,                                                   "unit": "offon"             }, "name": "Lock switch"},
+    {"id": "SPORTAGE_STEER_WHL_ANG",       "path": "Tires",        "fmt": {"bix": 160, "len": 8,  "max": 167,   "min": -88,                       "add": -88, "unit": "degrees"           }, "name": "Steering wheel angle"},
+    {"id": "SPORTAGE_MALFUNCTION",         "path": "Engine",       "fmt": {"bix": 175, "len": 1,  "max": 1,                                                   "unit": "offon"             }, "name": "Malfunction indicator"},
+    {"id": "SPORTAGE_P_SENS",              "path": "Engine",       "fmt": {"bix": 176, "len": 8,  "max": 63.75,                        "div": 4,              "unit": "bars"              }, "name": "Pressure sensor"}
+  ]},
+{ "hdr": "740", "rax": "748", "dbg": true, "cmd": {"22": "01A1"}, "freq": 0.25,
+  "signals": [
+    {"id": "SPORTAGE_AWD_CLU_DUTY",      "path": "Engine", "fmt": {"bix": 72,  "len": 16, "max": 100,       "min": -3276.8,                  "div": 10, "sign": true, "unit": "percent"      }, "name": "4WD clutch duty"},
+    {"id": "SPORTAGE_AWD_CLU_STRESS",    "path": "Engine", "fmt": {"bix": 104, "len": 16, "max": 63.99,     "min": -63.99,  "mul": 0.001953,            "sign": true, "unit": "percent"      }, "name": "4WD clutch stress"},
+    {"id": "SPORTAGE_AWD_STEER_WHL_ANG", "path": "Tires",  "fmt": {"bix": 184, "len": 16, "max": 4095.875,  "min": -4096,                    "div": 8,  "sign": true, "unit": "degrees"      }, "name": "4WD steering wheel angle"},
+    {"id": "SPORTAGE_AWD_CLU_TQ",        "path": "Engine", "fmt": {"bix": 200, "len": 16, "max": 2047.9375, "min": -2048,                    "div": 16, "sign": true, "unit": "newtonMeters" }, "name": "4WD clutch torque"},
+    {"id": "SPORTAGE_AWD_CLU_P",         "path": "Engine", "fmt": {"bix": 216, "len": 16, "max": 63.99,     "min": -63.99,  "mul": 0.001953,            "sign": true, "unit": "bars"         }, "name": "4WD clutch pressure"}
+  ]},
+{ "hdr": "740", "rax": "748", "dbg": true, "cmd": {"22": "01A3"}, "freq": 0.25,
+  "signals": [
+    {"id": "SPORTAGE_AWD_FRONT_AXLE_RAT", "path": "Engine",   "fmt": {"bix": 56,  "len": 16, "max": 0.999,     "min": -1,    "mul": 2, "div": 65535, "sign": true, "unit": "scalar" }, "name": "4WD front axle ratio"},
+    {"id": "SPORTAGE_AWD_AXLE_SPD_DIFF",  "path": "Movement", "fmt": {"bix": 144, "len": 16, "max": 2047.9375, "min": -2048,           "div": 16,    "sign": true, "unit": "rpm"    }, "name": "4WD delta speed between front and rear axle"}
+  ]},
 { "hdr": "744", "rax": "74C", "fcm1": true, "dbg": true, "cmd": {"22": "E001"}, "freq": 1, "filter": { "from": 2023 },
   "signals": [
     {"id": "SPORTAGE_DC_CHRG_STATE", "path": "Battery", "fmt": {"bix": 140, "len": 1, "max": 1, "unit": "offon" }, "name": "DC charging state"}
   ]},
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC03"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2025 },
+  "signals": [
+    {"id": "SPORTAGE_TRUNK",     "path": "Doors",     "fmt": {"bix": 32, "len": 1, "max": 1, "unit": "noyes" }, "name": "Trunk open?"},
+    {"id": "SPORTAGE_DOOR_FL",   "path": "Doors",     "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "noyes" }, "name": "Front left door open?"},
+    {"id": "SPORTAGE_DOOR_FR",   "path": "Doors",     "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "noyes" }, "name": "Front right door open?"},
+    {"id": "SPORTAGE_HANDBRAKE", "path": "Control",   "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "noyes" }, "name": "Handbrake engaged?"},
+    {"id": "SPORTAGE_DOOR_RR",   "path": "Doors",     "fmt": {"bix": 37, "len": 1, "max": 1, "unit": "noyes" }, "name": "Rear right door open?"},
+    {"id": "SPORTAGE_DOOR_RL",   "path": "Doors",     "fmt": {"bix": 39, "len": 1, "max": 1, "unit": "noyes" }, "name": "Rear left door open?"},
+    {"id": "SPORTAGE_BELT_PASS", "path": "Seatbelts", "fmt": {"bix": 45, "len": 1, "max": 1, "unit": "noyes" }, "name": "Passenger seatbelt latched?"},
+    {"id": "SPORTAGE_BELT_DRIV", "path": "Seatbelts", "fmt": {"bix": 46, "len": 1, "max": 1, "unit": "noyes" }, "name": "Driver seatbelt latched?"},
+    {"id": "SPORTAGE_HOOD",      "path": "Doors",     "fmt": {"bix": 47, "len": 1, "max": 1, "unit": "noyes" }, "name": "Hood latched?"},
+    {"id": "SPORTAGE_DEFOG_SW",  "path": "Climate",   "fmt": {"bix": 62, "len": 1, "max": 1, "unit": "noyes" }, "name": "Defogging?"}
+  ]},
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC04"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2025 },
+  "signals": [
+    {"id": "SPORTAGE_REVERSE_GEAR", "path": "Transmission", "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Reverse gear selected"},
+    {"id": "SPORTAGE_LOCK_FL",      "path": "Doors",        "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "scalar" }, "name": "Front left door locked?"},
+    {"id": "SPORTAGE_LOCK_FR",      "path": "Doors",        "fmt": {"bix": 37, "len": 1, "max": 1, "unit": "scalar" }, "name": "Front right door locked?"},
+    {"id": "SPORTAGE_BELT_RM",      "path": "Seatbelts",    "fmt": {"bix": 52, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear middle seatbelt latched?"},
+    {"id": "SPORTAGE_BELT_RL",      "path": "Seatbelts",    "fmt": {"bix": 53, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear left seatbelt latched?"},
+    {"id": "SPORTAGE_BELT_RR",      "path": "Seatbelts",    "fmt": {"bix": 54, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear right seatbelt latched?"}
+  ]},
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC05"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2025 },
+  "signals": [
+    {"id": "SPORTAGE_HAZARD_SW", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255,                             "unit": "scalar" }, "name": "Hazard switch"},
+    {"id": "SPORTAGE_HL_SW",     "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1,   "nullmin": 0, "nullmax": 2, "unit": "noyes"  }, "name": "Headlight switch"}
+  ]},
+{ "hdr": "770", "rax": "778", "dbg": true, "cmd": {"22": "BC06"}, "freq": 0.25,
+  "signals": [
+    {"id": "SPORTAGE_BRAKE_LIGHT", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "Brake light"}
+  ]},
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC07"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2025 },
+  "signals": [
+    {"id": "SPORTAGE_DEFOG_LIGHT", "path": "Lights", "fmt": {"bix": 40, "len": 8, "max": 1, "unit": "noyes" }, "name": "Defog light on"}
+  ]},
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC08"}, "freq": 2, "dbgfilter": { "to": 2021, "from": 2025 },
+  "signals": [
+    {"id": "SPORTAGE_TURN_L", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 1, "nullmin": 0, "nullmax": 1, "unit": "noyes" }, "name": "Left turn signal on?, raw >1"}
+  ]},
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC09"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2025 },
+  "signals": [
+    {"id": "SPORTAGE_HL_HIGH", "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1, "div": 12, "unit": "noyes" }, "name": "Headlight high beam on"},
+    {"id": "SPORTAGE_HL_LOW",  "path": "Lights", "fmt": {"bix": 56, "len": 8, "max": 1, "div": 12, "unit": "noyes" }, "name": "Headlight low beam on"}
+  ]},
+{ "hdr": "770", "rax": "778", "fcm1": true, "dbg": true, "cmd": {"22": "BC10"}, "freq": 5,
+  "signals": [
+    {"id": "SPORTAGE_LIGHTS_CODE", "path": "Lights", "fmt": {"bix": 32, "len": 4, "max": 15, "unit": "scalar" }, "name": "Exterior lights state code"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "B008"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_BRAKE_SW", "path": "Control", "fmt": {"bix": 51, "len": 1, "max": 1, "unit": "offon" }, "name": "Brake switch"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "dbg": true, "cmd": {"22": "B009"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_PARKING_SENS_REAR",        "path": "Engine", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "Parking sensor rear center left level"},
+    {"id": "SPORTAGE_PARKING_SENS_REAR_CENTER", "path": "Engine", "fmt": {"bix": 40, "len": 8, "max": 255, "unit": "scalar" }, "name": "Parking sensor rear center right level"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "B00C"}, "freq": 5,
+  "signals": [
+    {"id": "SPORTAGE_HEATED_WHEEL",     "path": "Climate", "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "offon" }, "name": "Heated steering wheel"},
+    {"id": "SPORTAGE_HEATED_WHEEL_ALT", "path": "Climate", "fmt": {"bix": 42, "len": 1, "max": 1, "unit": "offon" }, "name": "Heated steering wheel, alternate bit"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C002"}, "freq": 60,
+  "signals": [
+    {"id": "SPORTAGE_TID_1", "path": "Tires", "fmt": {"bix": 32,  "len": 32, "max": 4294967295, "unit": "hex" }, "name": "Tire sensor 1 ID"},
+    {"id": "SPORTAGE_TID_2", "path": "Tires", "fmt": {"bix": 64,  "len": 32, "max": 4294967295, "unit": "hex" }, "name": "Tire sensor 2 ID"},
+    {"id": "SPORTAGE_TID_3", "path": "Tires", "fmt": {"bix": 96,  "len": 32, "max": 4294967295, "unit": "hex" }, "name": "Tire sensor 3 ID"},
+    {"id": "SPORTAGE_TID_4", "path": "Tires", "fmt": {"bix": 128, "len": 32, "max": 4294967295, "unit": "hex" }, "name": "Tire sensor 4 ID"}
+  ]},
 { "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00B"}, "freq": 15, "dbgfilter": { "to": 2021, "from": 2027 },
   "signals": [
-    {"id": "SPORTAGE_TP_FL",      "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Front left tire pressure",          "suggestedMetric": "frontLeftTirePressure"},
-    {"id": "SPORTAGE_TT_FL",      "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Front left tire temperature"},
-    {"id": "SPORTAGE_FL_INVALID", "path": "Tires", "fmt": {"bix": 70,  "len": 1, "max": 1,                                                     "unit": "noyes"   }, "name": "Front left tire reading invalid?"},
-    {"id": "SPORTAGE_TP_FR",      "path": "Tires", "fmt": {"bix": 72,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Front right tire pressure",         "suggestedMetric": "frontRightTirePressure"},
-    {"id": "SPORTAGE_TT_FR",      "path": "Tires", "fmt": {"bix": 80,  "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Front right tire temperature"},
-    {"id": "SPORTAGE_FR_INVALID", "path": "Tires", "fmt": {"bix": 110, "len": 1, "max": 1,                                                     "unit": "noyes"   }, "name": "Front right tire reading invalid?"},
-    {"id": "SPORTAGE_TP_RL",      "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Rear left tire pressure",           "suggestedMetric": "rearLeftTirePressure"},
-    {"id": "SPORTAGE_TT_RL",      "path": "Tires", "fmt": {"bix": 120, "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Rear left tire temperature"},
-    {"id": "SPORTAGE_RL_INVALID", "path": "Tires", "fmt": {"bix": 150, "len": 1, "max": 1,                                                     "unit": "noyes"   }, "name": "Rear left tire reading invalid?"},
-    {"id": "SPORTAGE_TP_RR",      "path": "Tires", "fmt": {"bix": 152, "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Rear right tire pressure",          "suggestedMetric": "rearRightTirePressure"},
-    {"id": "SPORTAGE_TT_RR",      "path": "Tires", "fmt": {"bix": 160, "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Rear right tire temperature"},
-    {"id": "SPORTAGE_RR_INVALID", "path": "Tires", "fmt": {"bix": 190, "len": 1, "max": 1,                                                     "unit": "noyes"   }, "name": "Rear right tire reading invalid?"},
+    {"id": "SPORTAGE_TP_FL",      "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,                   "unit": "psi"     }, "name": "Front left tire pressure",          "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "SPORTAGE_TT_FL",      "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "nullmax": 205, "unit": "celsius" }, "name": "Front left tire temperature"},
+    {"id": "SPORTAGE_FL_INVALID", "path": "Tires", "fmt": {"bix": 70,  "len": 1, "max": 1,                                                                     "unit": "noyes"   }, "name": "Front left tire reading invalid?"},
+    {"id": "SPORTAGE_TP_FR",      "path": "Tires", "fmt": {"bix": 72,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,                   "unit": "psi"     }, "name": "Front right tire pressure",         "suggestedMetric": "frontRightTirePressure"},
+    {"id": "SPORTAGE_TT_FR",      "path": "Tires", "fmt": {"bix": 80,  "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "nullmax": 205, "unit": "celsius" }, "name": "Front right tire temperature"},
+    {"id": "SPORTAGE_FR_INVALID", "path": "Tires", "fmt": {"bix": 110, "len": 1, "max": 1,                                                                     "unit": "noyes"   }, "name": "Front right tire reading invalid?"},
+    {"id": "SPORTAGE_TP_RL",      "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 51,              "div": 5,             "nullmin": 0,                   "unit": "psi"     }, "name": "Rear left tire pressure",           "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "SPORTAGE_TT_RL",      "path": "Tires", "fmt": {"bix": 120, "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "nullmax": 205, "unit": "celsius" }, "name": "Rear left tire temperature"},
+    {"id": "SPORTAGE_RL_INVALID", "path": "Tires", "fmt": {"bix": 150, "len": 1, "max": 1,                                                                     "unit": "noyes"   }, "name": "Rear left tire reading invalid?"},
+    {"id": "SPORTAGE_TP_RR",      "path": "Tires", "fmt": {"bix": 152, "len": 8, "max": 51,              "div": 5,             "nullmin": 0,                   "unit": "psi"     }, "name": "Rear right tire pressure",          "suggestedMetric": "rearRightTirePressure"},
+    {"id": "SPORTAGE_TT_RR",      "path": "Tires", "fmt": {"bix": 160, "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "nullmax": 205, "unit": "celsius" }, "name": "Rear right tire temperature"},
+    {"id": "SPORTAGE_RR_INVALID", "path": "Tires", "fmt": {"bix": 190, "len": 1, "max": 1,                                                                     "unit": "noyes"   }, "name": "Rear right tire reading invalid?"},
     {"id": "SPORTAGE_TB_FL", "path": "Tires", "name": "Tire battery front left", "fmt": {"bix": 48, "len": 8, "map": {
           "0": { "description": ">3 V",        "value": "3V+" },
           "1": { "description": "2.7 - 3 V",   "value": "27_3V" },
@@ -53,11 +165,45 @@
         }}
     }
   ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C00C"}, "freq": 30,
+  "signals": [
+    {"id": "SPORTAGE_SENS_1_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #1 odometer event #1"},
+    {"id": "SPORTAGE_SENS_1_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #1 odometer event #2"},
+    {"id": "SPORTAGE_SENS_1_ODO_EVT_3", "path": "Trips", "fmt": {"bix": 320, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #1 odometer event #3"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C00D"}, "freq": 30,
+  "signals": [
+    {"id": "SPORTAGE_SENS_2_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #2 odometer event #1"},
+    {"id": "SPORTAGE_SENS_2_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #2 odometer event #2"},
+    {"id": "SPORTAGE_SENS_2_ODO_EVT_3", "path": "Trips", "fmt": {"bix": 320, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #2 odometer event #3"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C00E"}, "freq": 30,
+  "signals": [
+    {"id": "SPORTAGE_SENS_3_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #3 odometer event #1"},
+    {"id": "SPORTAGE_SENS_3_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #3 odometer event #2"},
+    {"id": "SPORTAGE_SENS_3_ODO_EVT_3", "path": "Trips", "fmt": {"bix": 320, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #3 odometer event #3"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C00F"}, "freq": 30,
+  "signals": [
+    {"id": "SPORTAGE_SENS_4_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #4 odometer event #1"},
+    {"id": "SPORTAGE_SENS_4_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #4 odometer event #2"},
+    {"id": "SPORTAGE_SENS_4_ODO_EVT_3", "path": "Trips", "fmt": {"bix": 320, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #4 odometer event #3"}
+  ]},
 { "hdr": "7B3", "rax": "7BB", "fcm1": true, "cmd": {"22": "0100"}, "freq": 0.25, "dbgfilter": { "to": 2018, "from": 2027 },
   "signals": [
     {"id": "SPORTAGE_TEMP_INT", "path": "Climate",  "fmt": {"bix": 40,  "len": 8, "max": 80,  "min": -40, "div": 2, "add": -40, "unit": "celsius"           }, "name": "Interior temperature"},
     {"id": "SPORTAGE_TEMP_EXT", "path": "Climate",  "fmt": {"bix": 48,  "len": 8, "max": 80,  "min": -40, "div": 2, "add": -40, "unit": "celsius"           }, "name": "Exterior temperature"},
     {"id": "SPORTAGE_VSS",      "path": "Movement", "fmt": {"bix": 232, "len": 8, "max": 255,                                   "unit": "kilometersPerHour" }, "name": "Vehicle speed",        "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "7B3", "rax": "7BB", "dbg": true, "cmd": {"22": "0101"}, "freq": 5,
+  "signals": [
+    {"id": "SPORTAGE_HVAC_IAT_PASSENGER_VENT",      "path": "Climate", "fmt": {"bix": 64, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Interior temperature, passenger vent"},
+    {"id": "SPORTAGE_HVAC_IAT_PASSENGER_LEGS_VENT", "path": "Climate", "fmt": {"bix": 72, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Interior temperature, passenger legs vent"}
+  ]},
+{ "hdr": "7B3", "rax": "7BB", "dbg": true, "cmd": {"22": "0102"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_HVAC_COOLANT_T",  "path": "Engine", "fmt": {"bix": 32, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Coolant temperature"},
+    {"id": "SPORTAGE_HVAC_INVERTER_T", "path": "Engine", "fmt": {"bix": 96, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Inverter temperature"}
   ]},
 { "hdr": "7C6", "rax": "7CE", "fcm1": true, "cmd": {"22": "B002"}, "freq": 5, "dbgfilter": { "to": 2013, "years": [2015, 2017, 2018], "from": 2027 },
   "signals": [
@@ -77,16 +223,273 @@
     {"id": "SPORTAGE_STEER_ANGLE", "path": "Control",  "fmt": {"bix": 200, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,   "sign": true, "unit": "degrees"           }, "name": "Steering wheel angle"},
     {"id": "SPORTAGE_BRAKE_P",     "path": "Control",  "fmt": {"bix": 256, "len": 16, "max": 100,                    "div": 86.7, "sign": true, "unit": "percent"           }, "name": "Brake pressure"}
   ]},
+{ "hdr": "7D1", "rax": "7D9", "dbg": true, "cmd": {"22": "0104"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_VSS_AVG_V2",         "path": "Movement", "fmt": {"bix": 48,  "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "Average wheel speed"},
+    {"id": "SPORTAGE_TIRE_FL_VSS_V2",     "path": "Movement", "fmt": {"bix": 88,  "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "SPORTAGE_TIRE_FR_VSS_V2",     "path": "Movement", "fmt": {"bix": 96,  "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "SPORTAGE_TIRE_RR_VSS_V2",     "path": "Movement", "fmt": {"bix": 104, "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
+    {"id": "SPORTAGE_TIRE_RL_VSS_V2",     "path": "Movement", "fmt": {"bix": 112, "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "SPORTAGE_TC_SWITCH_V2",       "path": "Movement", "fmt": {"bix": 150, "len": 1,  "max": 1,                                                 "unit": "noyes"             }, "name": "Traction control switch, raw"},
+    {"id": "SPORTAGE_STEER_ANGLE_V2_7D1", "path": "Control",  "fmt": {"bix": 200, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,   "sign": true, "unit": "degrees"           }, "name": "Steering wheel angle"},
+    {"id": "SPORTAGE_BRAKE_P_V2",         "path": "Control",  "fmt": {"bix": 256, "len": 16, "max": 100,                    "div": 86.7, "sign": true, "unit": "percent"           }, "name": "Brake pressure"}
+  ]},
+{ "hdr": "7D1", "rax": "7D9", "dbg": true, "cmd": {"22": "4000"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_TIRE_FL_VSS_V3", "path": "Movement", "fmt": {"bix": 48, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "SPORTAGE_TIRE_FR_VSS_V3", "path": "Movement", "fmt": {"bix": 56, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "SPORTAGE_TIRE_RL_VSS_V3", "path": "Movement", "fmt": {"bix": 64, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "SPORTAGE_TIRE_RR_VSS_V3", "path": "Movement", "fmt": {"bix": 72, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "7D1", "rax": "7D9", "dbg": true, "cmd": {"22": "C101"}, "freq": 0.25,
+  "signals": [
+    {"id": "SPORTAGE_FL_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "SPORTAGE_FR_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 96,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "SPORTAGE_RL_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 104, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "SPORTAGE_RR_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
 { "hdr": "7D4", "rax": "7DC", "cmd": {"21": "01"}, "freq": 0.25, "dbgfilter": { "to": 2010, "years": [2013, 2015, 2017, 2018], "from": 2023 },
   "signals": [
     {"id": "SPORTAGE_STEER_ANGLE_V2", "path": "Control", "fmt": {"bix": 72, "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "degrees" }, "name": "Steering wheel angle"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "01"}, "freq": 1, "dbgfilter": { "to": 2018, "from": 2021 },
+{ "hdr": "7D4", "rax": "7DC", "cmd": {"22": "0101"}, "freq": 5, "dbgfilter": { "to": 2021, "from": 2027 },
   "signals": [
-    {"id": "SPORTAGE_MIS_1", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfire count #1"},
-    {"id": "SPORTAGE_MIS_2", "path": "Engine", "fmt": {"bix": 72,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfire count #2"},
-    {"id": "SPORTAGE_MIS_3", "path": "Engine", "fmt": {"bix": 88,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfire count #3"},
-    {"id": "SPORTAGE_MIS_4", "path": "Engine", "fmt": {"bix": 104, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfire count #4"}
+    {"id": "SPORTAGE_MDPS_MOTOR_CURRENT", "path": "Engine", "fmt": {"bix": 88, "len": 8, "max": 127, "min": -128, "sign": true, "unit": "amps" }, "name": "Motor-driven power steering current"}
+  ]},
+{ "hdr": "7D6", "rax": "7DE", "dbg": true, "cmd": {"21": "06"}, "freq": 15,
+  "signals": [
+    {"id": "SPORTAGE_FL_TP", "path": "Tires",  "fmt": {            "len": 8, "max": 3.51,             "mul": 0.01378952,             "unit": "bars"    }, "name": "Front left tire pressure",     "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "SPORTAGE_FL_TT", "path": "Engine", "fmt": {"bix": 8,   "len": 8, "max": 205,  "min": -50,                    "add": -50, "unit": "celsius" }, "name": "Front left tire temperature",  "suggestedMetric": "frontLeftTireTemperature"},
+    {"id": "SPORTAGE_FR_TP", "path": "Tires",  "fmt": {"bix": 32,  "len": 8, "max": 3.51,             "mul": 0.01378952,             "unit": "bars"    }, "name": "Front right tire pressure",    "suggestedMetric": "frontRightTirePressure"},
+    {"id": "SPORTAGE_FR_TT", "path": "Engine", "fmt": {"bix": 40,  "len": 8, "max": 205,  "min": -50,                    "add": -50, "unit": "celsius" }, "name": "Front right tire temperature", "suggestedMetric": "frontRightTireTemperature"},
+    {"id": "SPORTAGE_RL_TP", "path": "Tires",  "fmt": {"bix": 64,  "len": 8, "max": 3.51,             "mul": 0.01378952,             "unit": "bars"    }, "name": "Rear left tire pressure",      "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "SPORTAGE_RL_TT", "path": "Engine", "fmt": {"bix": 72,  "len": 8, "max": 205,  "min": -50,                    "add": -50, "unit": "celsius" }, "name": "Rear left tire temperature",   "suggestedMetric": "rearLeftTireTemperature"},
+    {"id": "SPORTAGE_RR_TP", "path": "Tires",  "fmt": {"bix": 96,  "len": 8, "max": 3.51,             "mul": 0.01378952,             "unit": "bars"    }, "name": "Rear right tire pressure",     "suggestedMetric": "rearRightTirePressure"},
+    {"id": "SPORTAGE_RR_TT", "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 205,  "min": -50,                    "add": -50, "unit": "celsius" }, "name": "Rear right tire temperature",  "suggestedMetric": "rearRightTireTemperature"}
+  ]},
+{ "hdr": "7E0", "dbg": true, "cmd": {"21": "18"}, "freq": 0.25,
+  "signals": [
+    {"id": "SPORTAGE_CVVT_T", "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 207, "min": -48, "add": -48, "unit": "celsius" }, "name": "Continuously variable valve timing temperature", "description": "Continuously variable valve timing temperature."}
+  ]},
+{ "hdr": "7E0", "dbg": true, "cmd": {"22": "21A0"}, "freq": 10,
+  "signals": [
+    {"id": "SPORTAGE_ATF_TEMP", "path": "Transmission", "fmt": {"bix": 16, "len": 8, "max": 255, "mul": 9, "div": 5, "add": -40, "unit": "fahrenheit" }, "name": "Transmission fluid temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "00"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_FUEL_CUT",               "path": "Fuel",     "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "scalar" }, "name": "Fuel cut"},
+    {"id": "SPORTAGE_IDLE_CONTROL_MODE",      "path": "Engine",   "fmt": {"bix": 120, "len": 8, "max": 255, "unit": "scalar" }, "name": "Idle control mode"},
+    {"id": "SPORTAGE_COOLANT_FAN_LOW_SPEED",  "path": "Movement", "fmt": {"bix": 170, "len": 1, "max": 1,   "unit": "offon"  }, "name": "Coolant fan low speed"},
+    {"id": "SPORTAGE_COOLANT_FAN_HIGH_SPEED", "path": "Movement", "fmt": {"bix": 171, "len": 1, "max": 1,   "unit": "offon"  }, "name": "Coolant fan high speed"},
+    {"id": "SPORTAGE_KNOCK_DETECTED",         "path": "Engine",   "fmt": {"bix": 200, "len": 8, "max": 255, "unit": "scalar" }, "name": "Knock detected"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "02"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_OXYGEN_SENSOR_11",            "path": "Engine",   "fmt": {"bix": 32,  "len": 8,  "max": 1.12,   "min": -0.2,      "mul": 0.00521,                 "add": -0.2, "unit": "volts"             },                     "name": "Oxygen sensor 1 bank 1"},
+    {"id": "SPORTAGE_OXYGEN_SENSOR_21",            "path": "Engine",   "fmt": {"bix": 48,  "len": 8,  "max": 1.12,   "min": -0.2,      "mul": 0.00521,                 "add": -0.2, "unit": "volts"             },                     "name": "Oxygen sensor 2 bank 1"},
+    {"id": "SPORTAGE_VSS_V2_7E0",                  "path": "Movement", "fmt": {"bix": 96,  "len": 8,  "max": 318.75,                   "mul": 1.25,                                 "unit": "kilometersPerHour" },                     "name": "Vehicle speed, v2",           "suggestedMetric": "speed"},
+    {"id": "SPORTAGE_COMMANDED_EVAPORATIVE_PURGE", "path": "Engine",   "fmt": {"bix": 160, "len": 8,  "max": 99.6,                     "mul": 0.390625,                             "unit": "percent"           },                     "name": "Commanded evaporative purge"},
+    {"id": "SPORTAGE_FUEL_INJECTION_TIMING_1",     "path": "Fuel",     "fmt": {"bix": 176, "len": 16, "blsb": true,  "max": 53686.272,                  "mul": 0.8192,                                          "unit": "milliseconds" },                                     "name": "Fuel injection timing #1"},
+    {"id": "SPORTAGE_FUEL_INJECTION_TIMING_2",     "path": "Fuel",     "fmt": {"bix": 192, "len": 16, "blsb": true,  "max": 53686.272,                  "mul": 0.8192,                                          "unit": "milliseconds" },                                     "name": "Fuel injection timing #2"},
+    {"id": "SPORTAGE_FUEL_INJECTION_TIMING_3",     "path": "Fuel",     "fmt": {"bix": 208, "len": 16, "blsb": true,  "max": 53686.272,                  "mul": 0.8192,                                          "unit": "milliseconds" },                                     "name": "Fuel injection timing #3"},
+    {"id": "SPORTAGE_FUEL_INJECTION_TIMING_4",     "path": "Fuel",     "fmt": {"bix": 224, "len": 16, "blsb": true,  "max": 53686.272,                  "mul": 0.8192,                                          "unit": "milliseconds" },                                     "name": "Fuel injection timing #4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "03"}, "freq": 5,
+  "signals": [
+    {"id": "SPORTAGE_EXHAUST_GAS_T",                 "path": "Engine", "fmt": {"bix": 368, "len": 8,  "max": 1300,    "min": 99, "mul": 4.709803922,              "add": 99, "unit": "celsius"    }, "name": "Exhaust gas temperature"},
+    {"id": "SPORTAGE_ODO_LAST_DPF_REGEN",            "path": "Trips",  "fmt": {"bix": 392, "len": 32, "max": 4294967,                                "div": 1000,            "unit": "kilometers" }, "name": "Odometer at last DPF regeneration"},
+    {"id": "SPORTAGE_DISTANCE_SINCE_LAST_DPF_REGEN", "path": "Trips",  "fmt": {"bix": 424, "len": 32, "max": 4294967,                                "div": 1000,            "unit": "kilometers" }, "name": "Distance since last DPF regeneration"},
+    {"id": "SPORTAGE_ODO",                           "path": "Trips",  "fmt": {"bix": 456, "len": 32, "max": 4294967,                                "div": 1000,            "unit": "kilometers" }, "name": "Odometer",                             "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "04"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_COOLANT_FAN_HIGH_SPEED_1_8", "path": "Movement", "fmt": {"bix": 109, "len": 1, "max": 1, "unit": "offon" }, "name": "Coolant fan high speed, 1.8"},
+    {"id": "SPORTAGE_COOLANT_FAN_LOW_SPEED_1_8",  "path": "Movement", "fmt": {"bix": 110, "len": 1, "max": 1, "unit": "offon" }, "name": "Coolant fan low speed, 1.8"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "05"}, "freq": 0.25,
+  "signals": [
+    {"id": "SPORTAGE_TQ_ACT", "path": "Engine", "fmt": {"bix": 64, "len": 16, "blsb": true, "max": 99.94, "mul": 61, "div": 40000, "unit": "percent" }, "name": "Torque, actual"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "07"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_MAIN_INJECTION_QTY",  "path": "Engine", "fmt": {"bix": 96,  "len": 8,  "max": 100,   "mul": 0.392156863, "unit": "liters" }, "name": "Main injection volume"},
+    {"id": "SPORTAGE_PILOT_INJECTION_QTY", "path": "Engine", "fmt": {"bix": 104, "len": 16, "max": 65535,                     "unit": "liters" }, "name": "Pilot injection volume"},
+    {"id": "SPORTAGE_POST_INJECTION_QTY",  "path": "Engine", "fmt": {"bix": 128, "len": 16, "max": 65535,                     "unit": "liters" }, "name": "Post injection volume"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "08"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_EMIS_MIS_TOT_1_7E0",   "path": "Engine", "fmt": {"bix": 128, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Emission relevant misfires total, cylinder 1"},
+    {"id": "SPORTAGE_EMIS_MIS_TOT_2_7E0",   "path": "Engine", "fmt": {"bix": 144, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Emission relevant misfires total, cylinder 2"},
+    {"id": "SPORTAGE_EMIS_MIS_TOT_3_7E0",   "path": "Engine", "fmt": {"bix": 160, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Emission relevant misfires total, cylinder 3"},
+    {"id": "SPORTAGE_EMIS_MIS_TOT_4_7E0",   "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Emission relevant misfires total, cylinder 4"},
+    {"id": "SPORTAGE_EMIS_MIS_TOT_5",       "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Emission relevant misfires total, cylinder 5"},
+    {"id": "SPORTAGE_EMIS_MIS_TOT_6",       "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Emission relevant misfires total, cylinder 6"},
+    {"id": "SPORTAGE_CATDMG_MIS_TOT_1_7E0", "path": "Engine", "fmt": {"bix": 256, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Catalyst damaging misfires total, cylinder 1"},
+    {"id": "SPORTAGE_CATDMG_MIS_TOT_2_7E0", "path": "Engine", "fmt": {"bix": 272, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Catalyst damaging misfires total, cylinder 2"},
+    {"id": "SPORTAGE_CATDMG_MIS_TOT_3_7E0", "path": "Engine", "fmt": {"bix": 288, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Catalyst damaging misfires total, cylinder 3"},
+    {"id": "SPORTAGE_CATDMG_MIS_TOT_4_7E0", "path": "Engine", "fmt": {"bix": 304, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Catalyst damaging misfires total, cylinder 4"},
+    {"id": "SPORTAGE_CATDMG_MIS_TOT_5",     "path": "Engine", "fmt": {"bix": 320, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Catalyst damaging misfires total, cylinder 5"},
+    {"id": "SPORTAGE_CATDMG_MIS_TOT_6",     "path": "Engine", "fmt": {"bix": 336, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Catalyst damaging misfires total, cylinder 6"},
+    {"id": "SPORTAGE_EMIS_MIS_TOT_ALL",     "path": "Engine", "fmt": {"bix": 384, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Emission relevant misfires total all cylinders"},
+    {"id": "SPORTAGE_CATDMG_MIS_TOT_ALL",   "path": "Engine", "fmt": {"bix": 400, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Catalyst damaging misfires total all cylinders"},
+    {"id": "SPORTAGE_MIS_CURRENT_1",        "path": "Engine", "fmt": {"bix": 536, "len": 8,  "max": 255,                 "unit": "scalar" },               "name": "Misfires current, cylinder 1"},
+    {"id": "SPORTAGE_MIS_CURRENT_2",        "path": "Engine", "fmt": {"bix": 544, "len": 8,  "max": 255,                 "unit": "scalar" },               "name": "Misfires current, cylinder 2"},
+    {"id": "SPORTAGE_MIS_CURRENT_3",        "path": "Engine", "fmt": {"bix": 552, "len": 8,  "max": 255,                 "unit": "scalar" },               "name": "Misfires current, cylinder 3"},
+    {"id": "SPORTAGE_MIS_CURRENT_4",        "path": "Engine", "fmt": {"bix": 560, "len": 8,  "max": 255,                 "unit": "scalar" },               "name": "Misfires current, cylinder 4"},
+    {"id": "SPORTAGE_MIS_CURRENT_5",        "path": "Engine", "fmt": {"bix": 568, "len": 8,  "max": 255,                 "unit": "scalar" },               "name": "Misfires current, cylinder 5"},
+    {"id": "SPORTAGE_MIS_CURRENT_6",        "path": "Engine", "fmt": {"bix": 576, "len": 8,  "max": 255,                 "unit": "scalar" },               "name": "Misfires current, cylinder 6"},
+    {"id": "SPORTAGE_MIS_CURRENT_TOT",      "path": "Engine", "fmt": {"bix": 584, "len": 8,  "max": 255,                 "unit": "scalar" },               "name": "Misfires current total"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "0A"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_KNOCK_RETARD_CYL_1_ALT", "path": "Engine", "fmt": {"bix": 160, "len": 8, "max": 191.25, "div": 1.3333333333, "unit": "degrees" }, "name": "Knock retard cylinder 1, alternate"},
+    {"id": "SPORTAGE_KNOCK_RETARD_CYL_2_ALT", "path": "Engine", "fmt": {"bix": 168, "len": 8, "max": 191.25, "div": 1.3333333333, "unit": "degrees" }, "name": "Knock retard cylinder 2, alternate"},
+    {"id": "SPORTAGE_KNOCK_RETARD_CYL_3_ALT", "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 191.25, "div": 1.3333333333, "unit": "degrees" }, "name": "Knock retard cylinder 3, alternate"},
+    {"id": "SPORTAGE_KNOCK_RETARD_CYL_4_ALT", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 191.25, "div": 1.3333333333, "unit": "degrees" }, "name": "Knock retard cylinder 4, alternate"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "0B"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_DI_TIME_1", "path": "Engine", "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 500, "mul": 100, "div": 13107, "unit": "milliseconds" }, "name": "Direct injection time 1"},
+    {"id": "SPORTAGE_DI_TIME_2", "path": "Engine", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 500, "mul": 100, "div": 13107, "unit": "milliseconds" }, "name": "Direct injection time 2"},
+    {"id": "SPORTAGE_DI_TIME_3", "path": "Engine", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 500, "mul": 100, "div": 13107, "unit": "milliseconds" }, "name": "Direct injection time 3"},
+    {"id": "SPORTAGE_DI_TIME_4", "path": "Engine", "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 500, "mul": 100, "div": 13107, "unit": "milliseconds" }, "name": "Direct injection time 4"},
+    {"id": "SPORTAGE_DI_TIME_5", "path": "Engine", "fmt": {"bix": 96,  "len": 16, "blsb": true, "max": 500, "mul": 100, "div": 13107, "unit": "milliseconds" }, "name": "Direct injection time 5"},
+    {"id": "SPORTAGE_DI_TIME_6", "path": "Engine", "fmt": {"bix": 112, "len": 16, "blsb": true, "max": 500, "mul": 100, "div": 13107, "unit": "milliseconds" }, "name": "Direct injection time 6"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "0D"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_MIS_CNT_EMIS_1", "path": "Engine.Misfires", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission-relevant misfires, cylinder #1"},
+    {"id": "SPORTAGE_MIS_CNT_EMIS_2", "path": "Engine.Misfires", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission-relevant misfires, cylinder #2"},
+    {"id": "SPORTAGE_MIS_CNT_EMIS_3", "path": "Engine.Misfires", "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission-relevant misfires, cylinder #3"},
+    {"id": "SPORTAGE_MIS_CNT_EMIS_4", "path": "Engine.Misfires", "fmt": {"bix": 96,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission-relevant misfires, cylinder #4"},
+    {"id": "SPORTAGE_MIS_CNT_1",      "path": "Engine.Misfires", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires total counter, cylinder #1"},
+    {"id": "SPORTAGE_MIS_CNT_2",      "path": "Engine.Misfires", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires total counter, cylinder #2"},
+    {"id": "SPORTAGE_MIS_CNT_3",      "path": "Engine.Misfires", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires total counter, cylinder #3"},
+    {"id": "SPORTAGE_MIS_CNT_4",      "path": "Engine.Misfires", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires total counter, cylinder #4"},
+    {"id": "SPORTAGE_MIS_CNT_ALL",    "path": "Engine.Misfires", "fmt": {"bix": 432, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires total counter, all cylinders"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "0E"}, "freq": 30,
+  "signals": [
+    {"id": "SPORTAGE_ENG_RUN_TIME_TOT", "path": "Engine", "fmt": {"bix": 80, "len": 16, "blsb": true, "max": 393209.9999, "mul": 6, "unit": "minutes" }, "name": "Engine run time, total"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "13"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_TIMING_ADVANCE_1",    "path": "Engine", "fmt": {"bix": 32,  "len": 8, "max": 95.25, "min": -96, "mul": 0.75,           "sign": true, "unit": "degrees"    }, "name": "Timing advance #1"},
+    {"id": "SPORTAGE_TIMING_ADVANCE_2",    "path": "Engine", "fmt": {"bix": 40,  "len": 8, "max": 95.25, "min": -96, "mul": 0.75,           "sign": true, "unit": "degrees"    }, "name": "Timing advance #2"},
+    {"id": "SPORTAGE_TIMING_ADVANCE_3",    "path": "Engine", "fmt": {"bix": 48,  "len": 8, "max": 95.25, "min": -96, "mul": 0.75,           "sign": true, "unit": "degrees"    }, "name": "Timing advance #3"},
+    {"id": "SPORTAGE_TIMING_ADVANCE_4",    "path": "Engine", "fmt": {"bix": 56,  "len": 8, "max": 95.25, "min": -96, "mul": 0.75,           "sign": true, "unit": "degrees"    }, "name": "Timing advance #4"},
+    {"id": "SPORTAGE_BAROMETRIC_PRESSURE", "path": "Engine", "fmt": {"bix": 312, "len": 8, "max": 127.5,                          "div": 2,               "unit": "kilopascal" }, "name": "Barometric pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "14"}, "freq": 0.25,
+  "signals": [
+    {"id": "SPORTAGE_COMMANDED_THROTTLE_ACTUATOR",                 "path": "Engine",   "fmt": {"bix": 40,  "len": 8,  "max": 99.6,                 "mul": 0.390625,                                              "unit": "percent" },                "name": "Commanded throttle actuator"},
+    {"id": "SPORTAGE_THROTTLE_POSITION__1",                        "path": "Engine",   "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 799,    "min": -800,     "mul": 0.0244140625,           "sign": true,                   "unit": "percent" },                                             "name": "Throttle position #1"},
+    {"id": "SPORTAGE_THROTTLE_POSITION__2",                        "path": "Engine",   "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 799,    "min": -800,     "mul": 0.0244140625,           "sign": true,                   "unit": "percent" },                                             "name": "Throttle position #2"},
+    {"id": "SPORTAGE_THROTTLE_POSITION_SENSOR_VOLTAGE__2",         "path": "Battery",  "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 79,                      "mul": 0.0012207031,                                           "unit": "volts"   },                                             "name": "Throttle position sensor voltage #2"},
+    {"id": "SPORTAGE_COOLANT_FAN",                                 "path": "Engine",   "fmt": {"bix": 96,  "len": 8,  "max": 100,                                                                                "unit": "percent" },                "name": "Coolant"},
+    {"id": "SPORTAGE_RELATIVE_ACCELERATOR_PEDAL_POSITION_VOLTAGE", "path": "Battery",  "fmt": {"bix": 112, "len": 16, "blsb": true, "max": 6553.4, "min": -6553.6,                       "div": 5, "sign": true,                   "unit": "volts"   },                                             "name": "Relative accelerator pedal position voltage"},
+    {"id": "SPORTAGE_RELATIVE_ACCELERATOR_PEDAL_POSITION",         "path": "Movement", "fmt": {"bix": 128, "len": 8,  "max": 99.6,                 "mul": 0.390625,                                              "unit": "percent" },                "name": "Relative accelerator pedal position"},
+    {"id": "SPORTAGE_REQUESTED_TORQUE",                            "path": "Engine",   "fmt": {"bix": 176, "len": 16, "max": 100,                  "mul": 0.001526,                                              "unit": "percent" },                "name": "Requested torque"},
+    {"id": "SPORTAGE_THROTTLE_POSITION_SENSOR_VOLTAGE__1",         "path": "Battery",  "fmt": {"bix": 360, "len": 16, "blsb": true, "max": 79,                      "mul": 0.0012207031,                                           "unit": "volts"   },                                             "name": "Throttle position sensor voltage #1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "15"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_STFT_B1_IDLE", "path": "Fuel", "fmt": {"bix": 48, "len": 16, "blsb": true, "max": 100,   "mul": 0.046875,                  "sign": true, "unit": "percent" }, "name": "Short term fuel % trim, bank 1 idle"},
+    {"id": "SPORTAGE_STFT_B1",      "path": "Fuel", "fmt": {"bix": 80, "len": 16, "blsb": true, "max": 99.99, "mul": 0.0030517578, "add": -100,               "unit": "percent" }, "name": "Short term fuel % trim, bank 1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "16"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_KNOCK_RETARD_CYLINDER_1", "path": "Engine", "fmt": {"bix": 96,  "len": 8, "max": 191.25, "mul": 0.75, "unit": "degrees" }, "name": "Knock retard cylinder #1"},
+    {"id": "SPORTAGE_KNOCK_RETARD_CYLINDER_2", "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 191.25, "mul": 0.75, "unit": "degrees" }, "name": "Knock retard cylinder #2"},
+    {"id": "SPORTAGE_KNOCK_RETARD_CYLINDER_3", "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 191.25, "mul": 0.75, "unit": "degrees" }, "name": "Knock retard cylinder #3"},
+    {"id": "SPORTAGE_KNOCK_RETARD_CYLINDER_4", "path": "Engine", "fmt": {"bix": 120, "len": 8, "max": 191.25, "mul": 0.75, "unit": "degrees" }, "name": "Knock retard cylinder #4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "17"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_INTAKE_CAMSHAFT_POSITION_COMMANDED", "path": "Engine", "fmt": {"bix": 32, "len": 8,  "max": 63.5,  "min": -64,              "div": 2,             "sign": true,               "unit": "degrees" },                "name": "Intake camshaft position commanded"},
+    {"id": "SPORTAGE_INTAKE_CAMSHAFT_POSITION_ACTUAL",    "path": "Engine", "fmt": {"bix": 40, "len": 16, "blsb": true, "max": 255, "min": -256,           "div": 128,               "sign": true,                   "unit": "degrees" },                                            "name": "Intake camshaft position actual"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "19"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_TURBO_BOOST_P",           "path": "Engine",  "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 5433,                  "mul": 829.1, "div": 10000,                                   "unit": "unknown" },                                                "name": "Turbo boost pressure"},
+    {"id": "SPORTAGE_IGN_RETARD_KNOCK_1",      "path": "Engine",  "fmt": {"bix": 104, "len": 8,  "max": 0,     "min": -191.25, "mul": 0.75,                "add": -191.25,               "unit": "degrees" },                "name": "Ignition retard due to knock control 1"},
+    {"id": "SPORTAGE_IGN_RETARD_KNOCK_2",      "path": "Engine",  "fmt": {"bix": 112, "len": 8,  "max": 0,     "min": -191.25, "mul": 0.75,                "add": -191.25,               "unit": "degrees" },                "name": "Ignition retard due to knock control 2"},
+    {"id": "SPORTAGE_IGN_RETARD_KNOCK_3",      "path": "Engine",  "fmt": {"bix": 120, "len": 8,  "max": 0,     "min": -191.25, "mul": 0.75,                "add": -191.25,               "unit": "degrees" },                "name": "Ignition retard due to knock control 3"},
+    {"id": "SPORTAGE_IGN_RETARD_KNOCK_4",      "path": "Engine",  "fmt": {"bix": 128, "len": 8,  "max": 0,     "min": -191.25, "mul": 0.75,                "add": -191.25,               "unit": "degrees" },                "name": "Ignition retard due to knock control 4"},
+    {"id": "SPORTAGE_KNOCK_RETARD_CYL_1",      "path": "Engine",  "fmt": {"bix": 168, "len": 8,  "max": 0,     "min": -191.25, "mul": 0.75,                "add": -191.25,               "unit": "degrees" },                "name": "Knock retard cylinder 1"},
+    {"id": "SPORTAGE_KNOCK_RETARD_CYL_2",      "path": "Engine",  "fmt": {"bix": 176, "len": 8,  "max": 0,     "min": -191.25, "mul": 0.75,                "add": -191.25,               "unit": "degrees" },                "name": "Knock retard cylinder 2"},
+    {"id": "SPORTAGE_KNOCK_RETARD_CYL_3",      "path": "Engine",  "fmt": {"bix": 184, "len": 8,  "max": 0,     "min": -191.25, "mul": 0.75,                "add": -191.25,               "unit": "degrees" },                "name": "Knock retard cylinder 3"},
+    {"id": "SPORTAGE_KNOCK_RETARD_CYL_4",      "path": "Engine",  "fmt": {"bix": 192, "len": 8,  "max": 0,     "min": -191.25, "mul": 0.75,                "add": -191.25,               "unit": "degrees" },                "name": "Knock retard cylinder 4"},
+    {"id": "SPORTAGE_ADPT_LO_STOP",            "path": "Engine",  "fmt": {"bix": 384, "len": 16, "blsb": true, "max": 5.01,    "min": -5.01, "mul": 1.53,  "div": 10000,   "sign": true,                   "unit": "volts"   },                                                "name": "Adaptation value for lower stop of wastegate actuator"},
+    {"id": "SPORTAGE_WASTEGATE_POS_V",         "path": "Battery", "fmt": {"bix": 400, "len": 16, "blsb": true, "max": 5.01,    "min": -5.01, "mul": 1.53,  "div": 10000,   "sign": true,                   "unit": "volts"   },                                                "name": "Wastegate position voltage"},
+    {"id": "SPORTAGE_WASTEGATE_CTRL_PWM",      "path": "Engine",  "fmt": {"bix": 416, "len": 16, "blsb": true, "max": 100,     "min": -100,  "mul": 100,   "div": 32767,   "sign": true,                   "unit": "percent" },                                                "name": "Wastegate control PWM, wastegate actuator"},
+    {"id": "SPORTAGE_WASTEGATE_POS",           "path": "Engine",  "fmt": {"bix": 432, "len": 16, "blsb": true, "max": 200,     "min": -200,  "mul": 200,   "div": 32767,   "sign": true,                   "unit": "percent" },                                                "name": "Wastegate position, wastegate actuator"},
+    {"id": "SPORTAGE_WASTEGATE_POS_TGT",       "path": "Engine",  "fmt": {"bix": 448, "len": 16, "blsb": true, "max": 200,     "min": -200,  "mul": 200,   "div": 32767,   "sign": true,                   "unit": "percent" },                                                "name": "Wastegate position target, wastegate actuator"},
+    {"id": "SPORTAGE_MAX_ADPT_LO_MECH_P",      "path": "Engine",  "fmt": {"bix": 464, "len": 16, "blsb": true, "max": 10.02,                 "mul": 1.53,  "div": 10000,                                   "unit": "volts"   },                                                "name": "Max adaptation value for lower mechanical stop of the boost pressure actuator during engine stop"},
+    {"id": "SPORTAGE_MAX_ADPT_LO_MECH_STOP_P", "path": "Engine",  "fmt": {"bix": 480, "len": 16, "blsb": true, "max": 10.02,                 "mul": 1.53,  "div": 10000,                                   "unit": "volts"   },                                                "name": "Max adaptation value for lower mechanical stop of the boost pressure actuator during engine running"},
+    {"id": "SPORTAGE_MIN_ADPT_LO_MECH_P",      "path": "Engine",  "fmt": {"bix": 496, "len": 16, "blsb": true, "max": 10.02,                 "mul": 1.53,  "div": 10000,                                   "unit": "volts"   },                                                "name": "Min adaptation value for lower mechanical stop of the boost pressure actuator during engine stop"},
+    {"id": "SPORTAGE_MIN_ADPT_LO_MECH_STOP_P", "path": "Engine",  "fmt": {"bix": 512, "len": 16, "blsb": true, "max": 10.02,                 "mul": 1.53,  "div": 10000,                                   "unit": "volts"   },                                                "name": "Min adaptation value for lower mechanical stop of the boost pressure actuator during engine running"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "1D"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_MIS_1_7E0", "path": "Engine.Misfires", "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 1"},
+    {"id": "SPORTAGE_MIS_2_7E0", "path": "Engine.Misfires", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 2"},
+    {"id": "SPORTAGE_MIS_3_7E0", "path": "Engine.Misfires", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 3"},
+    {"id": "SPORTAGE_MIS_4_7E0", "path": "Engine.Misfires", "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 4"},
+    {"id": "SPORTAGE_MIS_CAT_1", "path": "Engine.Misfires", "fmt": {"bix": 160, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst cylinder 1"},
+    {"id": "SPORTAGE_MIS_CAT_2", "path": "Engine.Misfires", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst cylinder 2"},
+    {"id": "SPORTAGE_MIS_CAT_3", "path": "Engine.Misfires", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst cylinder 3"},
+    {"id": "SPORTAGE_MIS_CAT_4", "path": "Engine.Misfires", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires harmful for catalyst cylinder 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "20"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_CAM_INT_POS_ACT",            "path": "Engine", "fmt": {"bix": 72,  "len": 8, "max": 155,              "mul": 3,  "div": 8,  "add": 60,  "unit": "degrees" }, "name": "Camshaft intake position, actual"},
+    {"id": "SPORTAGE_CAM_EXH_POS_ACT",            "path": "Engine", "fmt": {"bix": 80,  "len": 8, "max": -40, "min": -135, "mul": -3, "div": 8,  "add": -40, "unit": "degrees" }, "name": "Camshaft exhaust position, actual"},
+    {"id": "SPORTAGE_CAM_INT_POS_CMD",            "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 155,              "mul": 3,  "div": 8,  "add": 60,  "unit": "degrees" }, "name": "Camshaft intake position, commanded"},
+    {"id": "SPORTAGE_CAM_EXH_POS_CMD",            "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": -40, "min": -135, "mul": -3, "div": 8,  "add": -40, "unit": "degrees" }, "name": "Camshaft exhaust position, commanded"},
+    {"id": "SPORTAGE_OIL_CTRL_VLV_IMPULSE",       "path": "Engine", "fmt": {"bix": 144, "len": 8, "max": 100,              "mul": 20, "div": 51,             "unit": "percent" }, "name": "Intake cam oil control valve duty"},
+    {"id": "SPORTAGE_OIL_CTRL_VLV_IMPULSE_WIDTH", "path": "Engine", "fmt": {"bix": 160, "len": 8, "max": 100,              "mul": 20, "div": 51,             "unit": "percent" }, "name": "Exhaust cam oil control valve duty"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "21"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_TURBO_BOOST_P_7E0", "path": "Engine",  "fmt": {"bix": 56,  "len": 16, "max": 543,  "mul": 0.008291,    "unit": "scalar"  }, "name": "Turbo boost pressure"},
+    {"id": "SPORTAGE_WASTE_GATE_V",      "path": "Battery", "fmt": {"bix": 392, "len": 16, "max": 9.99, "mul": 0.000152588, "unit": "volts"   }, "name": "Waste gate voltage"},
+    {"id": "SPORTAGE_WASTE_GATE_DUTY",   "path": "Engine",  "fmt": {"bix": 408, "len": 16, "max": 199,  "mul": 0.00305176,  "unit": "percent" }, "name": "Waste gate duty"},
+    {"id": "SPORTAGE_WASTE_GATE_POS",    "path": "Engine",  "fmt": {"bix": 424, "len": 16, "max": 399,  "mul": 0.00610352,  "unit": "percent" }, "name": "Waste gate position"},
+    {"id": "SPORTAGE_WASTE_GATE_TGT",    "path": "Engine",  "fmt": {"bix": 440, "len": 16, "max": 399,  "mul": 0.00610352,  "unit": "percent" }, "name": "Waste gate target"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "23"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_FUEL_P_7E0",         "path": "Fuel",   "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 347774.5845,                      "mul": 53067, "div": 10000,               "unit": "unknown"      }, "name": "Fuel pressure"},
+    {"id": "SPORTAGE_FUEL_P_SET_POINT",   "path": "Fuel",   "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 347774.5845,                      "mul": 53067, "div": 10000,               "unit": "unknown"      }, "name": "Fuel pressure set point"},
+    {"id": "SPORTAGE_FUEL_P_DEV",         "path": "Fuel",   "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 173884.6389, "min": -173889.9456, "mul": 53067, "div": 10000, "sign": true, "unit": "unknown"      }, "name": "Fuel pressure deviation"},
+    {"id": "SPORTAGE_CYL_1_INJ_TIME_2ND", "path": "Engine", "fmt": {"bix": 200, "len": 16, "blsb": true, "max": 262.14,                           "mul": 4,     "div": 1000,                "unit": "milliseconds" }, "name": "Cylinder 1 injection time, 2nd pulse"},
+    {"id": "SPORTAGE_CYL_2_INJ_TIME_2ND", "path": "Engine", "fmt": {"bix": 216, "len": 16, "blsb": true, "max": 262.14,                           "mul": 4,     "div": 1000,                "unit": "milliseconds" }, "name": "Cylinder 2 injection time, 2nd pulse"},
+    {"id": "SPORTAGE_CYL_3_INJ_TIME_2ND", "path": "Engine", "fmt": {"bix": 232, "len": 16, "blsb": true, "max": 262.14,                           "mul": 4,     "div": 1000,                "unit": "milliseconds" }, "name": "Cylinder 3 injection time, 2nd pulse"},
+    {"id": "SPORTAGE_CYL_4_INJ_TIME_2ND", "path": "Engine", "fmt": {"bix": 248, "len": 16, "blsb": true, "max": 262.14,                           "mul": 4,     "div": 1000,                "unit": "milliseconds" }, "name": "Cylinder 4 injection time, 2nd pulse"},
+    {"id": "SPORTAGE_CYL_1_INJ_TIME_1ST", "path": "Engine", "fmt": {"bix": 264, "len": 16, "blsb": true, "max": 262.14,                           "mul": 4,     "div": 1000,                "unit": "milliseconds" }, "name": "Cylinder 1 injection time, 1st pulse"},
+    {"id": "SPORTAGE_CYL_2_INJ_TIME_1ST", "path": "Engine", "fmt": {"bix": 280, "len": 16, "blsb": true, "max": 262.14,                           "mul": 4,     "div": 1000,                "unit": "milliseconds" }, "name": "Cylinder 2 injection time, 1st pulse"},
+    {"id": "SPORTAGE_CYL_3_INJ_TIME_1ST", "path": "Engine", "fmt": {"bix": 296, "len": 16, "blsb": true, "max": 262.14,                           "mul": 4,     "div": 1000,                "unit": "milliseconds" }, "name": "Cylinder 3 injection time, 1st pulse"},
+    {"id": "SPORTAGE_CYL_4_INJ_TIME_1ST", "path": "Engine", "fmt": {"bix": 312, "len": 16, "blsb": true, "max": 262.14,                           "mul": 4,     "div": 1000,                "unit": "milliseconds" }, "name": "Cylinder 4 injection time, 1st pulse"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "27"}, "freq": 5,
+  "signals": [
+    {"id": "SPORTAGE_BAT_CURRENT_BATSENS_7E0_7E0_27", "path": "Battery", "fmt": {"bix": 48,  "len": 16, "max": 3276,  "min": -3276, "div": 10,               "sign": true, "unit": "amps"    }, "name": "Battery current, battery sensor"},
+    {"id": "SPORTAGE_BAT_V_BATSENS_7E0_7E0_27",       "path": "Battery", "fmt": {"bix": 64,  "len": 16, "max": 71.53,               "div": 1000, "add": 6,                 "unit": "volts"   }, "name": "Battery voltage, battery sensor"},
+    {"id": "SPORTAGE_BAT_T_BATSENS_7E0_7E0_27",       "path": "Battery", "fmt": {"bix": 80,  "len": 16, "max": 32727, "min": -40,   "div": 2,    "add": -40,               "unit": "celsius" }, "name": "Battery temperature, battery sensor"},
+    {"id": "SPORTAGE_BAT_ST_CHG_BATSENS_7E0_7E0_27",  "path": "Battery", "fmt": {"bix": 96,  "len": 8,  "max": 255,                                                        "unit": "percent" }, "name": "Battery state of charge, battery sensor"},
+    {"id": "SPORTAGE_BAT_ST_HEALTH_BATSENS",          "path": "Battery", "fmt": {"bix": 104, "len": 8,  "max": 255,                                                        "unit": "percent" }, "name": "Battery state of health, battery sensor"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "A0"}, "freq": 5,
+  "signals": [
+    {"id": "SPORTAGE_TURBINE_SPD",  "path": "Movement", "fmt": {"bix": 64,  "len": 16, "max": 16383.75,              "div": 4,              "unit": "rpm"     }, "name": "Turbine speed"},
+    {"id": "SPORTAGE_OUTPUT_SPD",   "path": "Movement", "fmt": {"bix": 80,  "len": 16, "max": 16383.75,              "div": 4,              "unit": "rpm"     }, "name": "Output speed"},
+    {"id": "SPORTAGE_TQ_CONV_SLIP", "path": "Engine",   "fmt": {"bix": 104, "len": 16, "max": 15871.75, "min": -512, "div": 4, "add": -512, "unit": "rpm"     }, "name": "Torque converter slip"},
+    {"id": "SPORTAGE_ATF_T_7E0",    "path": "Engine",   "fmt": {"bix": 264, "len": 8,  "max": 215,      "min": -40,            "add": -40,  "unit": "celsius" }, "name": "Transmission fluid temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "B3"}, "freq": 30,
+  "signals": [
+    {"id": "SPORTAGE_VEH_TOT_DIST", "path": "Trips", "fmt": {"bix": 248, "len": 40, "max": 1099511627775, "unit": "kilometers" }, "name": "Vehicle total distance"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E001"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2020], "from": 2027 },
   "signals": [
@@ -100,11 +503,46 @@
     {"id": "SPORTAGE_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection duration cylinder 3"},
     {"id": "SPORTAGE_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection duration cylinder 4"}
   ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E003"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_BOOST_P_UP",     "path": "Engine", "fmt": {"bix": 280, "len": 16, "blsb": true, "max": 5111, "mul": 39, "div": 500, "unit": "unknown" }, "name": "Boost pressure upstream"},
+    {"id": "SPORTAGE_BOOST_P_UP_DES", "path": "Engine", "fmt": {"bix": 312, "len": 16, "blsb": true, "max": 5111, "mul": 39, "div": 500, "unit": "unknown" }, "name": "Boost pressure upstream, desired"}
+  ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E004"}, "freq": 5, "dbgfilter": { "to": 2018, "years": [2020], "from": 2027 },
   "signals": [
     {"id": "SPORTAGE_22E004",  "path": "Engine.Unknown", "fmt": {            "len": 8, "max": 100,               "unit": "scalar"  }, "name": "Unknown"},
     {"id": "SPORTAGE_AUX_SOC", "path": "Battery",        "fmt": {"bix": 320, "len": 8, "max": 100, "nullmin": 0, "unit": "percent" }, "name": "Aux battery state of charge", "suggestedMetric": "stateOfCharge"},
     {"id": "SPORTAGE_AUX_SOH", "path": "Battery",        "fmt": {"bix": 328, "len": 8, "max": 100, "nullmin": 0, "unit": "percent" }, "name": "Aux battery state of health", "suggestedMetric": "stateOfHealth"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E005"}, "freq": 2,
+  "signals": [
+    {"id": "SPORTAGE_GDI_IT_A1", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 1"},
+    {"id": "SPORTAGE_GDI_IT_A2", "path": "Engine", "fmt": {"bix": 240, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 2"},
+    {"id": "SPORTAGE_GDI_IT_A3", "path": "Engine", "fmt": {"bix": 256, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 3"},
+    {"id": "SPORTAGE_GDI_IT_A4", "path": "Engine", "fmt": {"bix": 272, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 4"},
+    {"id": "SPORTAGE_GDI_IT_B1", "path": "Engine", "fmt": {"bix": 352, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 1"},
+    {"id": "SPORTAGE_GDI_IT_B2", "path": "Engine", "fmt": {"bix": 368, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 2"},
+    {"id": "SPORTAGE_GDI_IT_B3", "path": "Engine", "fmt": {"bix": 384, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 3"},
+    {"id": "SPORTAGE_GDI_IT_B4", "path": "Engine", "fmt": {"bix": 400, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E007"}, "freq": 30,
+  "signals": [
+    {"id": "SPORTAGE_FLI_INPUT",         "path": "Fuel",   "fmt": {"bix": 112, "len": 16, "blsb": true, "max": 6553,           "div": 10,    "unit": "liters" }, "name": "Fuel level input"},
+    {"id": "SPORTAGE_INJ_CORR_FACTOR_1", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 2,    "mul": 2, "div": 65535, "unit": "scalar" }, "name": "Injector correction factor 1"},
+    {"id": "SPORTAGE_INJ_CORR_FACTOR_2", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 2,    "mul": 2, "div": 65535, "unit": "scalar" }, "name": "Injector correction factor 2"},
+    {"id": "SPORTAGE_INJ_CORR_FACTOR_3", "path": "Engine", "fmt": {"bix": 240, "len": 16, "blsb": true, "max": 2,    "mul": 2, "div": 65535, "unit": "scalar" }, "name": "Injector correction factor 3"},
+    {"id": "SPORTAGE_INJ_CORR_FACTOR_4", "path": "Engine", "fmt": {"bix": 256, "len": 16, "blsb": true, "max": 2,    "mul": 2, "div": 65535, "unit": "scalar" }, "name": "Injector correction factor 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E009"}, "freq": 30,
+  "signals": [
+    {"id": "SPORTAGE_GPF_INLET_T_SENS_RAW_V", "path": "Battery", "fmt": {"bix": 256, "len": 16, "blsb": true, "max": 319,     "mul": 21333, "div": 4369000,                  "unit": "volts"      },                                                  "name": "Gasoline particulate filter inlet temperature sensor raw voltage"},
+    {"id": "SPORTAGE_GPF_OUTLET_T_SENS_V",    "path": "Battery", "fmt": {"bix": 272, "len": 16, "blsb": true, "max": 319,     "mul": 21333, "div": 4369000,                  "unit": "volts"      },                                                  "name": "Gasoline particulate filter outlet temperature sensor raw voltage"},
+    {"id": "SPORTAGE_EXH_GAS_T_BEFORE_GPF_1", "path": "Engine",  "fmt": {"bix": 288, "len": 16, "blsb": true, "max": 6291,    "mul": 12,    "div": 125,                      "unit": "celsius"    },                                                  "name": "Exhaust gas temperature before gasoline particulate filter sensor 1"},
+    {"id": "SPORTAGE_EXH_GAS_T_BEFORE_GPF_2", "path": "Engine",  "fmt": {"bix": 304, "len": 16, "blsb": true, "max": 6291,    "mul": 12,    "div": 125,                      "unit": "celsius"    },                                                  "name": "Exhaust gas temperature before gasoline particulate filter sensor 2"},
+    {"id": "SPORTAGE_GPF_CHG_ST",             "path": "Battery", "fmt": {"bix": 320, "len": 8,  "max": 255,                                                 "unit": "scalar" },                   "name": "Gasoline particulate filter charge state"},
+    {"id": "SPORTAGE_ODO_LAST_GPF_REGEN",     "path": "Trips",   "fmt": {"bix": 328, "len": 32, "blsb": true, "max": 4294967,               "div": 1000,                     "unit": "kilometers" },                                                  "name": "Odometer at last gasoline particulate filter regeneration"},
+    {"id": "SPORTAGE_DIST_SINCE_GPF_REGEN",   "path": "Trips",   "fmt": {"bix": 360, "len": 32, "blsb": true, "max": 4294967,               "div": 1000,                     "unit": "kilometers" },                                                  "name": "Distance since last gasoline particulate filter regeneration"},
+    {"id": "SPORTAGE_COVERAGE_DRIVEN",        "path": "Engine",  "fmt": {"bix": 392, "len": 32, "blsb": true, "max": 4294967,               "div": 1000,                     "unit": "kilometers" },                                                  "name": "Coverage driven length"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E00A"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2020], "from": 2027 },
   "signals": [
@@ -117,6 +555,63 @@
     {"id": "SPORTAGE_KNOCK_LEARN_3",  "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn cylinder 3"},
     {"id": "SPORTAGE_KNOCK_LEARN_4",  "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn cylinder 4"}
   ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E00D"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_MISFIRES_C1_CUR",                                "path": "Engine", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 1"},
+    {"id": "SPORTAGE_MISFIRES_C2_CUR",                                "path": "Engine", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 2"},
+    {"id": "SPORTAGE_MISFIRES_C3_CUR",                                "path": "Engine", "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 3"},
+    {"id": "SPORTAGE_MISFIRES_C4_CUR",                                "path": "Engine", "fmt": {"bix": 96,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 4"},
+    {"id": "SPORTAGE_EMISSION_RELEVANT_MISFIRES_TOTAL_C1",            "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 1"},
+    {"id": "SPORTAGE_EMISSION_RELEVANT_MISFIRES_TOTAL_C2",            "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 2"},
+    {"id": "SPORTAGE_EMISSION_RELEVANT_MISFIRES_TOTAL_C3",            "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 3"},
+    {"id": "SPORTAGE_EMISSION_RELEVANT_MISFIRES_TOTAL_C4",            "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 4"},
+    {"id": "SPORTAGE_CATALYST_DAMAGING_MISFIRES_TOTAL_C1",            "path": "Engine", "fmt": {"bix": 304, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 1"},
+    {"id": "SPORTAGE_CATALYST_DAMAGING_MISFIRES_TOTAL_C2",            "path": "Engine", "fmt": {"bix": 320, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 2"},
+    {"id": "SPORTAGE_CATALYST_DAMAGING_MISFIRES_TOTAL_C3",            "path": "Engine", "fmt": {"bix": 336, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 3"},
+    {"id": "SPORTAGE_CATALYST_DAMAGING_MISFIRES_TOTAL_C4",            "path": "Engine", "fmt": {"bix": 352, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 4"},
+    {"id": "SPORTAGE_EMISSION_RELEVANT_MISFIRES_TOTAL_ALL_CYLINDERS", "path": "Engine", "fmt": {"bix": 432, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total all cylinders"},
+    {"id": "SPORTAGE_CATALYST_DAMAGING_MISFIRES_TOTAL_ALL_CYLINDERS", "path": "Engine", "fmt": {"bix": 448, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total all cylinders"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E010"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_MAF_RATE", "path": "Engine", "fmt": {"bix": 208, "len": 8, "blsb": true, "max": 10.8, "mul": 0.04239, "unit": "unknown" }, "name": "Mass air flow rate"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E011"}, "freq": 5,
+  "signals": [
+    {"id": "SPORTAGE_CALC_OIL_T", "path": "Engine", "fmt": {"bix": 304, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Calculated oil temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E013"}, "freq": 0.25,
+  "signals": [
+    {"id": "SPORTAGE_BRAKE_BOOSTER_P", "path": "Control", "fmt": {"bix": 48, "len": 16, "blsb": true, "max": 1310, "min": -1310, "div": 25, "sign": true, "unit": "unknown" }, "name": "Brake booster pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E014"}, "freq": 5,
+  "signals": [
+    {"id": "SPORTAGE_CLT_FAN_PWM", "path": "Engine", "fmt": {"bix": 88,  "len": 8, "max": 100,  "mul": 100,  "div": 255, "unit": "percent"    }, "name": "Coolant fan PWM"},
+    {"id": "SPORTAGE_AC_P",        "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 3520, "mul": 3520, "div": 255, "unit": "kilopascal" }, "name": "Air conditioning pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E019"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_KNOCK_RETARD_1_E019", "path": "Engine", "fmt": {"bix": 168, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 1, alternate"},
+    {"id": "SPORTAGE_KNOCK_RETARD_2_E019", "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 2, alternate"},
+    {"id": "SPORTAGE_KNOCK_RETARD_3_E019", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 3, alternate"},
+    {"id": "SPORTAGE_KNOCK_RETARD_4_E019", "path": "Engine", "fmt": {"bix": 192, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 4, alternate"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E01D"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_EMIS_MIS_TOT_1",   "path": "Engine", "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 1"},
+    {"id": "SPORTAGE_EMIS_MIS_TOT_2",   "path": "Engine", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 2"},
+    {"id": "SPORTAGE_EMIS_MIS_TOT_3",   "path": "Engine", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 3"},
+    {"id": "SPORTAGE_EMIS_MIS_TOT_4",   "path": "Engine", "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 4"},
+    {"id": "SPORTAGE_CATDMG_MIS_TOT_1", "path": "Engine", "fmt": {"bix": 160, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 1"},
+    {"id": "SPORTAGE_CATDMG_MIS_TOT_2", "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 2"},
+    {"id": "SPORTAGE_CATDMG_MIS_TOT_3", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 3"},
+    {"id": "SPORTAGE_CATDMG_MIS_TOT_4", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E020"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_INT_CAM_POS", "path": "Engine", "fmt": {"bix": 72, "len": 16, "blsb": true, "max": 255, "min": -256, "div": 128, "sign": true, "unit": "degrees" }, "name": "Intake camshaft position"},
+    {"id": "SPORTAGE_EXH_CAM_POS", "path": "Engine", "fmt": {"bix": 88, "len": 16, "blsb": true, "max": 255, "min": -256, "div": 128, "sign": true, "unit": "degrees" }, "name": "Exhaust camshaft position"}
+  ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E021"}, "freq": 0.1, "dbgfilter": { "to": 2018, "years": [2020], "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_TURBO_BOOST", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 66.81,  "min": -10,              "div": 831.55690902, "add": -12,                                "unit": "psi"     }, "name": "Turbo boost pressure (gauge)"},
@@ -125,9 +620,103 @@
     {"id": "SPORTAGE_WG_POSITION", "path": "Engine", "fmt": {"bix": 424, "len": 16, "max": 199.99, "min": -200, "mul": 400, "div": 65535,                    "sign": true, "nullmin": -200, "unit": "percent" }, "name": "Waste gate position"},
     {"id": "SPORTAGE_WG_SETPOINT", "path": "Engine", "fmt": {"bix": 440, "len": 16, "max": 199.99, "min": -200, "mul": 400, "div": 65535,                    "sign": true, "nullmin": -200, "unit": "percent" }, "name": "Waste gate setpoint"}
   ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E023"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_FUEL_P",            "path": "Fuel",   "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 399.7635, "mul": 61, "div": 10000, "unit": "unknown"      }, "name": "Fuel pressure"},
+    {"id": "SPORTAGE_FUEL_P_TGT",        "path": "Fuel",   "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 399.7635, "mul": 61, "div": 10000, "unit": "unknown"      }, "name": "Fuel pressure target"},
+    {"id": "SPORTAGE_DI_TIME_2ND_CYL_1", "path": "Engine", "fmt": {"bix": 200, "len": 16, "blsb": true, "max": 262.14,   "mul": 4,  "div": 1000,  "unit": "milliseconds" }, "name": "Direct injection time 2nd pulse, cylinder 1"},
+    {"id": "SPORTAGE_DI_TIME_2ND_CYL_2", "path": "Engine", "fmt": {"bix": 216, "len": 16, "blsb": true, "max": 262.14,   "mul": 4,  "div": 1000,  "unit": "milliseconds" }, "name": "Direct injection time 2nd pulse, cylinder 2"},
+    {"id": "SPORTAGE_DI_TIME_2ND_CYL_3", "path": "Engine", "fmt": {"bix": 232, "len": 16, "blsb": true, "max": 262.14,   "mul": 4,  "div": 1000,  "unit": "milliseconds" }, "name": "Direct injection time 2nd pulse, cylinder 3"},
+    {"id": "SPORTAGE_DI_TIME_2ND_CYL_4", "path": "Engine", "fmt": {"bix": 248, "len": 16, "blsb": true, "max": 262.14,   "mul": 4,  "div": 1000,  "unit": "milliseconds" }, "name": "Direct injection time 2nd pulse, cylinder 4"},
+    {"id": "SPORTAGE_DI_TIME_1ST_CYL_1", "path": "Engine", "fmt": {"bix": 264, "len": 16, "blsb": true, "max": 262.14,   "mul": 4,  "div": 1000,  "unit": "milliseconds" }, "name": "Direct injection time 1st pulse, cylinder 1"},
+    {"id": "SPORTAGE_DI_TIME_1ST_CYL_2", "path": "Engine", "fmt": {"bix": 280, "len": 16, "blsb": true, "max": 262.14,   "mul": 4,  "div": 1000,  "unit": "milliseconds" }, "name": "Direct injection time 1st pulse, cylinder 2"},
+    {"id": "SPORTAGE_DI_TIME_1ST_CYL_3", "path": "Engine", "fmt": {"bix": 296, "len": 16, "blsb": true, "max": 262.14,   "mul": 4,  "div": 1000,  "unit": "milliseconds" }, "name": "Direct injection time 1st pulse, cylinder 3"},
+    {"id": "SPORTAGE_DI_TIME_1ST_CYL_4", "path": "Engine", "fmt": {"bix": 312, "len": 16, "blsb": true, "max": 262.14,   "mul": 4,  "div": 1000,  "unit": "milliseconds" }, "name": "Direct injection time 1st pulse, cylinder 4"},
+    {"id": "SPORTAGE_CYL5_INJ_TIME_2ND", "path": "Engine", "fmt": {"bix": 360, "len": 16, "blsb": true, "max": 262.14,   "mul": 4,  "div": 1000,  "unit": "milliseconds" }, "name": "Direct injection time 2nd pulse, cylinder 5"},
+    {"id": "SPORTAGE_CYL6_INJ_TIME_2ND", "path": "Engine", "fmt": {"bix": 376, "len": 16, "blsb": true, "max": 262.14,   "mul": 4,  "div": 1000,  "unit": "milliseconds" }, "name": "Direct injection time 2nd pulse, cylinder 6"},
+    {"id": "SPORTAGE_CYL5_INJ_TIME_1ST", "path": "Engine", "fmt": {"bix": 392, "len": 16, "blsb": true, "max": 262.14,   "mul": 4,  "div": 1000,  "unit": "milliseconds" }, "name": "Direct injection time 1st pulse, cylinder 5"},
+    {"id": "SPORTAGE_CYL6_INJ_TIME_1ST", "path": "Engine", "fmt": {"bix": 408, "len": 16, "blsb": true, "max": 262.14,   "mul": 4,  "div": 1000,  "unit": "milliseconds" }, "name": "Direct injection time 1st pulse, cylinder 6"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E0F1"}, "freq": 5,
+  "signals": [
+    {"id": "SPORTAGE_EOT_7E0_2", "path": "Engine", "fmt": {"bix": 144, "len": 8, "max": 143, "min": -48, "mul": 3, "div": 4, "add": -48, "unit": "celsius" }, "name": "Engine oil temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E0F2"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_DPF_SUCCESSFUL_REGEN", "path": "Engine", "fmt": {"bix": 432, "len": 16, "max": 65535,                              "unit": "scalar"  }, "name": "Diesel particulate filter successful regeneration count"},
+    {"id": "SPORTAGE_BOOST_P",              "path": "Engine", "fmt": {"bix": 496, "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "unknown" }, "name": "Boost pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED01"}, "freq": 5,
+  "signals": [
+    {"id": "SPORTAGE_AC_RELAY",                 "path": "Engine",   "fmt": {"bix": 101, "len": 1, "max": 1,                                                           "unit": "offon"        }, "name": "Air conditioning relay"},
+    {"id": "SPORTAGE_ENG_CLT_FAN_LOW_SPD",      "path": "Movement", "fmt": {"bix": 176, "len": 8, "max": 100,                  "mul": 100,    "div": 255,             "unit": "percent"      }, "name": "Engine coolant fan low speed"},
+    {"id": "SPORTAGE_ENG_CLT_FAN_HIGH_SPD_OFF", "path": "Movement", "fmt": {"bix": 184, "len": 8, "max": 255,                                                         "unit": "scalar"       }, "name": "Engine coolant fan high speed, on/off"},
+    {"id": "SPORTAGE_FUEL_T",                   "path": "Fuel",     "fmt": {"bix": 216, "len": 8, "max": 149.9965, "min": -50, "mul": 0.7843,             "add": -50, "unit": "celsius"      }, "name": "Fuel temperature"},
+    {"id": "SPORTAGE_ENG_ACT_TQ",               "path": "Engine",   "fmt": {"bix": 240, "len": 8, "max": 599.9895,             "mul": 2.3529,                         "unit": "newtonMeters" }, "name": "Engine, actual torque"}
+  ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "ED02"}, "freq": 1, "dbgfilter": { "to": 2021, "years": [2023], "from": 2025 },
   "signals": [
     {"id": "SPORTAGE_EOT_V2", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 215, "min": -40, "add": -4, "unit": "celsius" }, "name": "Engine oil temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED03"}, "freq": 30,
+  "signals": [
+    {"id": "SPORTAGE_EXH_T_1_UP_OXICAT",    "path": "Engine", "fmt": {"bix": 296, "len": 8,  "max": 1299.999, "mul": 4.7098,              "add": 99, "unit": "celsius"    }, "name": "Exhaust temperature 1, upstream of oxidation catalyst"},
+    {"id": "SPORTAGE_EXH_T_2_UP_DPF",       "path": "Engine", "fmt": {"bix": 304, "len": 8,  "max": 1299.999, "mul": 4.7098,              "add": 99, "unit": "celsius"    }, "name": "Exhaust temperature 2, upstream of DPF"},
+    {"id": "SPORTAGE_DPF_ODO_LAST_REGEN",   "path": "Trips",  "fmt": {"bix": 328, "len": 32, "max": 4294967,                 "div": 1000,            "unit": "kilometers" }, "name": "Diesel particulate filter odometer at last regeneration"},
+    {"id": "SPORTAGE_DPF_DIST_SINCE_REGEN", "path": "Trips",  "fmt": {"bix": 360, "len": 32, "max": 4294967,                 "div": 1000,            "unit": "kilometers" }, "name": "Diesel particulate filter distance since last regeneration"},
+    {"id": "SPORTAGE_ODO_7E0",              "path": "Trips",  "fmt": {"bix": 392, "len": 32, "max": 4294967,                 "div": 1000,            "unit": "kilometers" }, "name": "Odometer"},
+    {"id": "SPORTAGE_DPF_REGEN_ST",         "path": "Engine", "fmt": {"bix": 431, "len": 1,  "max": 1,                                               "unit": "offon"      }, "name": "Diesel particulate filter regeneration state"},
+    {"id": "SPORTAGE_FUEL_CONS_SINCE_DPF",  "path": "Fuel",   "fmt": {"bix": 432, "len": 8,  "max": 319,      "mul": 1.2549,                         "unit": "liters"     }, "name": "Fuel consumption since last DPF regeneration"},
+    {"id": "SPORTAGE_DPF_REGEN_CNT",        "path": "Engine", "fmt": {"bix": 440, "len": 8,  "max": 255,                                             "unit": "scalar"     }, "name": "Diesel particulate filter regeneration count"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED04"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_ACT_ACCEL", "path": "Movement", "fmt": {"bix": 240, "len": 8, "max": 64, "mul": 64, "div": 255, "unit": "metersPerSecondSquared" }, "name": "Actual acceleration"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED05"}, "freq": 0.25,
+  "signals": [
+    {"id": "SPORTAGE_GEAR_7E0", "path": "Transmission", "fmt": {"bix": 176, "len": 8, "max": 255,                         "unit": "scalar"       }, "name": "Gear"},
+    {"id": "SPORTAGE_CRANK_TQ", "path": "Engine",       "fmt": {"bix": 240, "len": 8, "max": 600, "mul": 600, "div": 255, "unit": "newtonMeters" }, "name": "Crankshaft torque"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED06"}, "freq": 0.25,
+  "signals": [
+    {"id": "SPORTAGE_REQ_TQ_LIM_TRACTION", "path": "Engine", "fmt": {"bix": 120, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Requested torque limitation from traction control"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED07"}, "freq": 5,
+  "signals": [
+    {"id": "SPORTAGE_EOT_7E0", "path": "Engine", "fmt": {"bix": 152, "len": 8, "max": 149.9965, "min": -50, "mul": 0.7843, "add": -50, "unit": "celsius" }, "name": "Engine oil temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED08"}, "freq": 5,
+  "signals": [
+    {"id": "SPORTAGE_12V_BAT_CURRENT",     "path": "Battery", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 119,   "min": -119, "mul": 1831, "div": 500000,           "sign": true,                   "unit": "amps"  },                                       "name": "12V battery current"},
+    {"id": "SPORTAGE_12V_BAT_V",           "path": "Battery", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 71.53,                           "div": 1000,   "add": 6,                                 "unit": "volts" },                                       "name": "12V battery voltage"},
+    {"id": "SPORTAGE_12V_BAT_T",           "path": "Battery", "fmt": {"bix": 80,  "len": 8,  "max": 143,   "min": -48,   "mul": 3,    "div": 4,    "add": -48,                            "unit": "celsius" },              "name": "12V battery temperature"},
+    {"id": "SPORTAGE_12V_BAT_ST_CHG",      "path": "Battery", "fmt": {"bix": 88,  "len": 8,  "max": 255,                                                                                  "unit": "percent" },              "name": "12V battery state of charge"},
+    {"id": "SPORTAGE_12V_BAT_ST_HEALTH",   "path": "Battery", "fmt": {"bix": 96,  "len": 8,  "max": 255,                                                                                  "unit": "percent" },              "name": "12V battery state of health"},
+    {"id": "SPORTAGE_12V_BAT_ST_FUNCTION", "path": "Battery", "fmt": {"bix": 104, "len": 8,  "max": 12.75,                            "div": 20,                                          "unit": "volts"   },              "name": "12V battery state of function"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED13"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_OIL_PMP_PWM", "path": "Engine", "fmt": {"bix": 71, "len": 1, "max": 0.392, "mul": 20, "div": 51, "unit": "offon" }, "name": "Oil pump PWM"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "ED27"}, "freq": 5,
+  "signals": [
+    {"id": "SPORTAGE_BAT_CURRENT_BATSENS",  "path": "Battery", "fmt": {"bix": 48,  "len": 8,  "max": 25.5,                                  "div": 10,                              "unit": "amps"        }, "name": "Battery current, battery sensor"},
+    {"id": "SPORTAGE_BAT_V_BATSENS",        "path": "Battery", "fmt": {"bix": 56,  "len": 8,  "max": 18.75,                   "mul": 12.75, "div": 255,   "add": 6,                 "unit": "volts"       }, "name": "Battery voltage, battery sensor"},
+    {"id": "SPORTAGE_BAT_T_BATSENS",        "path": "Battery", "fmt": {"bix": 64,  "len": 8,  "max": 87.5,    "min": -40,                   "div": 2,     "add": -40,               "unit": "celsius"     }, "name": "Battery temperature, battery sensor"},
+    {"id": "SPORTAGE_BAT_ST_CHG_BATSENS",   "path": "Battery", "fmt": {"bix": 72,  "len": 8,  "max": 100,                                                                           "unit": "percent"     }, "name": "Battery state of charge, battery sensor"},
+    {"id": "SPORTAGE_BAT_ST_HEALTH",        "path": "Battery", "fmt": {"bix": 80,  "len": 8,  "max": 100,                                                                           "unit": "percent"     }, "name": "Battery state of health, battery sensor"},
+    {"id": "SPORTAGE_BAT_ST_FUNCTION",      "path": "Battery", "fmt": {"bix": 88,  "len": 8,  "max": 12.75,                   "mul": 12.75, "div": 255,                             "unit": "volts"       }, "name": "Battery state of function, battery sensor"},
+    {"id": "SPORTAGE_BAT_CAP_BATSENS",      "path": "Battery", "fmt": {"bix": 160, "len": 8,  "max": 255,                                                                           "unit": "ampereHours" }, "name": "Battery capacity, battery sensor"},
+    {"id": "SPORTAGE_RESPONSE_ERROR",       "path": "Battery", "fmt": {"bix": 178, "len": 1,  "max": 1,                                                                             "unit": "offon"       }, "name": "Response error from battery sensor flag, battery sensor"},
+    {"id": "SPORTAGE_BATSENS_INVALID_COND", "path": "Battery", "fmt": {"bix": 179, "len": 1,  "max": 1,                                                                             "unit": "offon"       }, "name": "Battery sensor invalid condition flag, battery sensor"},
+    {"id": "SPORTAGE_BAT_QUIESCENT",        "path": "Battery", "fmt": {"bix": 180, "len": 1,  "max": 1,                                                                             "unit": "offon"       }, "name": "Battery quiescent current flag, battery sensor"},
+    {"id": "SPORTAGE_BAT_CRANK_ENG_FLAG",   "path": "Battery", "fmt": {"bix": 181, "len": 1,  "max": 1,                                                                             "unit": "offon"       }, "name": "Battery is in use to crank the engine flag, battery sensor"},
+    {"id": "SPORTAGE_BAT_HEALTH_AGING",     "path": "Battery", "fmt": {"bix": 182, "len": 1,  "max": 1,                                                                             "unit": "offon"       }, "name": "Battery health aging flag, battery sensor"},
+    {"id": "SPORTAGE_BAT_CHG_FLAG_BATSENS", "path": "Battery", "fmt": {"bix": 183, "len": 1,  "max": 1,                                                                             "unit": "offon"       }, "name": "Battery charge flag, battery sensor"},
+    {"id": "SPORTAGE_BAT_CURRENT",          "path": "Battery", "fmt": {"bix": 256, "len": 16, "max": 3276.7,  "min": -3276.8, "mul": 1000,  "div": 10000,             "sign": true, "unit": "amps"        }, "name": "Battery current"},
+    {"id": "SPORTAGE_BAT_V",                "path": "Battery", "fmt": {"bix": 272, "len": 16, "max": 71.535,                  "mul": 10,    "div": 10000, "add": 6,                 "unit": "volts"       }, "name": "Battery voltage"},
+    {"id": "SPORTAGE_BAT_T",                "path": "Battery", "fmt": {"bix": 288, "len": 16, "max": 32767.5,                               "div": 2,                               "unit": "celsius"     }, "name": "Battery temperature"}
   ]},
 { "hdr": "7E1", "rax": "7E9", "cmd": {"21": "A0"}, "freq": 1, "dbgfilter": { "to": 2010, "years": [2013, 2014, 2015, 2016, 2017, 2018], "from": 2021 },
   "signals": [
@@ -141,6 +730,24 @@
         }}
     }
   ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"21": "A1"}, "freq": 0.25,
+  "signals": [
+    {"id": "SPORTAGE_CURRENT_GEAR_7E1_2", "path": "Transmission", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "01A0"}, "freq": 0.25,
+  "signals": [
+    {"id": "SPORTAGE_RPM_7E1",               "path": "Movement",     "fmt": {"bix": 32,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Engine RPM"},
+    {"id": "SPORTAGE_VSS_7E1",               "path": "Movement",     "fmt": {"bix": 48,  "len": 8,  "max": 255,                                                        "unit": "kilometersPerHour" }, "name": "Vehicle speed",                            "suggestedMetric": "speed"},
+    {"id": "SPORTAGE_REL_APP",               "path": "Movement",     "fmt": {"bix": 64,  "len": 8,  "max": 100,                   "mul": 100, "div": 255,              "unit": "percent"           }, "name": "Relative accelerator pedal position"},
+    {"id": "SPORTAGE_TURBINE_SPEED",         "path": "Movement",     "fmt": {"bix": 72,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Turbine speed"},
+    {"id": "SPORTAGE_OUTPUT_SPEED",          "path": "Movement",     "fmt": {"bix": 88,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Output speed"},
+    {"id": "SPORTAGE_ATF_T_7E1",             "path": "Engine",       "fmt": {"bix": 104, "len": 8,  "max": 215,      "min": -40,                          "add": -40,  "unit": "celsius"           }, "name": "Automatic transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"},
+    {"id": "SPORTAGE_TORQUE_CONVERTER_SLIP", "path": "Engine",       "fmt": {"bix": 128, "len": 16, "max": 15871.75, "min": -512,             "div": 4,   "add": -512, "unit": "rpm"               }, "name": "Torque converter slip"},
+    {"id": "SPORTAGE_GEAR_7E1",              "path": "Transmission", "fmt": {"bix": 160, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Gear selector"},
+    {"id": "SPORTAGE_CURRENT_GEAR",          "path": "Transmission", "fmt": {"bix": 168, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Current gear"},
+    {"id": "SPORTAGE_COMMANDED_GEAR",        "path": "Transmission", "fmt": {"bix": 176, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Commanded gear"},
+    {"id": "SPORTAGE_BRAKE_PEDAL",           "path": "Control",      "fmt": {"bix": 192, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Brake pedal"}
+  ]},
 { "hdr": "7E1", "rax": "7E9", "cmd": {"22": "01A4"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
     {"id": "SPORTAGE_GEAR_CUR",   "path": "Transmission", "fmt": {"bix": 188, "len": 4,  "max": 15,                                    "unit": "scalar"  }, "name": "Current gear"},
@@ -148,13 +755,199 @@
     {"id": "SPORTAGE_CLUTCH_1_T", "path": "Transmission", "fmt": {"bix": 232, "len": 16, "max": 300, "min": -40, "mul": 2, "add": -40, "unit": "celsius" }, "name": "Clutch #1 temperature", "description": "Part of the dual clutch transition"},
     {"id": "SPORTAGE_CLUTCH_2_T", "path": "Transmission", "fmt": {"bix": 248, "len": 16, "max": 300, "min": -40, "mul": 2, "add": -40, "unit": "celsius" }, "name": "Clutch #2 temperature", "description": "Part of the dual clutch transition"}
   ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "01A5"}, "freq": 5,
+  "signals": [
+    {"id": "SPORTAGE_DUAL_CLU_TRANS_ODD",       "path": "Transmission", "fmt": {"bix": 32,  "len": 8,  "max": 255,                                                     "unit": "scalar"  }, "name": "Dual-clutch transmission odd shaft, gear engaged"},
+    {"id": "SPORTAGE_DUAL_CLU_TRANS_EVEN",      "path": "Transmission", "fmt": {"bix": 40,  "len": 8,  "max": 255,                                                     "unit": "scalar"  }, "name": "Dual-clutch transmission even shaft, gear engaged"},
+    {"id": "SPORTAGE_DUAL_CLU_ATF_T_1",         "path": "Engine",       "fmt": {"bix": 48,  "len": 8,  "max": 215, "min": -40,                             "add": -40, "unit": "celsius" }, "name": "Dual-clutch transmission fluid temperature 1"},
+    {"id": "SPORTAGE_DUAL_CLU_ATF_T_2",         "path": "Engine",       "fmt": {"bix": 56,  "len": 8,  "max": 215, "min": -40,                             "add": -40, "unit": "celsius" }, "name": "Dual-clutch transmission fluid temperature 2"},
+    {"id": "SPORTAGE_DUAL_CLU_TRANS_CLU_1_P",   "path": "Engine",       "fmt": {"bix": 192, "len": 16, "max": 127,             "mul": 19.53, "div": 10000,             "unit": "bars"    }, "name": "Dual-clutch transmission clutch 1, pressure sensor a"},
+    {"id": "SPORTAGE_DUAL_CLU_TRANS_CLU_2_P_B", "path": "Engine",       "fmt": {"bix": 208, "len": 16, "max": 127,             "mul": 19.53, "div": 10000,             "unit": "bars"    }, "name": "Dual-clutch transmission clutch 2, pressure sensor b"},
+    {"id": "SPORTAGE_DUAL_CLU_TRANS_LINE_P_C",  "path": "Engine",       "fmt": {"bix": 224, "len": 16, "max": 127,             "mul": 19.53, "div": 10000,             "unit": "bars"    }, "name": "Dual-clutch transmission line pressure, sensor c"}
+  ]},
 { "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"21": "01"}, "freq": 0.25,
   "signals": [
     {"id": "SPORTAGE_VSS_V2", "path": "Movement", "fmt": {"bix": 104, "len": 16, "blsb": true, "max": 180, "min": -180, "div": 100, "sign": true, "unit": "milesPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "Current vehicle speed"}
   ]},
+{ "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"21": "02"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_AUX_AMPS_LDC",         "path": "Engine",  "fmt": {"bix": 128, "len": 16, "max": 655,   "div": 100, "unit": "amps"    }, "name": "AUX amps LDC"},
+    {"id": "SPORTAGE_AUXILIARY_BAT",        "path": "Battery", "fmt": {"bix": 168, "len": 16, "max": 65535,             "unit": "amps"    }, "name": "Auxiliary battery current"},
+    {"id": "SPORTAGE_AUXILIARY_BAT_ST_CHG", "path": "Battery", "fmt": {"bix": 184, "len": 8,  "max": 255,               "unit": "percent" }, "name": "Auxiliary battery state of charge"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "E003"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_CLU_FLUID_P",       "path": "Transmission", "fmt": {"bix": 288, "len": 16, "blsb": true, "max": 64, "mul": 64, "div": 65535, "unit": "bars" }, "name": "Clutch fluid pressure"},
+    {"id": "SPORTAGE_ENG_CLU_P_COMMAND", "path": "Transmission", "fmt": {"bix": 328, "len": 16, "blsb": true, "max": 16, "mul": 16, "div": 65535, "unit": "bars" }, "name": "Engine clutch pressure command"}
+  ]},
 { "hdr": "7E2", "rax": "7EA", "cmd": {"22": "E004"}, "freq": 1, "dbgfilter": { "to": 2022, "years": [2024], "from": 2027 },
   "signals": [
     {"id": "SPORTAGE_VPWR_V3", "path": "Battery", "fmt": {"bix": 152, "len": 8, "max": 100, "unit": "percent" }, "name": "12V battery charge"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "E005"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_DISCONNECTOR_STROKE_POSITION",        "path": "Engine", "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 511,                                 "div": 128,                                                      "unit": "millimeters" },                                             "name": "Disconnector stroke position"},
+    {"id": "SPORTAGE_DISCONNECTOR_MEET_POINT",             "path": "Engine", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 511,                                 "div": 128,                                                      "unit": "millimeters" },                                             "name": "Disconnector meet point"},
+    {"id": "SPORTAGE_DISCONNECTOR_END_POINT",              "path": "Engine", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 511,                                 "div": 128,                                                      "unit": "millimeters" },                                             "name": "Disconnector end point"},
+    {"id": "SPORTAGE_DISCONNECTOR_DISENGAGE_LAST_TIME",    "path": "Engine", "fmt": {"bix": 80,  "len": 8,  "max": 255,                                                                                         "unit": "milliseconds" },                    "name": "Disconnector disengage last time"},
+    {"id": "SPORTAGE_DISCONNECTOR_ACTUATOR_MOTOR_CURRENT", "path": "Engine", "fmt": {"bix": 96,  "len": 8,  "max": 254,   "min": -256,  "mul": 2,                                   "sign": true,               "unit": "amps"         },                    "name": "Disconnector actuator motor current"},
+    {"id": "SPORTAGE_DISCONNECTOR_INVERTER_PWM_DUTY",      "path": "Engine", "fmt": {"bix": 104, "len": 16, "blsb": true, "max": 100,                  "mul": 78.125, "div": 10000,               "sign": true,                        "unit": "percent"     },                                             "name": "Disconnector inverter PWM duty"},
+    {"id": "SPORTAGE_DISCONNECTOR_ZERO_COUNT_OFFSET",      "path": "Engine", "fmt": {"bix": 120, "len": 16, "blsb": true, "max": 32767, "min": -32768,                                            "sign": true,                        "unit": "scalar"      },                                             "name": "Disconnector zero count offset"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"21": "01"}, "freq": 5,
+  "signals": [
+    {"id": "SPORTAGE_ST_CHG_BMS",            "path": "Battery",  "fmt": {"bix": 32,  "len": 8,  "max": 127,                      "div": 2,                  "unit": "percent"       }, "name": "State of charge battery management system"},
+    {"id": "SPORTAGE_AVAILABLE_CHG",         "path": "Battery",  "fmt": {"bix": 40,  "len": 16, "max": 655,                      "div": 100,                "unit": "kilowatts"     }, "name": "Available charge power"},
+    {"id": "SPORTAGE_AVAILABLE_DCHG",        "path": "Battery",  "fmt": {"bix": 56,  "len": 16, "max": 655,                      "div": 100,                "unit": "kilowatts"     }, "name": "Available discharge power"},
+    {"id": "SPORTAGE_BMS_MAIN_RELAY",        "path": "Engine",   "fmt": {"bix": 79,  "len": 1,  "max": 1,                                                   "unit": "offon"         }, "name": "Battery management system main relay"},
+    {"id": "SPORTAGE_BAT_CURRENT_7E4_01",    "path": "Battery",  "fmt": {"bix": 80,  "len": 16, "max": 3276,      "min": -3276,  "div": 10,   "sign": true, "unit": "amps"          }, "name": "Battery, current"},
+    {"id": "SPORTAGE_BAT_DC_V",              "path": "Battery",  "fmt": {"bix": 96,  "len": 16, "max": 6553,                     "div": 10,                 "unit": "volts"         }, "name": "Battery DC voltage"},
+    {"id": "SPORTAGE_BAT_MAX_T",             "path": "Battery",  "fmt": {"bix": 112, "len": 8,  "max": 127,       "min": -128,                "sign": true, "unit": "celsius"       }, "name": "Battery max temperature"},
+    {"id": "SPORTAGE_BAT_MIN_T",             "path": "Battery",  "fmt": {"bix": 120, "len": 8,  "max": 127,       "min": -128,                "sign": true, "unit": "celsius"       }, "name": "Battery min temperature"},
+    {"id": "SPORTAGE_BAT_MODULE_01_T",       "path": "Battery",  "fmt": {"bix": 128, "len": 8,  "max": 127,       "min": -128,                "sign": true, "unit": "celsius"       }, "name": "Battery module 01 temperature"},
+    {"id": "SPORTAGE_BAT_MODULE_02_T",       "path": "Battery",  "fmt": {"bix": 136, "len": 8,  "max": 127,       "min": -128,                "sign": true, "unit": "celsius"       }, "name": "Battery module 02 temperature"},
+    {"id": "SPORTAGE_BAT_UNKNOWN_03_T",      "path": "Battery",  "fmt": {"bix": 144, "len": 8,  "max": 127,       "min": -128,                "sign": true, "unit": "celsius"       }, "name": "Battery unknown 03 temperature"},
+    {"id": "SPORTAGE_BAT_UNKNOWN_04_T",      "path": "Battery",  "fmt": {"bix": 152, "len": 8,  "max": 127,       "min": -128,                "sign": true, "unit": "celsius"       }, "name": "Battery unknown 04 temperature"},
+    {"id": "SPORTAGE_BAT_UNKNOWN_05_T",      "path": "Battery",  "fmt": {"bix": 160, "len": 8,  "max": 127,       "min": -128,                "sign": true, "unit": "celsius"       }, "name": "Battery unknown 05 temperature"},
+    {"id": "SPORTAGE_BAT_INLET_T",           "path": "Battery",  "fmt": {"bix": 176, "len": 8,  "max": 127,       "min": -128,                "sign": true, "unit": "celsius"       }, "name": "Battery inlet temperature"},
+    {"id": "SPORTAGE_MAX_CELL_V",            "path": "Battery",  "fmt": {"bix": 184, "len": 8,  "max": 5.1,                      "div": 50,                 "unit": "volts"         }, "name": "Maximum cell voltage"},
+    {"id": "SPORTAGE_MAX_CELL_V_NO",         "path": "Battery",  "fmt": {"bix": 192, "len": 8,  "max": 255,                                                 "unit": "scalar"        }, "name": "Maximum cell voltage no."},
+    {"id": "SPORTAGE_MIN_CELL_V",            "path": "Battery",  "fmt": {"bix": 200, "len": 8,  "max": 5.1,                      "div": 50,                 "unit": "volts"         }, "name": "Minimum cell voltage"},
+    {"id": "SPORTAGE_MIN_CELL_V_NO",         "path": "Battery",  "fmt": {"bix": 208, "len": 8,  "max": 255,                                                 "unit": "scalar"        }, "name": "Minimum cell voltage no."},
+    {"id": "SPORTAGE_BAT_FAN_STAT",          "path": "Battery",  "fmt": {"bix": 216, "len": 8,  "max": 255,                                                 "unit": "scalar"        }, "name": "Battery fan status"},
+    {"id": "SPORTAGE_BAT_FAN",               "path": "Battery",  "fmt": {"bix": 224, "len": 8,  "max": 255,                                                 "unit": "hertz"         }, "name": "Battery fan feedback"},
+    {"id": "SPORTAGE_AUXILIARY_BAT_V",       "path": "Battery",  "fmt": {"bix": 232, "len": 8,  "max": 25.5,                     "div": 10,                 "unit": "volts"         }, "name": "Auxiliary battery voltage"},
+    {"id": "SPORTAGE_CUM_CHG_CURRENT",       "path": "Battery",  "fmt": {"bix": 240, "len": 32, "max": 429496729,                "div": 10,                 "unit": "ampereHours"   }, "name": "Cumulative charge, current"},
+    {"id": "SPORTAGE_CUM_DCHG",              "path": "Battery",  "fmt": {"bix": 272, "len": 32, "max": 429496729,                "div": 10,                 "unit": "ampereHours"   }, "name": "Cumulative discharge, current"},
+    {"id": "SPORTAGE_CUM_ENERGY",            "path": "Battery",  "fmt": {"bix": 304, "len": 32, "max": 429496729,                "div": 10,                 "unit": "kilowattHours" }, "name": "Cumulative energy charged"},
+    {"id": "SPORTAGE_CUM_ENERGY_DISCHARGED", "path": "Battery",  "fmt": {"bix": 336, "len": 32, "max": 429496729,                "div": 10,                 "unit": "kilowattHours" }, "name": "Cumulative energy discharged"},
+    {"id": "SPORTAGE_OP_TIME",               "path": "Engine",   "fmt": {"bix": 368, "len": 32, "max": 1193046,                  "div": 3600,               "unit": "unknown"       }, "name": "Operating time"},
+    {"id": "SPORTAGE_BMS_IGN",               "path": "Engine",   "fmt": {"bix": 405, "len": 1,  "max": 1,                                                   "unit": "offon"         }, "name": "Battery management system ignition"},
+    {"id": "SPORTAGE_INVERTER_V",            "path": "Battery",  "fmt": {"bix": 408, "len": 16, "max": 65535,                                               "unit": "volts"         }, "name": "Inverter capacitor voltage"},
+    {"id": "SPORTAGE_DRIVE_MOTOR_SPD_1",     "path": "Movement", "fmt": {"bix": 424, "len": 16, "max": 32767,     "min": -32768,              "sign": true, "unit": "rpm"           }, "name": "Drive motor speed 1"},
+    {"id": "SPORTAGE_RPM_UNKNOWN",           "path": "Movement", "fmt": {"bix": 440, "len": 16, "max": 65535,                                               "unit": "rpm"           }, "name": "Rpm unknown"},
+    {"id": "SPORTAGE_ISOLATION_RES",         "path": "Engine",   "fmt": {"bix": 456, "len": 16, "max": 65535,                                               "unit": "kiloohms"      }, "name": "Isolation resistance"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"21": "02"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_CELL_V_01", "path": "Battery", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 01"},
+    {"id": "SPORTAGE_CELL_V_02", "path": "Battery", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 02"},
+    {"id": "SPORTAGE_CELL_V_03", "path": "Battery", "fmt": {"bix": 48,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 03"},
+    {"id": "SPORTAGE_CELL_V_04", "path": "Battery", "fmt": {"bix": 56,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 04"},
+    {"id": "SPORTAGE_CELL_V_05", "path": "Battery", "fmt": {"bix": 64,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 05"},
+    {"id": "SPORTAGE_CELL_V_06", "path": "Battery", "fmt": {"bix": 72,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 06"},
+    {"id": "SPORTAGE_CELL_V_07", "path": "Battery", "fmt": {"bix": 80,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 07"},
+    {"id": "SPORTAGE_CELL_V_08", "path": "Battery", "fmt": {"bix": 88,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 08"},
+    {"id": "SPORTAGE_CELL_V_09", "path": "Battery", "fmt": {"bix": 96,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 09"},
+    {"id": "SPORTAGE_CELL_V_10", "path": "Battery", "fmt": {"bix": 104, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 10"},
+    {"id": "SPORTAGE_CELL_V_11", "path": "Battery", "fmt": {"bix": 112, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 11"},
+    {"id": "SPORTAGE_CELL_V_12", "path": "Battery", "fmt": {"bix": 120, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 12"},
+    {"id": "SPORTAGE_CELL_V_13", "path": "Battery", "fmt": {"bix": 128, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 13"},
+    {"id": "SPORTAGE_CELL_V_14", "path": "Battery", "fmt": {"bix": 136, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 14"},
+    {"id": "SPORTAGE_CELL_V_15", "path": "Battery", "fmt": {"bix": 144, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 15"},
+    {"id": "SPORTAGE_CELL_V_16", "path": "Battery", "fmt": {"bix": 152, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 16"},
+    {"id": "SPORTAGE_CELL_V_17", "path": "Battery", "fmt": {"bix": 160, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 17"},
+    {"id": "SPORTAGE_CELL_V_18", "path": "Battery", "fmt": {"bix": 168, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 18"},
+    {"id": "SPORTAGE_CELL_V_19", "path": "Battery", "fmt": {"bix": 176, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 19"},
+    {"id": "SPORTAGE_CELL_V_20", "path": "Battery", "fmt": {"bix": 184, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 20"},
+    {"id": "SPORTAGE_CELL_V_21", "path": "Battery", "fmt": {"bix": 192, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 21"},
+    {"id": "SPORTAGE_CELL_V_22", "path": "Battery", "fmt": {"bix": 200, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 22"},
+    {"id": "SPORTAGE_CELL_V_23", "path": "Battery", "fmt": {"bix": 208, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 23"},
+    {"id": "SPORTAGE_CELL_V_24", "path": "Battery", "fmt": {"bix": 216, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 24"},
+    {"id": "SPORTAGE_CELL_V_25", "path": "Battery", "fmt": {"bix": 224, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 25"},
+    {"id": "SPORTAGE_CELL_V_26", "path": "Battery", "fmt": {"bix": 232, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 26"},
+    {"id": "SPORTAGE_CELL_V_27", "path": "Battery", "fmt": {"bix": 240, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 27"},
+    {"id": "SPORTAGE_CELL_V_28", "path": "Battery", "fmt": {"bix": 248, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 28"},
+    {"id": "SPORTAGE_CELL_V_29", "path": "Battery", "fmt": {"bix": 256, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 29"},
+    {"id": "SPORTAGE_CELL_V_30", "path": "Battery", "fmt": {"bix": 264, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 30"},
+    {"id": "SPORTAGE_CELL_V_31", "path": "Battery", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 31"},
+    {"id": "SPORTAGE_CELL_V_32", "path": "Battery", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 32"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"21": "03"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_CELL_V_33", "path": "Battery", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 33"},
+    {"id": "SPORTAGE_CELL_V_34", "path": "Battery", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 34"},
+    {"id": "SPORTAGE_CELL_V_35", "path": "Battery", "fmt": {"bix": 48,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 35"},
+    {"id": "SPORTAGE_CELL_V_36", "path": "Battery", "fmt": {"bix": 56,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 36"},
+    {"id": "SPORTAGE_CELL_V_37", "path": "Battery", "fmt": {"bix": 64,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 37"},
+    {"id": "SPORTAGE_CELL_V_38", "path": "Battery", "fmt": {"bix": 72,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 38"},
+    {"id": "SPORTAGE_CELL_V_39", "path": "Battery", "fmt": {"bix": 80,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 39"},
+    {"id": "SPORTAGE_CELL_V_40", "path": "Battery", "fmt": {"bix": 88,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 40"},
+    {"id": "SPORTAGE_CELL_V_41", "path": "Battery", "fmt": {"bix": 96,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 41"},
+    {"id": "SPORTAGE_CELL_V_42", "path": "Battery", "fmt": {"bix": 104, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 42"},
+    {"id": "SPORTAGE_CELL_V_43", "path": "Battery", "fmt": {"bix": 112, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 43"},
+    {"id": "SPORTAGE_CELL_V_44", "path": "Battery", "fmt": {"bix": 120, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 44"},
+    {"id": "SPORTAGE_CELL_V_45", "path": "Battery", "fmt": {"bix": 128, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 45"},
+    {"id": "SPORTAGE_CELL_V_46", "path": "Battery", "fmt": {"bix": 136, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 46"},
+    {"id": "SPORTAGE_CELL_V_47", "path": "Battery", "fmt": {"bix": 144, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 47"},
+    {"id": "SPORTAGE_CELL_V_48", "path": "Battery", "fmt": {"bix": 152, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 48"},
+    {"id": "SPORTAGE_CELL_V_49", "path": "Battery", "fmt": {"bix": 160, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 49"},
+    {"id": "SPORTAGE_CELL_V_50", "path": "Battery", "fmt": {"bix": 168, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 50"},
+    {"id": "SPORTAGE_CELL_V_51", "path": "Battery", "fmt": {"bix": 176, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 51"},
+    {"id": "SPORTAGE_CELL_V_52", "path": "Battery", "fmt": {"bix": 184, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 52"},
+    {"id": "SPORTAGE_CELL_V_53", "path": "Battery", "fmt": {"bix": 192, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 53"},
+    {"id": "SPORTAGE_CELL_V_54", "path": "Battery", "fmt": {"bix": 200, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 54"},
+    {"id": "SPORTAGE_CELL_V_55", "path": "Battery", "fmt": {"bix": 208, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 55"},
+    {"id": "SPORTAGE_CELL_V_56", "path": "Battery", "fmt": {"bix": 216, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 56"},
+    {"id": "SPORTAGE_CELL_V_57", "path": "Battery", "fmt": {"bix": 224, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 57"},
+    {"id": "SPORTAGE_CELL_V_58", "path": "Battery", "fmt": {"bix": 232, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 58"},
+    {"id": "SPORTAGE_CELL_V_59", "path": "Battery", "fmt": {"bix": 240, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 59"},
+    {"id": "SPORTAGE_CELL_V_60", "path": "Battery", "fmt": {"bix": 248, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 60"},
+    {"id": "SPORTAGE_CELL_V_61", "path": "Battery", "fmt": {"bix": 256, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 61"},
+    {"id": "SPORTAGE_CELL_V_62", "path": "Battery", "fmt": {"bix": 264, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 62"},
+    {"id": "SPORTAGE_CELL_V_63", "path": "Battery", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 63"},
+    {"id": "SPORTAGE_CELL_V_64", "path": "Battery", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 64"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"21": "04"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_CELL_V_65", "path": "Battery", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 65"},
+    {"id": "SPORTAGE_CELL_V_66", "path": "Battery", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 66"},
+    {"id": "SPORTAGE_CELL_V_67", "path": "Battery", "fmt": {"bix": 48,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 67"},
+    {"id": "SPORTAGE_CELL_V_68", "path": "Battery", "fmt": {"bix": 56,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 68"},
+    {"id": "SPORTAGE_CELL_V_69", "path": "Battery", "fmt": {"bix": 64,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 69"},
+    {"id": "SPORTAGE_CELL_V_70", "path": "Battery", "fmt": {"bix": 72,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 70"},
+    {"id": "SPORTAGE_CELL_V_71", "path": "Battery", "fmt": {"bix": 80,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 71"},
+    {"id": "SPORTAGE_CELL_V_72", "path": "Battery", "fmt": {"bix": 88,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 72"},
+    {"id": "SPORTAGE_CELL_V_73", "path": "Battery", "fmt": {"bix": 96,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 73"},
+    {"id": "SPORTAGE_CELL_V_74", "path": "Battery", "fmt": {"bix": 104, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 74"},
+    {"id": "SPORTAGE_CELL_V_75", "path": "Battery", "fmt": {"bix": 112, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 75"},
+    {"id": "SPORTAGE_CELL_V_76", "path": "Battery", "fmt": {"bix": 120, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 76"},
+    {"id": "SPORTAGE_CELL_V_77", "path": "Battery", "fmt": {"bix": 128, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 77"},
+    {"id": "SPORTAGE_CELL_V_78", "path": "Battery", "fmt": {"bix": 136, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 78"},
+    {"id": "SPORTAGE_CELL_V_79", "path": "Battery", "fmt": {"bix": 144, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 79"},
+    {"id": "SPORTAGE_CELL_V_80", "path": "Battery", "fmt": {"bix": 152, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 80"},
+    {"id": "SPORTAGE_CELL_V_81", "path": "Battery", "fmt": {"bix": 160, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 81"},
+    {"id": "SPORTAGE_CELL_V_82", "path": "Battery", "fmt": {"bix": 168, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 82"},
+    {"id": "SPORTAGE_CELL_V_83", "path": "Battery", "fmt": {"bix": 176, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 83"},
+    {"id": "SPORTAGE_CELL_V_84", "path": "Battery", "fmt": {"bix": 184, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 84"},
+    {"id": "SPORTAGE_CELL_V_85", "path": "Battery", "fmt": {"bix": 192, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 85"},
+    {"id": "SPORTAGE_CELL_V_86", "path": "Battery", "fmt": {"bix": 200, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 86"},
+    {"id": "SPORTAGE_CELL_V_87", "path": "Battery", "fmt": {"bix": 208, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 87"},
+    {"id": "SPORTAGE_CELL_V_88", "path": "Battery", "fmt": {"bix": 216, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 88"},
+    {"id": "SPORTAGE_CELL_V_89", "path": "Battery", "fmt": {"bix": 224, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 89"},
+    {"id": "SPORTAGE_CELL_V_90", "path": "Battery", "fmt": {"bix": 232, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 90"},
+    {"id": "SPORTAGE_CELL_V_91", "path": "Battery", "fmt": {"bix": 240, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 91"},
+    {"id": "SPORTAGE_CELL_V_92", "path": "Battery", "fmt": {"bix": 248, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 92"},
+    {"id": "SPORTAGE_CELL_V_93", "path": "Battery", "fmt": {"bix": 256, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 93"},
+    {"id": "SPORTAGE_CELL_V_94", "path": "Battery", "fmt": {"bix": 264, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 94"},
+    {"id": "SPORTAGE_CELL_V_95", "path": "Battery", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 95"},
+    {"id": "SPORTAGE_CELL_V_96", "path": "Battery", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "Cell voltage 96"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"21": "05"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_BAT_UNKNOWN_06_T",  "path": "Battery", "fmt": {"bix": 72,  "len": 8,  "max": 127,  "min": -128,            "sign": true, "unit": "celsius" }, "name": "Battery unknown 06 temperature"},
+    {"id": "SPORTAGE_BAT_UNKNOWN_07_T",  "path": "Battery", "fmt": {"bix": 80,  "len": 8,  "max": 127,  "min": -128,            "sign": true, "unit": "celsius" }, "name": "Battery unknown 07 temperature"},
+    {"id": "SPORTAGE_BAT_UNKNOWN_08_T",  "path": "Battery", "fmt": {"bix": 88,  "len": 8,  "max": 127,  "min": -128,            "sign": true, "unit": "celsius" }, "name": "Battery unknown 08 temperature"},
+    {"id": "SPORTAGE_BAT_UNKNOWN_09_T",  "path": "Battery", "fmt": {"bix": 96,  "len": 8,  "max": 127,  "min": -128,            "sign": true, "unit": "celsius" }, "name": "Battery unknown 09 temperature"},
+    {"id": "SPORTAGE_BAT_UNKNOWN_10_T",  "path": "Battery", "fmt": {"bix": 104, "len": 8,  "max": 127,  "min": -128,            "sign": true, "unit": "celsius" }, "name": "Battery unknown 10 temperature"},
+    {"id": "SPORTAGE_BAT_UNKNOWN_11_T",  "path": "Battery", "fmt": {"bix": 112, "len": 8,  "max": 127,  "min": -128,            "sign": true, "unit": "celsius" }, "name": "Battery unknown 11 temperature"},
+    {"id": "SPORTAGE_BAT_UNKNOWN_12_T",  "path": "Battery", "fmt": {"bix": 120, "len": 8,  "max": 127,  "min": -128,            "sign": true, "unit": "celsius" }, "name": "Battery unknown 12 temperature"},
+    {"id": "SPORTAGE_BAT_CELL_V_DEV",    "path": "Battery", "fmt": {"bix": 160, "len": 8,  "max": 5.1,               "div": 50,               "unit": "volts"   }, "name": "Battery cell voltage deviation"},
+    {"id": "SPORTAGE_AIRBAG_H_WIRE",     "path": "Engine",  "fmt": {"bix": 176, "len": 8,  "max": 255,                                        "unit": "scalar"  }, "name": "Airbag h/wire duty"},
+    {"id": "SPORTAGE_MAX",               "path": "Engine",  "fmt": {"bix": 200, "len": 16, "max": 6553,              "div": 10,               "unit": "percent" }, "name": "Maximum deterioration"},
+    {"id": "SPORTAGE_MAX_DETERIORATION", "path": "Engine",  "fmt": {"bix": 216, "len": 8,  "max": 255,                                        "unit": "scalar"  }, "name": "Maximum deterioration cell no."},
+    {"id": "SPORTAGE_MIN",               "path": "Engine",  "fmt": {"bix": 224, "len": 16, "max": 6553,              "div": 10,               "unit": "percent" }, "name": "Minimum deterioration"},
+    {"id": "SPORTAGE_MIN_DETERIORATION", "path": "Engine",  "fmt": {"bix": 240, "len": 8,  "max": 255,                                        "unit": "scalar"  }, "name": "Minimum deterioration cell no."}
   ]},
 { "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0101"}, "freq": 1, "dbgfilter": { "to": 2022, "years": [2024], "from": 2027 },
   "signals": [
@@ -185,7 +978,7 @@
     {"id": "SPORTAGE_DRIVE_TIME",       "path": "Stats",   "fmt": {"bix": 368, "len": 32, "max": 4294967295,                                                      "unit": "seconds"       }, "name": "Total drive time"},
     {"id": "SPORTAGE_IGN",              "path": "Battery", "fmt": {"bix": 405, "len": 1,  "max": 1,                                                               "unit": "offon"         }, "name": "Ignition"},
     {"id": "SPORTAGE_INVRT_CV",         "path": "Battery", "fmt": {"bix": 408, "len": 16, "max": 65535,                                                           "unit": "volts"         }, "name": "Inverter capacitor voltage"},
-    {"id": "SPORTAGE_RPM",              "path": "Engine",  "fmt": {"bix": 424, "len": 16, "max": 65535,                                                           "unit": "rpm"           }, "name": "Drive motor speed"},
+    {"id": "SPORTAGE_RPM",              "path": "Engine",  "fmt": {"bix": 424, "len": 16, "max": 32767,      "min": -32768,                         "sign": true, "unit": "rpm"           }, "name": "Drive motor speed"},
     {"id": "SPORTAGE_ISO_R",            "path": "Battery", "fmt": {"bix": 456, "len": 16, "max": 65535,                                                           "unit": "kiloohms"      }, "name": "Isolation resistance"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0102"}, "freq": 1, "filter": { "from": 2023 }, "dbgfilter": { "years": [2024], "from": 2027 },
@@ -295,16 +1088,193 @@
   ]},
 { "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0105"}, "freq": 1, "filter": { "from": 2023 }, "dbgfilter": { "years": [2024], "from": 2027 },
   "signals": [
-    {"id": "SPORTAGE_HVBAT_C_DEV_V",     "path": "Battery",             "fmt": {"bix": 160, "len": 8,  "max": 5.1,                          "div": 50,                                 "unit": "volts"         }, "name": "HV cell deviation (voltage)"},
-    {"id": "SPORTAGE_HVBAT_HTR1_T",      "path": "Battery",             "fmt": {"bix": 184, "len": 8,  "max": 127, "min": -127,                          "sign": true,                 "unit": "celsius"       }, "name": "HV battery heater 1 temperature"},
-    {"id": "SPORTAGE_HVBAT_HTR2_T",      "path": "Battery",             "fmt": {"bix": 192, "len": 8,  "max": 127, "min": -127,                          "sign": true,                 "unit": "celsius"       }, "name": "HV battery heater 2 temperature"},
-    {"id": "SPORTAGE_HVBAT_SOH",         "path": "Battery",             "fmt": {"bix": 200, "len": 16, "max": 100,                          "div": 10,                                 "unit": "percent"       }, "name": "HV battery state of health",         "suggestedMetric": "stateOfHealth"},
-    {"id": "SPORTAGE_HVBAT_DET_MAX_ID",  "path": "Battery",             "fmt": {"bix": 216, "len": 8,  "max": 98,                                                      "nullmax": 200, "unit": "scalar"        }, "name": "HV battery max deteriation cell id"},
-    {"id": "SPORTAGE_HVBAT_WH",          "path": "Battery",             "fmt": {"bix": 224, "len": 16, "max": 100,              "mul": 2,   "div": 1000,                               "unit": "kilowattHours" }, "name": "HV battery remaining energy"},
-    {"id": "SPORTAGE_HVBAT_DET_MIN_ID",  "path": "Battery",             "fmt": {"bix": 240, "len": 8,  "max": 98,                                                      "nullmax": 200, "unit": "scalar"        }, "name": "HV battery min deteriation cell id"},
-    {"id": "SPORTAGE_HVBAT_SOC_DISP",    "path": "Battery",             "fmt": {"bix": 248, "len": 8,  "max": 100,              "mul": 0.5,                                            "unit": "percent"       }, "name": "HV battery charge",                  "suggestedMetric": "stateOfCharge"},
-    {"id": "SPORTAGE_HVBAT_CMU097_VOLT", "path": "Battery.Modules.097", "fmt": {"bix": 272, "len": 8,  "max": 4.2, "min": 2.8,              "div": 50,                                 "unit": "volts"         }, "name": "HV battery module 097 voltage"},
-    {"id": "SPORTAGE_HVBAT_CMU098_VOLT", "path": "Battery.Modules.098", "fmt": {"bix": 280, "len": 8,  "max": 4.2, "min": 2.8,              "div": 50,                                 "unit": "volts"         }, "name": "HV battery module 098 voltage"}
+    {"id": "SPORTAGE_HVBAT_C_DEV_V",     "path": "Battery",             "fmt": {"bix": 160, "len": 8,  "max": 5.1,                          "div": 50,                                               "unit": "volts"         }, "name": "HV cell deviation (voltage)"},
+    {"id": "SPORTAGE_HVBAT_HTR1_T",      "path": "Battery",             "fmt": {"bix": 184, "len": 8,  "max": 127, "min": -127,                          "sign": true,                               "unit": "celsius"       }, "name": "HV battery heater 1 temperature"},
+    {"id": "SPORTAGE_HVBAT_HTR2_T",      "path": "Battery",             "fmt": {"bix": 192, "len": 8,  "max": 127, "min": -127,                          "sign": true,                               "unit": "celsius"       }, "name": "HV battery heater 2 temperature"},
+    {"id": "SPORTAGE_HVBAT_SOH",         "path": "Battery",             "fmt": {"bix": 200, "len": 16, "max": 100,                          "div": 10,                                               "unit": "percent"       }, "name": "HV battery state of health",         "suggestedMetric": "stateOfHealth"},
+    {"id": "SPORTAGE_HVBAT_DET_MAX_ID",  "path": "Battery",             "fmt": {"bix": 216, "len": 8,  "max": 98,                                                                    "nullmax": 200, "unit": "scalar"        }, "name": "HV battery max deteriation cell id"},
+    {"id": "SPORTAGE_HVBAT_WH",          "path": "Battery",             "fmt": {"bix": 224, "len": 16, "max": 100,              "mul": 2,   "div": 1000,                                             "unit": "kilowattHours" }, "name": "HV battery remaining energy"},
+    {"id": "SPORTAGE_HVBAT_DET_MIN_ID",  "path": "Battery",             "fmt": {"bix": 240, "len": 8,  "max": 98,                                                                    "nullmax": 200, "unit": "scalar"        }, "name": "HV battery min deteriation cell id"},
+    {"id": "SPORTAGE_HVBAT_SOC_DISP",    "path": "Battery",             "fmt": {"bix": 248, "len": 8,  "max": 100,              "mul": 0.5,                                                          "unit": "percent"       }, "name": "HV battery charge",                  "suggestedMetric": "stateOfCharge"},
+    {"id": "SPORTAGE_HVBAT_CMU097_VOLT", "path": "Battery.Modules.097", "fmt": {"bix": 272, "len": 8,  "max": 4.2,                          "div": 50,                 "nullmin": 0,                 "unit": "volts"         }, "name": "HV battery module 097 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU098_VOLT", "path": "Battery.Modules.098", "fmt": {"bix": 280, "len": 8,  "max": 4.2, "min": 2.8,              "div": 50,                                               "unit": "volts"         }, "name": "HV battery module 098 voltage"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"22": "0106"}, "freq": 5,
+  "signals": [
+    {"id": "SPORTAGE_BAT_T_WCS_INPUT", "path": "Battery",  "fmt": {"bix": 32,  "len": 8, "max": 127,  "min": -128,            "sign": true, "unit": "celsius" }, "name": "Battery temperature at cooling input"},
+    {"id": "SPORTAGE_BAT_FAN_DUTY",    "path": "Battery",  "fmt": {"bix": 64,  "len": 8, "max": 255,                                        "unit": "percent" }, "name": "Battery fan duty feedback"},
+    {"id": "SPORTAGE_DATC_AC_COMP_1",  "path": "Movement", "fmt": {"bix": 96,  "len": 8, "max": 5100,              "mul": 20,               "unit": "rpm"     }, "name": "Climate compressor operation RPM, variant 1"},
+    {"id": "SPORTAGE_BAT_T_PRA",       "path": "Battery",  "fmt": {"bix": 160, "len": 8, "max": 254,  "min": -256, "mul": 2,  "sign": true, "unit": "celsius" }, "name": "Battery temperature, power relay assembly"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"22": "010A"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_HVBAT_CMU097_VOLT_7E4", "path": "Battery.Modules.097", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 097 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU098_VOLT_7E4", "path": "Battery.Modules.098", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 098 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU099_VOLT",     "path": "Battery.Modules.099", "fmt": {"bix": 48,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 099 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU100_VOLT",     "path": "Battery.Modules.100", "fmt": {"bix": 56,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 100 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU101_VOLT",     "path": "Battery.Modules.101", "fmt": {"bix": 64,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 101 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU102_VOLT",     "path": "Battery.Modules.102", "fmt": {"bix": 72,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 102 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU103_VOLT",     "path": "Battery.Modules.103", "fmt": {"bix": 80,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 103 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU104_VOLT",     "path": "Battery.Modules.104", "fmt": {"bix": 88,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 104 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU105_VOLT",     "path": "Battery.Modules.105", "fmt": {"bix": 96,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 105 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU106_VOLT",     "path": "Battery.Modules.106", "fmt": {"bix": 104, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 106 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU107_VOLT",     "path": "Battery.Modules.107", "fmt": {"bix": 112, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 107 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU108_VOLT",     "path": "Battery.Modules.108", "fmt": {"bix": 120, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 108 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU109_VOLT",     "path": "Battery.Modules.109", "fmt": {"bix": 128, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 109 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU110_VOLT",     "path": "Battery.Modules.110", "fmt": {"bix": 136, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 110 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU111_VOLT",     "path": "Battery.Modules.111", "fmt": {"bix": 144, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 111 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU112_VOLT",     "path": "Battery.Modules.112", "fmt": {"bix": 152, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 112 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU113_VOLT",     "path": "Battery.Modules.113", "fmt": {"bix": 160, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 113 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU114_VOLT",     "path": "Battery.Modules.114", "fmt": {"bix": 168, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 114 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU115_VOLT",     "path": "Battery.Modules.115", "fmt": {"bix": 176, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 115 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU116_VOLT",     "path": "Battery.Modules.116", "fmt": {"bix": 184, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 116 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU117_VOLT",     "path": "Battery.Modules.117", "fmt": {"bix": 192, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 117 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU118_VOLT",     "path": "Battery.Modules.118", "fmt": {"bix": 200, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 118 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU119_VOLT",     "path": "Battery.Modules.119", "fmt": {"bix": 208, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 119 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU120_VOLT",     "path": "Battery.Modules.120", "fmt": {"bix": 216, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 120 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU121_VOLT",     "path": "Battery.Modules.121", "fmt": {"bix": 224, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 121 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU122_VOLT",     "path": "Battery.Modules.122", "fmt": {"bix": 232, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 122 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU123_VOLT",     "path": "Battery.Modules.123", "fmt": {"bix": 240, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 123 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU124_VOLT",     "path": "Battery.Modules.124", "fmt": {"bix": 248, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 124 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU125_VOLT",     "path": "Battery.Modules.125", "fmt": {"bix": 256, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 125 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU126_VOLT",     "path": "Battery.Modules.126", "fmt": {"bix": 264, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 126 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU127_VOLT",     "path": "Battery.Modules.127", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 127 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU128_VOLT",     "path": "Battery.Modules.128", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 128 voltage"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"22": "010B"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_HVBAT_CMU129_VOLT", "path": "Battery.Modules.129", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 129 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU130_VOLT", "path": "Battery.Modules.130", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 130 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU131_VOLT", "path": "Battery.Modules.131", "fmt": {"bix": 48,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 131 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU132_VOLT", "path": "Battery.Modules.132", "fmt": {"bix": 56,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 132 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU133_VOLT", "path": "Battery.Modules.133", "fmt": {"bix": 64,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 133 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU134_VOLT", "path": "Battery.Modules.134", "fmt": {"bix": 72,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 134 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU135_VOLT", "path": "Battery.Modules.135", "fmt": {"bix": 80,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 135 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU136_VOLT", "path": "Battery.Modules.136", "fmt": {"bix": 88,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 136 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU137_VOLT", "path": "Battery.Modules.137", "fmt": {"bix": 96,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 137 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU138_VOLT", "path": "Battery.Modules.138", "fmt": {"bix": 104, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 138 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU139_VOLT", "path": "Battery.Modules.139", "fmt": {"bix": 112, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 139 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU140_VOLT", "path": "Battery.Modules.140", "fmt": {"bix": 120, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 140 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU141_VOLT", "path": "Battery.Modules.141", "fmt": {"bix": 128, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 141 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU142_VOLT", "path": "Battery.Modules.142", "fmt": {"bix": 136, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 142 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU143_VOLT", "path": "Battery.Modules.143", "fmt": {"bix": 144, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 143 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU144_VOLT", "path": "Battery.Modules.144", "fmt": {"bix": 152, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 144 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU145_VOLT", "path": "Battery.Modules.145", "fmt": {"bix": 160, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 145 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU146_VOLT", "path": "Battery.Modules.146", "fmt": {"bix": 168, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 146 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU147_VOLT", "path": "Battery.Modules.147", "fmt": {"bix": 176, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 147 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU148_VOLT", "path": "Battery.Modules.148", "fmt": {"bix": 184, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 148 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU149_VOLT", "path": "Battery.Modules.149", "fmt": {"bix": 192, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 149 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU150_VOLT", "path": "Battery.Modules.150", "fmt": {"bix": 200, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 150 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU151_VOLT", "path": "Battery.Modules.151", "fmt": {"bix": 208, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 151 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU152_VOLT", "path": "Battery.Modules.152", "fmt": {"bix": 216, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 152 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU153_VOLT", "path": "Battery.Modules.153", "fmt": {"bix": 224, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 153 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU154_VOLT", "path": "Battery.Modules.154", "fmt": {"bix": 232, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 154 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU155_VOLT", "path": "Battery.Modules.155", "fmt": {"bix": 240, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 155 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU156_VOLT", "path": "Battery.Modules.156", "fmt": {"bix": 248, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 156 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU157_VOLT", "path": "Battery.Modules.157", "fmt": {"bix": 256, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 157 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU158_VOLT", "path": "Battery.Modules.158", "fmt": {"bix": 264, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 158 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU159_VOLT", "path": "Battery.Modules.159", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 159 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU160_VOLT", "path": "Battery.Modules.160", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 160 voltage"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"22": "010C"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_HVBAT_CMU161_VOLT", "path": "Battery.Modules.161", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 161 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU162_VOLT", "path": "Battery.Modules.162", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 162 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU163_VOLT", "path": "Battery.Modules.163", "fmt": {"bix": 48,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 163 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU164_VOLT", "path": "Battery.Modules.164", "fmt": {"bix": 56,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 164 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU165_VOLT", "path": "Battery.Modules.165", "fmt": {"bix": 64,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 165 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU166_VOLT", "path": "Battery.Modules.166", "fmt": {"bix": 72,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 166 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU167_VOLT", "path": "Battery.Modules.167", "fmt": {"bix": 80,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 167 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU168_VOLT", "path": "Battery.Modules.168", "fmt": {"bix": 88,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 168 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU169_VOLT", "path": "Battery.Modules.169", "fmt": {"bix": 96,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 169 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU170_VOLT", "path": "Battery.Modules.170", "fmt": {"bix": 104, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 170 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU171_VOLT", "path": "Battery.Modules.171", "fmt": {"bix": 112, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 171 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU172_VOLT", "path": "Battery.Modules.172", "fmt": {"bix": 120, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 172 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU173_VOLT", "path": "Battery.Modules.173", "fmt": {"bix": 128, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 173 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU174_VOLT", "path": "Battery.Modules.174", "fmt": {"bix": 136, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 174 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU175_VOLT", "path": "Battery.Modules.175", "fmt": {"bix": 144, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 175 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU176_VOLT", "path": "Battery.Modules.176", "fmt": {"bix": 152, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 176 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU177_VOLT", "path": "Battery.Modules.177", "fmt": {"bix": 160, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 177 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU178_VOLT", "path": "Battery.Modules.178", "fmt": {"bix": 168, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 178 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU179_VOLT", "path": "Battery.Modules.179", "fmt": {"bix": 176, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 179 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU180_VOLT", "path": "Battery.Modules.180", "fmt": {"bix": 184, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 180 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU181_VOLT", "path": "Battery.Modules.181", "fmt": {"bix": 192, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 181 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU182_VOLT", "path": "Battery.Modules.182", "fmt": {"bix": 200, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 182 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU183_VOLT", "path": "Battery.Modules.183", "fmt": {"bix": 208, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 183 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU184_VOLT", "path": "Battery.Modules.184", "fmt": {"bix": 216, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 184 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU185_VOLT", "path": "Battery.Modules.185", "fmt": {"bix": 224, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 185 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU186_VOLT", "path": "Battery.Modules.186", "fmt": {"bix": 232, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 186 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU187_VOLT", "path": "Battery.Modules.187", "fmt": {"bix": 240, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 187 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU188_VOLT", "path": "Battery.Modules.188", "fmt": {"bix": 248, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 188 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU189_VOLT", "path": "Battery.Modules.189", "fmt": {"bix": 256, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 189 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU190_VOLT", "path": "Battery.Modules.190", "fmt": {"bix": 264, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 190 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU191_VOLT", "path": "Battery.Modules.191", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 191 voltage"},
+    {"id": "SPORTAGE_HVBAT_CMU192_VOLT", "path": "Battery.Modules.192", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 192 voltage"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "0111"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_NUM_STANDARD_CHG",   "path": "Engine", "fmt": {"bix": 32, "len": 32, "max": 4294967295, "unit": "scalar"        }, "name": "Number of standard charging"},
+    {"id": "SPORTAGE_NUM_QUICK_CHG",      "path": "Engine", "fmt": {"bix": 64, "len": 32, "max": 4294967295, "unit": "scalar"        }, "name": "Number of quick charging"},
+    {"id": "SPORTAGE_ACCUMULATED_NORMAL", "path": "Engine", "fmt": {"bix": 96, "len": 32, "max": 4294967295, "unit": "kilowattHours" }, "name": "Accumulated normal charging energy"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "0114"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_AC_COMPRESSOR_OPERATION_RPM", "path": "Climate", "fmt": {"bix": 208, "len": 16, "max": 1310700, "mul": 20, "unit": "rpm" }, "name": "A/C compressor operation RPM"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "0201"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_48_BAT_ST_CHG", "path": "Battery", "fmt": {"bix": 152, "len": 16, "blsb": true, "max": 6553, "div": 10, "unit": "percent" }, "name": "48 battery state of charge"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "0203"}, "freq": 1,
+  "signals": [
+    {"id": "SPORTAGE_48V_BAT_CELL_01_V",   "path": "Battery", "fmt": {"bix": 48,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "48V battery cell 01 voltage"},
+    {"id": "SPORTAGE_48V_BAT_CELL_02_V",   "path": "Battery", "fmt": {"bix": 64,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "48V battery cell 02 voltage"},
+    {"id": "SPORTAGE_48V_BAT_CELL_03_V",   "path": "Battery", "fmt": {"bix": 80,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "48V battery cell 03 voltage"},
+    {"id": "SPORTAGE_48V_BAT_CELL_04_V",   "path": "Battery", "fmt": {"bix": 96,  "len": 16, "max": 65535, "unit": "millivolts" }, "name": "48V battery cell 04 voltage"},
+    {"id": "SPORTAGE_48V_BAT_CELL_05_V",   "path": "Battery", "fmt": {"bix": 112, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "48V battery cell 05 voltage"},
+    {"id": "SPORTAGE_48V_BAT_CELL_06_V",   "path": "Battery", "fmt": {"bix": 128, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "48V battery cell 06 voltage"},
+    {"id": "SPORTAGE_48V_BAT_CELL_07_V",   "path": "Battery", "fmt": {"bix": 144, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "48V battery cell 07 voltage"},
+    {"id": "SPORTAGE_48V_BAT_CELL_08_V",   "path": "Battery", "fmt": {"bix": 160, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "48V battery cell 08 voltage"},
+    {"id": "SPORTAGE_48V_BAT_CELL_09_V",   "path": "Battery", "fmt": {"bix": 176, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "48V battery cell 09 voltage"},
+    {"id": "SPORTAGE_48V_BAT_CELL_10_V",   "path": "Battery", "fmt": {"bix": 192, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "48V battery cell 10 voltage"},
+    {"id": "SPORTAGE_48V_BAT_CELL_11_V",   "path": "Battery", "fmt": {"bix": 208, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "48V battery cell 11 voltage"},
+    {"id": "SPORTAGE_48V_BAT_CELL_12_V",   "path": "Battery", "fmt": {"bix": 224, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "48V battery cell 12 voltage"},
+    {"id": "SPORTAGE_48V_BAT_CELL_01_RES", "path": "Battery", "fmt": {"bix": 240, "len": 8,  "max": 255,   "unit": "unknown"    }, "name": "48V battery cell 01 resistance"},
+    {"id": "SPORTAGE_48V_BAT_CELL_02_RES", "path": "Battery", "fmt": {"bix": 248, "len": 8,  "max": 255,   "unit": "unknown"    }, "name": "48V battery cell 02 resistance"},
+    {"id": "SPORTAGE_48V_BAT_CELL_03_RES", "path": "Battery", "fmt": {"bix": 256, "len": 8,  "max": 255,   "unit": "unknown"    }, "name": "48V battery cell 03 resistance"},
+    {"id": "SPORTAGE_48V_BAT_CELL_04_RES", "path": "Battery", "fmt": {"bix": 264, "len": 8,  "max": 255,   "unit": "unknown"    }, "name": "48V battery cell 04 resistance"},
+    {"id": "SPORTAGE_48V_BAT_CELL_05_RES", "path": "Battery", "fmt": {"bix": 272, "len": 8,  "max": 255,   "unit": "unknown"    }, "name": "48V battery cell 05 resistance"},
+    {"id": "SPORTAGE_48V_BAT_CELL_06_RES", "path": "Battery", "fmt": {"bix": 280, "len": 8,  "max": 255,   "unit": "unknown"    }, "name": "48V battery cell 06 resistance"},
+    {"id": "SPORTAGE_48V_BAT_CELL_07_RES", "path": "Battery", "fmt": {"bix": 288, "len": 8,  "max": 255,   "unit": "unknown"    }, "name": "48V battery cell 07 resistance"},
+    {"id": "SPORTAGE_48V_BAT_CELL_08_RES", "path": "Battery", "fmt": {"bix": 296, "len": 8,  "max": 255,   "unit": "unknown"    }, "name": "48V battery cell 08 resistance"},
+    {"id": "SPORTAGE_48V_BAT_CELL_09_RES", "path": "Battery", "fmt": {"bix": 304, "len": 8,  "max": 255,   "unit": "unknown"    }, "name": "48V battery cell 09 resistance"},
+    {"id": "SPORTAGE_48V_BAT_CELL_10_RES", "path": "Battery", "fmt": {"bix": 312, "len": 8,  "max": 255,   "unit": "unknown"    }, "name": "48V battery cell 10 resistance"},
+    {"id": "SPORTAGE_48V_BAT_CELL_11_RES", "path": "Battery", "fmt": {"bix": 320, "len": 8,  "max": 255,   "unit": "unknown"    }, "name": "48V battery cell 11 resistance"},
+    {"id": "SPORTAGE_48V_BAT_CELL_12_RES", "path": "Battery", "fmt": {"bix": 328, "len": 8,  "max": 255,   "unit": "unknown"    }, "name": "48V battery cell 12 resistance"},
+    {"id": "SPORTAGE_48V_BAT_CELL_V_MAX",  "path": "Battery", "fmt": {"bix": 336, "len": 16, "max": 65535, "unit": "millivolts" }, "name": "48V battery cell voltage max deviation"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "0204"}, "freq": 5,
+  "signals": [
+    {"id": "SPORTAGE_CURRENT_SENS_NARROW",       "path": "Trips",   "fmt": {"bix": 32,  "len": 16, "max": 3276,  "min": -3276,               "div": 10,       "sign": true, "unit": "amps"       }, "name": "Current sensor narrow range, amps"},
+    {"id": "SPORTAGE_CURRENT_SENS_WIDE",         "path": "Trips",   "fmt": {"bix": 48,  "len": 16, "max": 3276,  "min": -3276,               "div": 10,       "sign": true, "unit": "amps"       }, "name": "Current sensor wide range, amps"},
+    {"id": "SPORTAGE_48V_BAT_CURRENT",           "path": "Battery", "fmt": {"bix": 64,  "len": 16, "max": 3276,  "min": -3276,               "div": 10,       "sign": true, "unit": "amps"       }, "name": "48V battery current monitoring"},
+    {"id": "SPORTAGE_48V_BAT_CURRENT_7E4",       "path": "Battery", "fmt": {"bix": 80,  "len": 16, "max": 3276,  "min": -3276,               "div": 10,       "sign": true, "unit": "amps"       }, "name": "48V battery current"},
+    {"id": "SPORTAGE_BAT_T_1",                   "path": "Battery", "fmt": {"bix": 96,  "len": 16, "max": 3276,  "min": -3276,               "div": 10,       "sign": true, "unit": "celsius"    }, "name": "Battery temperature 1"},
+    {"id": "SPORTAGE_BAT_T_2",                   "path": "Battery", "fmt": {"bix": 112, "len": 16, "max": 3276,  "min": -3276,               "div": 10,       "sign": true, "unit": "celsius"    }, "name": "Battery temperature 2"},
+    {"id": "SPORTAGE_MIN_48V_BAT_V",             "path": "Battery", "fmt": {"bix": 128, "len": 16, "max": 65535,                                                            "unit": "millivolts" }, "name": "Minimum 48V battery voltage"},
+    {"id": "SPORTAGE_MAX_48V_BAT_V",             "path": "Battery", "fmt": {"bix": 144, "len": 16, "max": 65535,                                                            "unit": "millivolts" }, "name": "Maximum 48V battery voltage"},
+    {"id": "SPORTAGE_CURRENT_SENS_NARROW_RANGE", "path": "Battery", "fmt": {"bix": 304, "len": 16, "max": 79.95,               "mul": 26651, "div": 21845000,               "unit": "volts"      }, "name": "Current sensor narrow range, volts"},
+    {"id": "SPORTAGE_CURRENT_SENS_WIDE_RANGE",   "path": "Battery", "fmt": {"bix": 320, "len": 16, "max": 79.95,               "mul": 26651, "div": 21845000,               "unit": "amps"       }, "name": "Current sensor wide range, volts"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "dbg": true, "cmd": {"22": "0205"}, "freq": 5,
+  "signals": [
+    {"id": "SPORTAGE_48_BAT_ST_CHG_2", "path": "Battery", "fmt": {"bix": 40,  "len": 16, "max": 6553,                 "div": 10,               "unit": "percent"    }, "name": "48 battery state of charge 2"},
+    {"id": "SPORTAGE_48V_BAT_CHG_LIM", "path": "Battery", "fmt": {"bix": 216, "len": 16, "max": 32767, "min": -32768,            "sign": true, "unit": "amps"       }, "name": "48V battery charge limit"},
+    {"id": "SPORTAGE_48V_BAT_V",       "path": "Battery", "fmt": {"bix": 328, "len": 16, "max": 65535,                                         "unit": "millivolts" }, "name": "48V battery voltage"}
+  ]},
+{ "hdr": "7E6", "rax": "7EE", "fcm1": true, "dbg": true, "cmd": {"21": "80"}, "freq": 30,
+  "signals": [
+    {"id": "SPORTAGE_AAT_VMCU", "path": "Climate", "fmt": {"bix": 96, "len": 8, "max": 23.5, "min": -104, "div": 2, "add": -40, "sign": true, "unit": "celsius" }, "name": "Ambient temperature, vehicle control unit"}
   ]},
 { "hdr": "7E7", "rax": "7EF", "cmd": {"22": "C101"}, "freq": 0.25, "filter": { "from": 2023 }, "dbgfilter": { "years": [2024], "from": 2027 },
   "signals": [
