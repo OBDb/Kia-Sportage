@@ -1,0 +1,17 @@
+command_id: 770.778.22BC10|fc=1
+test_cases:
+- expected_values:
+    SPORTAGE_LIGHTS_CODE: 0
+  response: |-
+    778100B62BC100F2400
+    778210000000000AAAA
+- expected_values:
+    SPORTAGE_LIGHTS_CODE: 0
+  response: |-
+    778100B62BC100F2400
+    778210000200000AAAA
+- expected_values:
+    SPORTAGE_LIGHTS_CODE: 15
+  response: |-
+    778100B62BC100F2400
+    7782100F0200000AAAA
