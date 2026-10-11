@@ -14,4 +14,9 @@ test_cases:
     SPORTAGE_HAZARD_SW: 160
   response: |-
     778100B62BC052F1320
+    7782100A0000000AAAA
+- expected_values:
+    SPORTAGE_HAZARD_SW: 160
+  response: |-
+    778100B62BC052F1320
     7782100A0400000AAAA
