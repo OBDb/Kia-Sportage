@@ -53,7 +53,7 @@
   "signals": [
     {"id": "SPORTAGE_DC_CHRG_STATE", "path": "Battery", "fmt": {"bix": 140, "len": 1, "max": 1, "unit": "offon" }, "name": "DC charging state"}
   ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC03"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2025 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC03"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_TRUNK",     "path": "Doors",     "fmt": {"bix": 32, "len": 1, "max": 1, "unit": "noyes" }, "name": "Trunk open?"},
     {"id": "SPORTAGE_DOOR_FL",   "path": "Doors",     "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "noyes" }, "name": "Front left door open?"},
@@ -66,7 +66,7 @@
     {"id": "SPORTAGE_HOOD",      "path": "Doors",     "fmt": {"bix": 47, "len": 1, "max": 1, "unit": "noyes" }, "name": "Hood latched?"},
     {"id": "SPORTAGE_DEFOG_SW",  "path": "Climate",   "fmt": {"bix": 62, "len": 1, "max": 1, "unit": "noyes" }, "name": "Defogging?"}
   ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC04"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2025 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC04"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_REVERSE_GEAR", "path": "Transmission", "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Reverse gear selected"},
     {"id": "SPORTAGE_LOCK_FL",      "path": "Doors",        "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "scalar" }, "name": "Front left door locked?"},
@@ -75,47 +75,47 @@
     {"id": "SPORTAGE_BELT_RL",      "path": "Seatbelts",    "fmt": {"bix": 53, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear left seatbelt latched?"},
     {"id": "SPORTAGE_BELT_RR",      "path": "Seatbelts",    "fmt": {"bix": 54, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear right seatbelt latched?"}
   ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC05"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2025 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC05"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_HAZARD_SW", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255,                             "unit": "scalar" }, "name": "Hazard switch"},
     {"id": "SPORTAGE_HL_SW",     "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1,   "nullmin": 0, "nullmax": 2, "unit": "noyes"  }, "name": "Headlight switch"}
   ]},
-{ "hdr": "770", "rax": "778", "dbg": true, "cmd": {"22": "BC06"}, "freq": 0.25,
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC06"}, "freq": 0.25, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_BRAKE_LIGHT", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "Brake light"}
   ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC07"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2025 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC07"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_DEFOG_LIGHT", "path": "Lights", "fmt": {"bix": 40, "len": 8, "max": 1, "unit": "noyes" }, "name": "Defog light on"}
   ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC08"}, "freq": 2, "dbgfilter": { "to": 2021, "from": 2025 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC08"}, "freq": 2, "dbgfilter": { "to": 2021, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_TURN_L", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 1, "nullmin": 0, "nullmax": 1, "unit": "noyes" }, "name": "Left turn signal on?, raw >1"}
   ]},
-{ "hdr": "770", "rax": "778", "cmd": {"22": "BC09"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2025 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC09"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_HL_HIGH", "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1, "div": 12, "unit": "noyes" }, "name": "Headlight high beam on"},
     {"id": "SPORTAGE_HL_LOW",  "path": "Lights", "fmt": {"bix": 56, "len": 8, "max": 1, "div": 12, "unit": "noyes" }, "name": "Headlight low beam on"}
   ]},
-{ "hdr": "770", "rax": "778", "fcm1": true, "dbg": true, "cmd": {"22": "BC10"}, "freq": 5,
+{ "hdr": "770", "rax": "778", "fcm1": true, "cmd": {"22": "BC10"}, "freq": 5, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_LIGHTS_CODE", "path": "Lights", "fmt": {"bix": 32, "len": 4, "max": 15, "unit": "scalar" }, "name": "Exterior lights state code"}
   ]},
-{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "B008"}, "freq": 1,
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "B008"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_BRAKE_SW", "path": "Control", "fmt": {"bix": 51, "len": 1, "max": 1, "unit": "offon" }, "name": "Brake switch"}
   ]},
-{ "hdr": "7A0", "rax": "7A8", "dbg": true, "cmd": {"22": "B009"}, "freq": 1,
+{ "hdr": "7A0", "rax": "7A8", "cmd": {"22": "B009"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_PARKING_SENS_REAR",        "path": "Engine", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "Parking sensor rear center left level"},
     {"id": "SPORTAGE_PARKING_SENS_REAR_CENTER", "path": "Engine", "fmt": {"bix": 40, "len": 8, "max": 255, "unit": "scalar" }, "name": "Parking sensor rear center right level"}
   ]},
-{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "B00C"}, "freq": 5,
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "B00C"}, "freq": 5, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_HEATED_WHEEL",     "path": "Climate", "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "offon" }, "name": "Heated steering wheel"},
     {"id": "SPORTAGE_HEATED_WHEEL_ALT", "path": "Climate", "fmt": {"bix": 42, "len": 1, "max": 1, "unit": "offon" }, "name": "Heated steering wheel, alternate bit"}
   ]},
-{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C002"}, "freq": 60,
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C002"}, "freq": 60, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_TID_1", "path": "Tires", "fmt": {"bix": 32,  "len": 32, "max": 4294967295, "unit": "hex" }, "name": "Tire sensor 1 ID"},
     {"id": "SPORTAGE_TID_2", "path": "Tires", "fmt": {"bix": 64,  "len": 32, "max": 4294967295, "unit": "hex" }, "name": "Tire sensor 2 ID"},
@@ -165,25 +165,25 @@
         }}
     }
   ]},
-{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C00C"}, "freq": 30,
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00C"}, "freq": 30, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_SENS_1_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #1 odometer event #1"},
     {"id": "SPORTAGE_SENS_1_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #1 odometer event #2"},
     {"id": "SPORTAGE_SENS_1_ODO_EVT_3", "path": "Trips", "fmt": {"bix": 320, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #1 odometer event #3"}
   ]},
-{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C00D"}, "freq": 30,
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00D"}, "freq": 30, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_SENS_2_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #2 odometer event #1"},
     {"id": "SPORTAGE_SENS_2_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #2 odometer event #2"},
     {"id": "SPORTAGE_SENS_2_ODO_EVT_3", "path": "Trips", "fmt": {"bix": 320, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #2 odometer event #3"}
   ]},
-{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C00E"}, "freq": 30,
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00E"}, "freq": 30, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_SENS_3_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #3 odometer event #1"},
     {"id": "SPORTAGE_SENS_3_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #3 odometer event #2"},
     {"id": "SPORTAGE_SENS_3_ODO_EVT_3", "path": "Trips", "fmt": {"bix": 320, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #3 odometer event #3"}
   ]},
-{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C00F"}, "freq": 30,
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00F"}, "freq": 30, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_SENS_4_ODO_EVT_1", "path": "Trips", "fmt": {"bix": 272, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #4 odometer event #1"},
     {"id": "SPORTAGE_SENS_4_ODO_EVT_2", "path": "Trips", "fmt": {"bix": 296, "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Sensor #4 odometer event #2"},
@@ -241,7 +241,7 @@
     {"id": "SPORTAGE_TIRE_RL_VSS_V3", "path": "Movement", "fmt": {"bix": 64, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
     {"id": "SPORTAGE_TIRE_RR_VSS_V3", "path": "Movement", "fmt": {"bix": 72, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
   ]},
-{ "hdr": "7D1", "rax": "7D9", "dbg": true, "cmd": {"22": "C101"}, "freq": 0.25,
+{ "hdr": "7D1", "rax": "7D9", "cmd": {"22": "C101"}, "freq": 0.25, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_FL_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
     {"id": "SPORTAGE_FR_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 96,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
@@ -503,7 +503,7 @@
     {"id": "SPORTAGE_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection duration cylinder 3"},
     {"id": "SPORTAGE_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "milliseconds" }, "name": "Injection duration cylinder 4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E003"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E003"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_BOOST_P_UP",     "path": "Engine", "fmt": {"bix": 280, "len": 16, "blsb": true, "max": 5111, "mul": 39, "div": 500, "unit": "unknown" }, "name": "Boost pressure upstream"},
     {"id": "SPORTAGE_BOOST_P_UP_DES", "path": "Engine", "fmt": {"bix": 312, "len": 16, "blsb": true, "max": 5111, "mul": 39, "div": 500, "unit": "unknown" }, "name": "Boost pressure upstream, desired"}
@@ -514,7 +514,7 @@
     {"id": "SPORTAGE_AUX_SOC", "path": "Battery",        "fmt": {"bix": 320, "len": 8, "max": 100, "nullmin": 0, "unit": "percent" }, "name": "Aux battery state of charge", "suggestedMetric": "stateOfCharge"},
     {"id": "SPORTAGE_AUX_SOH", "path": "Battery",        "fmt": {"bix": 328, "len": 8, "max": 100, "nullmin": 0, "unit": "percent" }, "name": "Aux battery state of health", "suggestedMetric": "stateOfHealth"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E005"}, "freq": 2,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E005"}, "freq": 2, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_GDI_IT_A1", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 1"},
     {"id": "SPORTAGE_GDI_IT_A2", "path": "Engine", "fmt": {"bix": 240, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 2"},
@@ -533,7 +533,7 @@
     {"id": "SPORTAGE_INJ_CORR_FACTOR_3", "path": "Engine", "fmt": {"bix": 240, "len": 16, "blsb": true, "max": 2,    "mul": 2, "div": 65535, "unit": "scalar" }, "name": "Injector correction factor 3"},
     {"id": "SPORTAGE_INJ_CORR_FACTOR_4", "path": "Engine", "fmt": {"bix": 256, "len": 16, "blsb": true, "max": 2,    "mul": 2, "div": 65535, "unit": "scalar" }, "name": "Injector correction factor 4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E009"}, "freq": 30,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E009"}, "freq": 30, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_GPF_INLET_T_SENS_RAW_V", "path": "Battery", "fmt": {"bix": 256, "len": 16, "blsb": true, "max": 319,     "mul": 21333, "div": 4369000,                  "unit": "volts"      },                                                  "name": "Gasoline particulate filter inlet temperature sensor raw voltage"},
     {"id": "SPORTAGE_GPF_OUTLET_T_SENS_V",    "path": "Battery", "fmt": {"bix": 272, "len": 16, "blsb": true, "max": 319,     "mul": 21333, "div": 4369000,                  "unit": "volts"      },                                                  "name": "Gasoline particulate filter outlet temperature sensor raw voltage"},
@@ -572,31 +572,31 @@
     {"id": "SPORTAGE_EMISSION_RELEVANT_MISFIRES_TOTAL_ALL_CYLINDERS", "path": "Engine", "fmt": {"bix": 432, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total all cylinders"},
     {"id": "SPORTAGE_CATALYST_DAMAGING_MISFIRES_TOTAL_ALL_CYLINDERS", "path": "Engine", "fmt": {"bix": 448, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total all cylinders"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E010"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E010"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_MAF_RATE", "path": "Engine", "fmt": {"bix": 208, "len": 8, "blsb": true, "max": 10.8, "mul": 0.04239, "unit": "unknown" }, "name": "Mass air flow rate"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E011"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E011"}, "freq": 5, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_CALC_OIL_T", "path": "Engine", "fmt": {"bix": 304, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Calculated oil temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E013"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E013"}, "freq": 0.25, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_BRAKE_BOOSTER_P", "path": "Control", "fmt": {"bix": 48, "len": 16, "blsb": true, "max": 1310, "min": -1310, "div": 25, "sign": true, "unit": "unknown" }, "name": "Brake booster pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E014"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E014"}, "freq": 5, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_CLT_FAN_PWM", "path": "Engine", "fmt": {"bix": 88,  "len": 8, "max": 100,  "mul": 100,  "div": 255, "unit": "percent"    }, "name": "Coolant fan PWM"},
     {"id": "SPORTAGE_AC_P",        "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 3520, "mul": 3520, "div": 255, "unit": "kilopascal" }, "name": "Air conditioning pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E019"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E019"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_KNOCK_RETARD_1_E019", "path": "Engine", "fmt": {"bix": 168, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 1, alternate"},
     {"id": "SPORTAGE_KNOCK_RETARD_2_E019", "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 2, alternate"},
     {"id": "SPORTAGE_KNOCK_RETARD_3_E019", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 3, alternate"},
     {"id": "SPORTAGE_KNOCK_RETARD_4_E019", "path": "Engine", "fmt": {"bix": 192, "len": 8, "max": 0, "min": -191.25, "mul": 0.75, "add": -191.25, "unit": "degrees" }, "name": "Knock retard cylinder 4, alternate"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E01D"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E01D"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_EMIS_MIS_TOT_1",   "path": "Engine", "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 1"},
     {"id": "SPORTAGE_EMIS_MIS_TOT_2",   "path": "Engine", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 2"},
@@ -607,7 +607,7 @@
     {"id": "SPORTAGE_CATDMG_MIS_TOT_3", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 3"},
     {"id": "SPORTAGE_CATDMG_MIS_TOT_4", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E020"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E020"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_INT_CAM_POS", "path": "Engine", "fmt": {"bix": 72, "len": 16, "blsb": true, "max": 255, "min": -256, "div": 128, "sign": true, "unit": "degrees" }, "name": "Intake camshaft position"},
     {"id": "SPORTAGE_EXH_CAM_POS", "path": "Engine", "fmt": {"bix": 88, "len": 16, "blsb": true, "max": 255, "min": -256, "div": 128, "sign": true, "unit": "degrees" }, "name": "Exhaust camshaft position"}
@@ -620,7 +620,7 @@
     {"id": "SPORTAGE_WG_POSITION", "path": "Engine", "fmt": {"bix": 424, "len": 16, "max": 199.99, "min": -200, "mul": 400, "div": 65535,                    "sign": true, "nullmin": -200, "unit": "percent" }, "name": "Waste gate position"},
     {"id": "SPORTAGE_WG_SETPOINT", "path": "Engine", "fmt": {"bix": 440, "len": 16, "max": 199.99, "min": -200, "mul": 400, "div": 65535,                    "sign": true, "nullmin": -200, "unit": "percent" }, "name": "Waste gate setpoint"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E023"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E023"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_FUEL_P",            "path": "Fuel",   "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 399.7635, "mul": 61, "div": 10000, "unit": "unknown"      }, "name": "Fuel pressure"},
     {"id": "SPORTAGE_FUEL_P_TGT",        "path": "Fuel",   "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 399.7635, "mul": 61, "div": 10000, "unit": "unknown"      }, "name": "Fuel pressure target"},
@@ -637,11 +637,11 @@
     {"id": "SPORTAGE_CYL5_INJ_TIME_1ST", "path": "Engine", "fmt": {"bix": 392, "len": 16, "blsb": true, "max": 262.14,   "mul": 4,  "div": 1000,  "unit": "milliseconds" }, "name": "Direct injection time 1st pulse, cylinder 5"},
     {"id": "SPORTAGE_CYL6_INJ_TIME_1ST", "path": "Engine", "fmt": {"bix": 408, "len": 16, "blsb": true, "max": 262.14,   "mul": 4,  "div": 1000,  "unit": "milliseconds" }, "name": "Direct injection time 1st pulse, cylinder 6"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E0F1"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E0F1"}, "freq": 5, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_EOT_7E0_2", "path": "Engine", "fmt": {"bix": 144, "len": 8, "max": 143, "min": -48, "mul": 3, "div": 4, "add": -48, "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E0F2"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E0F2"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_DPF_SUCCESSFUL_REGEN", "path": "Engine", "fmt": {"bix": 432, "len": 16, "max": 65535,                              "unit": "scalar"  }, "name": "Diesel particulate filter successful regeneration count"},
     {"id": "SPORTAGE_BOOST_P",              "path": "Engine", "fmt": {"bix": 496, "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "unknown" }, "name": "Boost pressure"}
@@ -734,7 +734,7 @@
   "signals": [
     {"id": "SPORTAGE_CURRENT_GEAR_7E1_2", "path": "Transmission", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear"}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "01A0"}, "freq": 0.25,
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "01A0"}, "freq": 0.25, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_RPM_7E1",               "path": "Movement",     "fmt": {"bix": 32,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Engine RPM"},
     {"id": "SPORTAGE_VSS_7E1",               "path": "Movement",     "fmt": {"bix": 48,  "len": 8,  "max": 255,                                                        "unit": "kilometersPerHour" }, "name": "Vehicle speed",                            "suggestedMetric": "speed"},
