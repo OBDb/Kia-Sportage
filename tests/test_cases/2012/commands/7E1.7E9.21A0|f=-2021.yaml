@@ -1,4 +1,4 @@
-command_id: 7E1.7E9.21A0
+command_id: 7E1.7E9.21A0|f=-2021
 test_cases:
 - expected_values:
     SPORTAGE_ATF_T: 28

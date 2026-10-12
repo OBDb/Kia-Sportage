@@ -1,4 +1,4 @@
-command_id: 7D4.7DC.220101
+command_id: 7D4.7DC.220101|f=2022-;-2010
 test_cases:
 - expected_values:
     SPORTAGE_MDPS_MOTOR_CURRENT: 3

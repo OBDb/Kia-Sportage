@@ -212,7 +212,7 @@
     {"id": "SPORTAGE_ODO_KM",  "path": "Trips",   "fmt": {"bix": 48, "len": 24, "max": 16777215,                                "unit": "kilometers" }, "name": "Odometer",            "suggestedMetric": "odometer"},
     {"id": "SPORTAGE_ODO_MI",  "path": "Trips",   "fmt": {"bix": 72, "len": 24, "max": 16777215,                                "unit": "miles"      }, "name": "Odometer",            "suggestedMetric": "odometer"}
   ]},
-{ "hdr": "7D1", "rax": "7D9", "cmd": {"21": "01"}, "freq": 0.25, "dbgfilter": { "to": 2010, "years": [2013, 2015], "from": 2017 },
+{ "hdr": "7D1", "rax": "7D9", "cmd": {"21": "01"}, "freq": 0.25, "filter": { "to": 2021 }, "dbgfilter": { "to": 2010, "years": [2013, 2015], "from": 2017 },
   "signals": [
     {"id": "SPORTAGE_VSS_AVG",     "path": "Movement", "fmt": {"bix": 48,  "len": 8,  "max": 255,                                               "unit": "kilometersPerHour" }, "name": "Vehicle speed"},
     {"id": "SPORTAGE_FL_VSS",      "path": "Movement", "fmt": {"bix": 88,  "len": 8,  "max": 127,    "min": -127,                 "sign": true, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
@@ -252,7 +252,7 @@
   "signals": [
     {"id": "SPORTAGE_STEER_ANGLE_V2", "path": "Control", "fmt": {"bix": 72, "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "degrees" }, "name": "Steering wheel angle"}
   ]},
-{ "hdr": "7D4", "rax": "7DC", "cmd": {"22": "0101"}, "freq": 5, "dbgfilter": { "to": 2021, "from": 2027 },
+{ "hdr": "7D4", "rax": "7DC", "cmd": {"22": "0101"}, "freq": 5, "filter": { "to": 2010, "from": 2022 }, "dbgfilter": { "from": 2027 },
   "signals": [
     {"id": "SPORTAGE_MDPS_MOTOR_CURRENT", "path": "Engine", "fmt": {"bix": 88, "len": 8, "max": 127, "min": -128, "sign": true, "unit": "amps" }, "name": "Motor-driven power steering current"}
   ]},
@@ -654,7 +654,7 @@
     {"id": "SPORTAGE_FUEL_T",                   "path": "Fuel",     "fmt": {"bix": 216, "len": 8, "max": 149.9965, "min": -50, "mul": 0.7843,             "add": -50, "unit": "celsius"      }, "name": "Fuel temperature"},
     {"id": "SPORTAGE_ENG_ACT_TQ",               "path": "Engine",   "fmt": {"bix": 240, "len": 8, "max": 599.9895,             "mul": 2.3529,                         "unit": "newtonMeters" }, "name": "Engine, actual torque"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "ED02"}, "freq": 1, "dbgfilter": { "to": 2021, "years": [2023], "from": 2025 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "ED02"}, "freq": 1, "filter": { "to": 2015, "from": 2022 }, "dbgfilter": { "years": [2023], "from": 2025 },
   "signals": [
     {"id": "SPORTAGE_EOT_V2", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 215, "min": -40, "add": -4, "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
@@ -718,7 +718,7 @@
     {"id": "SPORTAGE_BAT_V",                "path": "Battery", "fmt": {"bix": 272, "len": 16, "max": 71.535,                  "mul": 10,    "div": 10000, "add": 6,                 "unit": "volts"       }, "name": "Battery voltage"},
     {"id": "SPORTAGE_BAT_T",                "path": "Battery", "fmt": {"bix": 288, "len": 16, "max": 32767.5,                               "div": 2,                               "unit": "celsius"     }, "name": "Battery temperature"}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "cmd": {"21": "A0"}, "freq": 1, "dbgfilter": { "to": 2010, "years": [2013, 2014, 2015, 2016, 2017, 2018], "from": 2021 },
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"21": "A0"}, "freq": 1, "filter": { "to": 2021 }, "dbgfilter": { "to": 2010, "years": [2013, 2014, 2015, 2016, 2017, 2018], "from": 2021 },
   "signals": [
     {"id": "SPORTAGE_VSS_V3", "path": "Movement",     "fmt": {"bix": 48,  "len": 8, "max": 255,                         "unit": "kilometersPerHour" }, "name": "Vehicle speed",                            "suggestedMetric": "speed"},
     {"id": "SPORTAGE_ATF_T",  "path": "Transmission", "fmt": {"bix": 104, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius"           }, "name": "Automatic transmission fluid temperature"},
