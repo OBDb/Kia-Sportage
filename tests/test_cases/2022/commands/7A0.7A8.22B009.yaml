@@ -1,0 +1,8 @@
+command_id: 7A0.7A8.22B009
+test_cases:
+- expected_values:
+    SPORTAGE_PARKING_SENS_REAR: 8
+    SPORTAGE_PARKING_SENS_REAR_CENTER: 0
+  response: |-
+    7A8100B62B009FEEEFE
+    7A821EE08000800AAAA
