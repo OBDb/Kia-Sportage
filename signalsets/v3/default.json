@@ -615,11 +615,11 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E021"}, "freq": 0.1, "dbgfilter": { "to": 2018, "years": [2020], "from": 2026 },
   "signals": [
-    {"id": "SPORTAGE_TURBO_BOOST", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 66.81,  "min": -10,              "div": 831.55690902, "add": -12,                                "unit": "psi"     }, "name": "Turbo boost pressure (gauge)"},
-    {"id": "SPORTAGE_WG_VOLTAGE",  "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 10,                  "mul": 10,  "div": 65535,                                                   "unit": "volts"   }, "name": "Waste gate voltage"},
-    {"id": "SPORTAGE_WG_DUTY",     "path": "Engine", "fmt": {"bix": 408, "len": 16, "max": 200,                 "mul": 200, "div": 65535,                                                   "unit": "percent" }, "name": "Waste gate duty"},
-    {"id": "SPORTAGE_WG_POSITION", "path": "Engine", "fmt": {"bix": 424, "len": 16, "max": 199.99, "min": -200, "mul": 400, "div": 65535,                    "sign": true, "nullmin": -200, "unit": "percent" }, "name": "Waste gate position"},
-    {"id": "SPORTAGE_WG_SETPOINT", "path": "Engine", "fmt": {"bix": 440, "len": 16, "max": 199.99, "min": -200, "mul": 400, "div": 65535,                    "sign": true, "nullmin": -200, "unit": "percent" }, "name": "Waste gate setpoint"}
+    {"id": "SPORTAGE_TURBO_BOOST", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 66.81, "min": -10,                 "div": 831.55690902, "add": -12,                                  "unit": "psi" },                "name": "Turbo boost pressure (gauge)"},
+    {"id": "SPORTAGE_WG_VOLTAGE",  "path": "Engine", "fmt": {"bix": 384, "len": 16, "blsb": true, "max": 10,                  "mul": 10,           "div": 65535,                                              "unit": "volts"   },                                      "name": "Waste gate voltage"},
+    {"id": "SPORTAGE_WG_DUTY",     "path": "Engine", "fmt": {"bix": 400, "len": 16, "blsb": true, "max": 200,                 "mul": 200,          "div": 65535,                                              "unit": "percent" },                                      "name": "Waste gate duty"},
+    {"id": "SPORTAGE_WG_POSITION", "path": "Engine", "fmt": {"bix": 432, "len": 16, "blsb": true, "max": 199.99, "min": -200, "mul": 400,          "div": 65535, "sign": true, "nullmin": -200,               "unit": "percent" },                                      "name": "Waste gate position"},
+    {"id": "SPORTAGE_WG_SETPOINT", "path": "Engine", "fmt": {"bix": 448, "len": 16, "blsb": true, "max": 199.99, "min": -200, "mul": 400,          "div": 65535, "sign": true, "nullmin": -200,               "unit": "percent" },                                      "name": "Waste gate setpoint"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E023"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
