@@ -206,7 +206,7 @@
     {"id": "SPORTAGE_HVAC_COOLANT_T",  "path": "Engine", "fmt": {"bix": 32, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Coolant temperature"},
     {"id": "SPORTAGE_HVAC_INVERTER_T", "path": "Engine", "fmt": {"bix": 96, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Inverter temperature"}
   ]},
-{ "hdr": "7C6", "rax": "7CE", "fcm1": true, "cmd": {"22": "B002"}, "freq": 5, "dbgfilter": { "to": 2013, "years": [2015, 2017, 2018], "from": 2027 },
+{ "hdr": "7C6", "rax": "7CE", "fcm1": true, "cmd": {"22": "B002"}, "freq": 1, "dbgfilter": { "to": 2013, "years": [2015, 2017, 2018], "from": 2027 },
   "signals": [
     {"id": "SPORTAGE_FLI_VOL", "path": "Fuel",    "fmt": {"bix": 32, "len": 8,  "max": 127.5,    "div": 2,    "nullmax": 127.5, "unit": "liters"     }, "name": "Fuel level (volume)", "suggestedMetric": "fuelTankLevel"},
     {"id": "SPORTAGE_VPWR",    "path": "Battery", "fmt": {"bix": 40, "len": 8,  "max": 18,       "div": 12.8,                   "unit": "volts"      }, "name": "12v battery voltage", "suggestedMetric": "starterBatteryVoltage"},
