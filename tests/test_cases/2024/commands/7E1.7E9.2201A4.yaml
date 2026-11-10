@@ -3,7 +3,7 @@ test_cases:
 - expected_values:
     SPORTAGE_CLUTCH_1_T: 102
     SPORTAGE_CLUTCH_2_T: 102
-    SPORTAGE_GEAR_CUR: 1
+    SPORTAGE_GEAR_CUR: '1'
     SPORTAGE_GEAR_NXT: 1
   response: |-
     7E910326201A4FFFFFF
@@ -17,7 +17,6 @@ test_cases:
 - expected_values:
     SPORTAGE_CLUTCH_1_T: 74
     SPORTAGE_CLUTCH_2_T: 58
-    SPORTAGE_GEAR_CUR: 0
     SPORTAGE_GEAR_NXT: 0
   response: |-
     7E910326201A4FFFFFF
@@ -31,7 +30,6 @@ test_cases:
 - expected_values:
     SPORTAGE_CLUTCH_1_T: 112
     SPORTAGE_CLUTCH_2_T: 102
-    SPORTAGE_GEAR_CUR: 0
     SPORTAGE_GEAR_NXT: 0
   response: |-
     7E910326201A4FFFFFF
@@ -45,7 +43,6 @@ test_cases:
 - expected_values:
     SPORTAGE_CLUTCH_1_T: 110
     SPORTAGE_CLUTCH_2_T: 100
-    SPORTAGE_GEAR_CUR: 0
     SPORTAGE_GEAR_NXT: 0
   response: |-
     7E910326201A4FFFFFF
@@ -59,7 +56,7 @@ test_cases:
 - expected_values:
     SPORTAGE_CLUTCH_1_T: 92
     SPORTAGE_CLUTCH_2_T: 90
-    SPORTAGE_GEAR_CUR: 1
+    SPORTAGE_GEAR_CUR: '1'
     SPORTAGE_GEAR_NXT: 1
   response: |-
     7E910326201A4FFFFFF
@@ -73,7 +70,7 @@ test_cases:
 - expected_values:
     SPORTAGE_CLUTCH_1_T: 110
     SPORTAGE_CLUTCH_2_T: 100
-    SPORTAGE_GEAR_CUR: 1
+    SPORTAGE_GEAR_CUR: '1'
     SPORTAGE_GEAR_NXT: 1
   response: |-
     7E910326201A4FFFFFF
@@ -87,7 +84,7 @@ test_cases:
 - expected_values:
     SPORTAGE_CLUTCH_1_T: 82
     SPORTAGE_CLUTCH_2_T: 78
-    SPORTAGE_GEAR_CUR: 2
+    SPORTAGE_GEAR_CUR: '2'
     SPORTAGE_GEAR_NXT: 2
   response: |-
     7E910326201A4FFFFFF
@@ -101,7 +98,6 @@ test_cases:
 - expected_values:
     SPORTAGE_CLUTCH_1_T: 108
     SPORTAGE_CLUTCH_2_T: 114
-    SPORTAGE_GEAR_CUR: 14
     SPORTAGE_GEAR_NXT: 14
   response: |-
     7E910326201A4FFFFFF
@@ -115,7 +111,7 @@ test_cases:
 - expected_values:
     SPORTAGE_CLUTCH_1_T: 106
     SPORTAGE_CLUTCH_2_T: 102
-    SPORTAGE_GEAR_CUR: 4
+    SPORTAGE_GEAR_CUR: '4'
     SPORTAGE_GEAR_NXT: 4
   response: |-
     7E910326201A4FFFFFF
@@ -129,7 +125,7 @@ test_cases:
 - expected_values:
     SPORTAGE_CLUTCH_1_T: 92
     SPORTAGE_CLUTCH_2_T: 88
-    SPORTAGE_GEAR_CUR: 5
+    SPORTAGE_GEAR_CUR: '5'
     SPORTAGE_GEAR_NXT: 5
   response: |-
     7E910326201A4FFFFFF
@@ -143,7 +139,7 @@ test_cases:
 - expected_values:
     SPORTAGE_CLUTCH_1_T: 90
     SPORTAGE_CLUTCH_2_T: 86
-    SPORTAGE_GEAR_CUR: 4
+    SPORTAGE_GEAR_CUR: '4'
     SPORTAGE_GEAR_NXT: 4
   response: |-
     7E910326201A4FFFFFF
@@ -157,7 +153,7 @@ test_cases:
 - expected_values:
     SPORTAGE_CLUTCH_1_T: 82
     SPORTAGE_CLUTCH_2_T: 70
-    SPORTAGE_GEAR_CUR: 4
+    SPORTAGE_GEAR_CUR: '4'
     SPORTAGE_GEAR_NXT: 4
   response: |-
     7E910326201A4FFFFFF
@@ -171,7 +167,7 @@ test_cases:
 - expected_values:
     SPORTAGE_CLUTCH_1_T: 78
     SPORTAGE_CLUTCH_2_T: 52
-    SPORTAGE_GEAR_CUR: 7
+    SPORTAGE_GEAR_CUR: '7'
     SPORTAGE_GEAR_NXT: 7
   response: |-
     7E910326201A4FFFFFF
@@ -185,7 +181,7 @@ test_cases:
 - expected_values:
     SPORTAGE_CLUTCH_1_T: 84
     SPORTAGE_CLUTCH_2_T: 68
-    SPORTAGE_GEAR_CUR: 6
+    SPORTAGE_GEAR_CUR: '6'
     SPORTAGE_GEAR_NXT: 6
   response: |-
     7E910326201A4FFFFFF
@@ -199,7 +195,7 @@ test_cases:
 - expected_values:
     SPORTAGE_CLUTCH_1_T: 68
     SPORTAGE_CLUTCH_2_T: 52
-    SPORTAGE_GEAR_CUR: 7
+    SPORTAGE_GEAR_CUR: '7'
     SPORTAGE_GEAR_NXT: 7
   response: |-
     7E910326201A4FFFFFF
@@ -213,7 +209,7 @@ test_cases:
 - expected_values:
     SPORTAGE_CLUTCH_1_T: 72
     SPORTAGE_CLUTCH_2_T: 52
-    SPORTAGE_GEAR_CUR: 7
+    SPORTAGE_GEAR_CUR: '7'
     SPORTAGE_GEAR_NXT: 7
   response: |-
     7E910326201A4FFFFFF
@@ -227,7 +223,7 @@ test_cases:
 - expected_values:
     SPORTAGE_CLUTCH_1_T: 66
     SPORTAGE_CLUTCH_2_T: 52
-    SPORTAGE_GEAR_CUR: 7
+    SPORTAGE_GEAR_CUR: '7'
     SPORTAGE_GEAR_NXT: 7
   response: |-
     7E910326201A4FFFFFF
@@ -241,7 +237,7 @@ test_cases:
 - expected_values:
     SPORTAGE_CLUTCH_1_T: 72
     SPORTAGE_CLUTCH_2_T: 52
-    SPORTAGE_GEAR_CUR: 7
+    SPORTAGE_GEAR_CUR: '7'
     SPORTAGE_GEAR_NXT: 7
   response: |-
     7E910326201A4FFFFFF
