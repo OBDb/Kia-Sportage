@@ -37,7 +37,7 @@
     {"id": "SPORTAGE_MALFUNCTION",         "path": "Engine",       "fmt": {"bix": 175, "len": 1,  "max": 1,                                                   "unit": "offon"             }, "name": "Malfunction indicator"},
     {"id": "SPORTAGE_P_SENS",              "path": "Engine",       "fmt": {"bix": 176, "len": 8,  "max": 63.75,                        "div": 4,              "unit": "bars"              }, "name": "Pressure sensor"}
   ]},
-{ "hdr": "740", "rax": "748", "dbg": true, "cmd": {"22": "01A1"}, "freq": 0.25,
+{ "hdr": "740", "rax": "748", "cmd": {"22": "01A1"}, "freq": 0.25, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_AWD_CLU_DUTY",      "path": "Engine", "fmt": {"bix": 72,  "len": 16, "max": 100,       "min": -3276.8,                  "div": 10, "sign": true, "unit": "percent"      }, "name": "4WD clutch duty"},
     {"id": "SPORTAGE_AWD_CLU_STRESS",    "path": "Engine", "fmt": {"bix": 104, "len": 16, "max": 63.99,     "min": -63.99,  "mul": 0.001953,            "sign": true, "unit": "percent"      }, "name": "4WD clutch stress"},
@@ -45,7 +45,7 @@
     {"id": "SPORTAGE_AWD_CLU_TQ",        "path": "Engine", "fmt": {"bix": 200, "len": 16, "max": 2047.9375, "min": -2048,                    "div": 16, "sign": true, "unit": "newtonMeters" }, "name": "4WD clutch torque"},
     {"id": "SPORTAGE_AWD_CLU_P",         "path": "Engine", "fmt": {"bix": 216, "len": 16, "max": 63.99,     "min": -63.99,  "mul": 0.001953,            "sign": true, "unit": "bars"         }, "name": "4WD clutch pressure"}
   ]},
-{ "hdr": "740", "rax": "748", "dbg": true, "cmd": {"22": "01A3"}, "freq": 0.25,
+{ "hdr": "740", "rax": "748", "cmd": {"22": "01A3"}, "freq": 0.25, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_AWD_FRONT_AXLE_RAT", "path": "Engine",   "fmt": {"bix": 56,  "len": 16, "max": 0.999,     "min": -1,    "mul": 2, "div": 65535, "sign": true, "unit": "scalar" }, "name": "4WD front axle ratio"},
     {"id": "SPORTAGE_AWD_AXLE_SPD_DIFF",  "path": "Movement", "fmt": {"bix": 144, "len": 16, "max": 2047.9375, "min": -2048,           "div": 16,    "sign": true, "unit": "rpm"    }, "name": "4WD delta speed between front and rear axle"}
@@ -196,7 +196,7 @@
     {"id": "SPORTAGE_TEMP_EXT", "path": "Climate",  "fmt": {"bix": 48,  "len": 8, "max": 80,  "min": -40, "div": 2, "add": -40, "unit": "celsius"           }, "name": "Exterior temperature"},
     {"id": "SPORTAGE_VSS",      "path": "Movement", "fmt": {"bix": 232, "len": 8, "max": 255,                                   "unit": "kilometersPerHour" }, "name": "Vehicle speed",        "suggestedMetric": "speed"}
   ]},
-{ "hdr": "7B3", "rax": "7BB", "cmd": {"22": "0101"}, "freq": 5, "dbgfilter": { "to": 2021, "from": 2024 },
+{ "hdr": "7B3", "rax": "7BB", "cmd": {"22": "0101"}, "freq": 5, "dbgfilter": { "to": 2021, "years": [2024], "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_HVAC_IAT_PASSENGER_VENT",      "path": "Climate", "fmt": {"bix": 64, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Interior temperature, passenger vent"},
     {"id": "SPORTAGE_HVAC_IAT_PASSENGER_LEGS_VENT", "path": "Climate", "fmt": {"bix": 72, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Interior temperature, passenger legs vent"}
