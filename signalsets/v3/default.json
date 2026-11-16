@@ -34,7 +34,7 @@
     {"id": "SPORTAGE_RL_WHL_SPD",          "path": "Tires",        "fmt": {"bix": 128, "len": 8,  "max": 255,                                                 "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
     {"id": "SPORTAGE_LOCK_SWITCH",         "path": "Engine",       "fmt": {"bix": 151, "len": 1,  "max": 1,                                                   "unit": "offon"             }, "name": "Lock switch"},
     {"id": "SPORTAGE_STEER_WHL_ANG",       "path": "Tires",        "fmt": {"bix": 160, "len": 8,  "max": 167,   "min": -88,                       "add": -88, "unit": "degrees"           }, "name": "Steering wheel angle"},
-    {"id": "SPORTAGE_MALFUNCTION",         "path": "Engine",       "fmt": {"bix": 175, "len": 1,  "max": 1,                                                   "unit": "offon"             }, "name": "Malfunction indicator"},
+    {"id": "SPORTAGE_MALFUNCTION",         "path": "Engine",       "fmt": {"bix": 175, "len": 1,  "max": 1,                                                   "unit": "offon"             }, "name": "Malfunction indicator",               "suggestedMetric": "checkEngineLightOn"},
     {"id": "SPORTAGE_P_SENS",              "path": "Engine",       "fmt": {"bix": 176, "len": 8,  "max": 63.75,                        "div": 4,              "unit": "bars"              }, "name": "Pressure sensor"}
   ]},
 { "hdr": "740", "rax": "748", "cmd": {"22": "01A1"}, "freq": 0.25, "dbgfilter": { "to": 2024, "from": 2026 },
@@ -379,7 +379,7 @@
     {"id": "SPORTAGE_TIMING_ADVANCE_2",    "path": "Engine", "fmt": {"bix": 40,  "len": 8, "max": 95.25, "min": -96, "mul": 0.75,           "sign": true, "unit": "degrees"    }, "name": "Timing advance #2"},
     {"id": "SPORTAGE_TIMING_ADVANCE_3",    "path": "Engine", "fmt": {"bix": 48,  "len": 8, "max": 95.25, "min": -96, "mul": 0.75,           "sign": true, "unit": "degrees"    }, "name": "Timing advance #3"},
     {"id": "SPORTAGE_TIMING_ADVANCE_4",    "path": "Engine", "fmt": {"bix": 56,  "len": 8, "max": 95.25, "min": -96, "mul": 0.75,           "sign": true, "unit": "degrees"    }, "name": "Timing advance #4"},
-    {"id": "SPORTAGE_BAROMETRIC_PRESSURE", "path": "Engine", "fmt": {"bix": 312, "len": 8, "max": 127.5,                          "div": 2,               "unit": "kilopascal" }, "name": "Barometric pressure"}
+    {"id": "SPORTAGE_BAROMETRIC_PRESSURE", "path": "Engine", "fmt": {"bix": 312, "len": 8, "max": 127.5,                          "div": 2,               "unit": "kilopascal" }, "name": "Barometric pressure", "suggestedMetric": "barometricPressure"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "14"}, "freq": 0.25,
   "signals": [
@@ -494,7 +494,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E001"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2020], "from": 2027 },
   "signals": [
-    {"id": "SPORTAGE_EIT", "path": "Engine", "fmt": {"bix": 264, "len": 8, "max": 143,        "min": -48, "mul": 3, "div": 4,      "add": -48, "unit": "celsius" }, "name": "Intake air temperature"},
+    {"id": "SPORTAGE_EIT", "path": "Engine", "fmt": {"bix": 264, "len": 8, "max": 143,        "min": -48, "mul": 3, "div": 4,      "add": -48, "unit": "celsius" }, "name": "Intake air temperature", "suggestedMetric": "intakeAirTemperature"},
     {"id": "SPORTAGE_EOT", "path": "Engine", "fmt": {"bix": 272, "len": 8, "max": 143.254781,                       "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E002"}, "freq": 5, "dbgfilter": { "to": 2018, "years": [2020], "from": 2027 },
