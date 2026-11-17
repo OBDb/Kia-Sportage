@@ -655,7 +655,7 @@
     {"id": "SPORTAGE_FUEL_T",                   "path": "Fuel",     "fmt": {"bix": 216, "len": 8, "max": 149.9965, "min": -50, "mul": 0.7843,             "add": -50, "unit": "celsius"      }, "name": "Fuel temperature"},
     {"id": "SPORTAGE_ENG_ACT_TQ",               "path": "Engine",   "fmt": {"bix": 240, "len": 8, "max": 599.9895,             "mul": 2.3529,                         "unit": "newtonMeters" }, "name": "Engine, actual torque"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "ED02"}, "freq": 1, "filter": { "to": 2015, "from": 2022 }, "dbgfilter": { "years": [2023], "from": 2025 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "ED02"}, "freq": 1, "dbgfilter": { "to": 2020, "years": [2023], "from": 2025 },
   "signals": [
     {"id": "SPORTAGE_EOT_V2", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 215, "min": -40, "add": -4, "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
