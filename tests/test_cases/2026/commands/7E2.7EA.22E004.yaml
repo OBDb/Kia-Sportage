@@ -1,7 +1,7 @@
 command_id: 7E2.7EA.22E004
 test_cases:
 - expected_values:
-    SPORTAGE_VPWR_V3: 100
+    SPORTAGE_VPWR_V3: 12.7
   response: |-
     7EA102962E004FFFFFE
     7EA210001010000008F

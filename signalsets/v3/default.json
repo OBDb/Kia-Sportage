@@ -79,7 +79,7 @@
 { "hdr": "770", "rax": "778", "cmd": {"22": "BC05"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2026 },
   "signals": [
     {"id": "SPORTAGE_HAZARD_SW", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255,                             "unit": "scalar" }, "name": "Hazard switch"},
-    {"id": "SPORTAGE_HL_SW",     "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1,   "nullmin": 0, "nullmax": 2, "unit": "noyes"  }, "name": "Headlight switch"}
+    {"id": "SPORTAGE_HL_SW",     "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 2,   "nullmin": 0, "nullmax": 2, "unit": "noyes"  }, "name": "Headlight switch"}
   ]},
 { "hdr": "770", "rax": "778", "cmd": {"22": "BC06"}, "freq": 0.25, "dbgfilter": { "to": 2021, "years": [2024], "from": 2026 },
   "signals": [
@@ -615,11 +615,11 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E021"}, "freq": 0.1, "dbgfilter": { "to": 2018, "years": [2020], "from": 2026 },
   "signals": [
-    {"id": "SPORTAGE_TURBO_BOOST", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 66.81, "min": -10,                 "div": 831.55690902, "add": -12,                                  "unit": "psi" },                "name": "Turbo boost pressure (gauge)"},
-    {"id": "SPORTAGE_WG_VOLTAGE",  "path": "Engine", "fmt": {"bix": 384, "len": 16, "blsb": true, "max": 10,                  "mul": 10,           "div": 65535,                                              "unit": "volts"   },                                      "name": "Waste gate voltage"},
-    {"id": "SPORTAGE_WG_DUTY",     "path": "Engine", "fmt": {"bix": 400, "len": 16, "blsb": true, "max": 200,                 "mul": 200,          "div": 65535,                                              "unit": "percent" },                                      "name": "Waste gate duty"},
-    {"id": "SPORTAGE_WG_POSITION", "path": "Engine", "fmt": {"bix": 432, "len": 16, "blsb": true, "max": 199.99, "min": -200, "mul": 400,          "div": 65535, "sign": true, "nullmin": -200,               "unit": "percent" },                                      "name": "Waste gate position"},
-    {"id": "SPORTAGE_WG_SETPOINT", "path": "Engine", "fmt": {"bix": 448, "len": 16, "blsb": true, "max": 199.99, "min": -200, "mul": 400,          "div": 65535, "sign": true, "nullmin": -200,               "unit": "percent" },                                      "name": "Waste gate setpoint"}
+    {"id": "SPORTAGE_TURBO_BOOST", "path": "Engine", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 66.81,  "min": -10,              "div": 831.55690902, "add": -12,                                "unit": "psi"     }, "name": "Turbo boost pressure (gauge)"},
+    {"id": "SPORTAGE_WG_VOLTAGE",  "path": "Engine", "fmt": {"bix": 384, "len": 16, "blsb": true, "max": 10,                  "mul": 10,  "div": 65535,                                                   "unit": "volts"   }, "name": "Waste gate voltage"},
+    {"id": "SPORTAGE_WG_DUTY",     "path": "Engine", "fmt": {"bix": 400, "len": 16, "blsb": true, "max": 200,                 "mul": 200, "div": 65535,                                                   "unit": "percent" }, "name": "Waste gate duty"},
+    {"id": "SPORTAGE_WG_POSITION", "path": "Engine", "fmt": {"bix": 432, "len": 16, "blsb": true, "max": 199.99, "min": -200, "mul": 400, "div": 65535,                    "sign": true, "nullmin": -200, "unit": "percent" }, "name": "Waste gate position"},
+    {"id": "SPORTAGE_WG_SETPOINT", "path": "Engine", "fmt": {"bix": 448, "len": 16, "blsb": true, "max": 199.99, "min": -200, "mul": 400, "div": 65535,                    "sign": true, "nullmin": -200, "unit": "percent" }, "name": "Waste gate setpoint"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E023"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
   "signals": [
@@ -804,7 +804,7 @@
   ]},
 { "hdr": "7E2", "rax": "7EA", "cmd": {"22": "E004"}, "freq": 1, "dbgfilter": { "to": 2022, "years": [2024], "from": 2027 },
   "signals": [
-    {"id": "SPORTAGE_VPWR_V3", "path": "Battery", "fmt": {"bix": 152, "len": 8, "max": 100, "unit": "percent" }, "name": "12V battery charge"}
+    {"id": "SPORTAGE_VPWR_V3", "path": "Battery", "fmt": {"bix": 152, "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "12V battery charge"}
   ]},
 { "hdr": "7E2", "rax": "7EA", "dbg": true, "cmd": {"22": "E005"}, "freq": 1,
   "signals": [
@@ -1114,9 +1114,9 @@
     {"id": "SPORTAGE_HVBAT_HTR1_T",      "path": "Battery",             "fmt": {"bix": 184, "len": 8,  "max": 127, "min": -127,                          "sign": true,                               "unit": "celsius"       }, "name": "HV battery heater 1 temperature"},
     {"id": "SPORTAGE_HVBAT_HTR2_T",      "path": "Battery",             "fmt": {"bix": 192, "len": 8,  "max": 127, "min": -127,                          "sign": true,                               "unit": "celsius"       }, "name": "HV battery heater 2 temperature"},
     {"id": "SPORTAGE_HVBAT_SOH",         "path": "Battery",             "fmt": {"bix": 200, "len": 16, "max": 100,                          "div": 10,                                               "unit": "percent"       }, "name": "HV battery state of health",         "suggestedMetric": "stateOfHealth"},
-    {"id": "SPORTAGE_HVBAT_DET_MAX_ID",  "path": "Battery",             "fmt": {"bix": 216, "len": 8,  "max": 98,                                                                    "nullmax": 200, "unit": "scalar"        }, "name": "HV battery max deteriation cell id"},
+    {"id": "SPORTAGE_HVBAT_DET_MAX_ID",  "path": "Battery",             "fmt": {"bix": 216, "len": 8,  "max": 200,                                                                   "nullmax": 200, "unit": "scalar"        }, "name": "HV battery max deteriation cell id"},
     {"id": "SPORTAGE_HVBAT_WH",          "path": "Battery",             "fmt": {"bix": 224, "len": 16, "max": 100,              "mul": 2,   "div": 1000,                                             "unit": "kilowattHours" }, "name": "HV battery remaining energy"},
-    {"id": "SPORTAGE_HVBAT_DET_MIN_ID",  "path": "Battery",             "fmt": {"bix": 240, "len": 8,  "max": 98,                                                                    "nullmax": 200, "unit": "scalar"        }, "name": "HV battery min deteriation cell id"},
+    {"id": "SPORTAGE_HVBAT_DET_MIN_ID",  "path": "Battery",             "fmt": {"bix": 240, "len": 8,  "max": 200,                                                                   "nullmax": 200, "unit": "scalar"        }, "name": "HV battery min deteriation cell id"},
     {"id": "SPORTAGE_HVBAT_SOC_DISP",    "path": "Battery",             "fmt": {"bix": 248, "len": 8,  "max": 100,              "mul": 0.5,                                                          "unit": "percent"       }, "name": "HV battery charge",                  "suggestedMetric": "stateOfCharge"},
     {"id": "SPORTAGE_HVBAT_CMU097_VOLT", "path": "Battery.Modules.097", "fmt": {"bix": 272, "len": 8,  "max": 4.2,                          "div": 50,                 "nullmin": 0,                 "unit": "volts"         }, "name": "HV battery module 097 voltage"},
     {"id": "SPORTAGE_HVBAT_CMU098_VOLT", "path": "Battery.Modules.098", "fmt": {"bix": 280, "len": 8,  "max": 4.2, "min": 2.8,              "div": 50,                                               "unit": "volts"         }, "name": "HV battery module 098 voltage"}
