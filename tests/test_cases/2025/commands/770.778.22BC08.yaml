@@ -9,6 +9,11 @@ test_cases:
     SPORTAGE_TURN_L: null
   response: |-
     778100B62BC08A05090
+    77821B80000001CAAAA
+- expected_values:
+    SPORTAGE_TURN_L: null
+  response: |-
+    778100B62BC08A05090
     77821B80000011CAAAA
 - expected_values:
     SPORTAGE_TURN_L: null
